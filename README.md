@@ -54,11 +54,4 @@ Located in `DETS/`, this module handles property prediction for materials using 
 python DETS/icl_dets_train.py 
 
 ```
-## 📝 Methodology
 
-DETS introduces a **Student- posterior predictive distribution** derived from a Normal-Inverse-Gamma (NIG) prior. This allows for robust regression even in the presence of heavy-tailed noise.
-
-Key features include:
-
-* **Uncertainty Decomposition:**Analytically separating total variance into data noise and model uncertainty.
-* **Interval-Censored Likelihood (ICL):** Maximizing probability mass within tolerance intervals rather than point estimates.
