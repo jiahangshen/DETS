@@ -1,0 +1,94 @@
+--- Enthalpy Baseline: Full (Ratio: 0.4) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 10: Loss 1.3582 | Val MAE 137.6758
+[P1] Ep 20: Loss 0.4042 | Val MAE 283.9529
+[P1] Ep 30: Loss 0.2067 | Val MAE 285.5527
+[P1] Ep 40: Loss 0.1677 | Val MAE 346.6371
+[P1] Ep 50: Loss 0.1543 | Val MAE 315.9661
+[P1] Ep 60: Loss 0.1115 | Val MAE 370.8527
+[P1] Ep 70: Loss 0.1067 | Val MAE 403.3628
+[P1] Ep 80: Loss 0.0886 | Val MAE 392.5018
+[P1] Ep 90: Loss 0.0797 | Val MAE 409.3306
+[P1] Ep 100: Loss 0.0729 | Val MAE 471.6005
+[P1] Ep 110: Loss 0.0651 | Val MAE 603.9565
+[P1] Ep 120: Loss 0.0632 | Val MAE 669.7675
+[P1] Ep 130: Loss 0.0593 | Val MAE 668.7588
+[P1] Ep 140: Loss 0.0569 | Val MAE 747.5414
+[P1] Ep 150: Loss 0.0561 | Val MAE 646.9845
+[P1] Ep 160: Loss 0.0574 | Val MAE 725.5779
+[P1] Ep 170: Loss 0.0515 | Val MAE 543.8476
+[P1] Ep 180: Loss 0.0504 | Val MAE 637.8661
+[P1] Ep 190: Loss 0.0511 | Val MAE 839.6507
+[P1] Ep 200: Loss 0.0487 | Val MAE 730.7835
+[P1] Ep 210: Loss 0.0477 | Val MAE 688.4497
+[P1] Ep 220: Loss 0.0445 | Val MAE 994.6274
+[P1] Ep 230: Loss 0.0429 | Val MAE 911.6873
+[P1] Ep 240: Loss 0.0441 | Val MAE 894.5604
+[P1] Ep 250: Loss 0.0434 | Val MAE 905.6572
+[P1] Ep 260: Loss 0.0456 | Val MAE 871.8883
+[P1] Ep 270: Loss 0.0419 | Val MAE 883.9977
+[P1] Ep 280: Loss 0.0382 | Val MAE 835.3759
+[P1] Ep 290: Loss 0.0422 | Val MAE 731.5038
+[P1] Ep 300: Loss 0.0379 | Val MAE 734.1389
+[P1] Ep 310: Loss 0.0365 | Val MAE 684.1689
+[P1] Ep 320: Loss 0.0344 | Val MAE 757.8361
+[P1] Ep 330: Loss 0.0348 | Val MAE 627.6635
+[P1] Ep 340: Loss 0.0347 | Val MAE 701.4710
+[P1] Ep 350: Loss 0.0347 | Val MAE 641.4287
+[P1] Ep 360: Loss 0.0377 | Val MAE 723.4229
+[P1] Ep 370: Loss 0.0332 | Val MAE 696.5482
+[P1] Ep 380: Loss 0.0320 | Val MAE 760.4140
+[P1] Ep 390: Loss 0.0366 | Val MAE 830.4210
+[P1] Ep 400: Loss 0.0329 | Val MAE 674.1923
+[P1] Ep 410: Loss 0.0312 | Val MAE 736.7615
+[P1] Ep 420: Loss 0.0334 | Val MAE 676.5884
+[P1] Ep 430: Loss 0.0307 | Val MAE 592.1354
+[P1] Ep 440: Loss 0.0344 | Val MAE 620.0117
+[P1] Ep 450: Loss 0.0306 | Val MAE 778.3705
+[P1] Ep 460: Loss 0.0323 | Val MAE 788.5788
+[P1] Ep 470: Loss 0.0325 | Val MAE 563.7635
+[P1] Ep 480: Loss 0.0286 | Val MAE 548.1295
+[P1] Ep 490: Loss 0.0299 | Val MAE 963.0631
+[P1] Ep 500: Loss 0.0313 | Val MAE 682.5250
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 2.1407 | Val MAE 44.5634
+[FT] Ep 20: Loss 0.9382 | Val MAE 32.6003
+[FT] Ep 30: Loss 0.9418 | Val MAE 37.9900
+[FT] Ep 40: Loss 0.7366 | Val MAE 34.1778
+[FT] Ep 50: Loss 0.6525 | Val MAE 36.6199
+[FT] Ep 60: Loss 0.6610 | Val MAE 35.8432
+[FT] Ep 70: Loss 0.6394 | Val MAE 34.4435
+[FT] Ep 80: Loss 0.6151 | Val MAE 31.6282
+[FT] Ep 90: Loss 0.7401 | Val MAE 34.7736
+[FT] Ep 100: Loss 0.6939 | Val MAE 35.9577
+[FT] Ep 110: Loss 0.6158 | Val MAE 36.4036
+[FT] Ep 120: Loss 0.6281 | Val MAE 31.9184
+[FT] Ep 130: Loss 0.6340 | Val MAE 31.0817
+[FT] Ep 140: Loss 0.5747 | Val MAE 30.9656
+[FT] Ep 150: Loss 0.6429 | Val MAE 28.9006
+[FT] Ep 160: Loss 0.5456 | Val MAE 34.1834
+[FT] Ep 170: Loss 0.5750 | Val MAE 29.3861
+[FT] Ep 180: Loss 0.5937 | Val MAE 30.1986
+[FT] Ep 190: Loss 0.7085 | Val MAE 34.1128
+[FT] Ep 200: Loss 0.5873 | Val MAE 34.6828
+[FT] Ep 210: Loss 0.5977 | Val MAE 29.7904
+[FT] Ep 220: Loss 0.5805 | Val MAE 30.9909
+[FT] Ep 230: Loss 0.5678 | Val MAE 29.9431
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: Full
+   MAE:  27.3830
+   RMSE: 39.7122
+   MAPE: 88.06 %
+   Acc:  13.89 %
+------------------------------------------------------------

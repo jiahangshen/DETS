@@ -1,0 +1,90 @@
+--- Enthalpy Baseline: DP (Ratio: 0.2) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running DP | Target: 1214/6074 (20.0%)
+Scanning Source (DP):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (DP):  17%|█▋        | 1/6 [00:01<00:09,  1.80s/it]Scanning Source (DP):  33%|███▎      | 2/6 [00:03<00:08,  2.00s/it]Scanning Source (DP):  50%|█████     | 3/6 [00:05<00:05,  1.88s/it]Scanning Source (DP):  67%|██████▋   | 4/6 [00:07<00:03,  1.91s/it]Scanning Source (DP):  83%|████████▎ | 5/6 [00:08<00:01,  1.71s/it]Scanning Source (DP): 100%|██████████| 6/6 [00:11<00:00,  1.83s/it]                                                                   -> Source reduced: 6074 -> 1214
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 10: Loss 1.0193 | Val MAE 92.5959
+[P1] Ep 20: Loss 0.4021 | Val MAE 95.7668
+[P1] Ep 30: Loss 0.2437 | Val MAE 79.7585
+[P1] Ep 40: Loss 0.2989 | Val MAE 50.6113
+[P1] Ep 50: Loss 0.1538 | Val MAE 51.7175
+[P1] Ep 60: Loss 0.1224 | Val MAE 40.3987
+[P1] Ep 70: Loss 0.1089 | Val MAE 49.0092
+[P1] Ep 80: Loss 0.0923 | Val MAE 65.9623
+[P1] Ep 90: Loss 0.0833 | Val MAE 76.2501
+[P1] Ep 100: Loss 0.0803 | Val MAE 61.7554
+[P1] Ep 110: Loss 0.0802 | Val MAE 48.6144
+[P1] Ep 120: Loss 0.0920 | Val MAE 72.0013
+[P1] Ep 130: Loss 0.0707 | Val MAE 45.1485
+[P1] Ep 140: Loss 0.0647 | Val MAE 55.3297
+[P1] Ep 150: Loss 0.0825 | Val MAE 59.0209
+[P1] Ep 160: Loss 0.1512 | Val MAE 65.0181
+[P1] Ep 170: Loss 0.0779 | Val MAE 63.1999
+[P1] Ep 180: Loss 0.0705 | Val MAE 43.0827
+[P1] Ep 190: Loss 0.0761 | Val MAE 54.6961
+[P1] Ep 200: Loss 0.0875 | Val MAE 48.9810
+[P1] Ep 210: Loss 0.1086 | Val MAE 43.0205
+[P1] Ep 220: Loss 0.0754 | Val MAE 44.1798
+[P1] Ep 230: Loss 0.0532 | Val MAE 73.1836
+[P1] Ep 240: Loss 0.0594 | Val MAE 44.4319
+[P1] Ep 250: Loss 0.0564 | Val MAE 40.3456
+[P1] Ep 260: Loss 0.0736 | Val MAE 41.1727
+[P1] Ep 270: Loss 0.0467 | Val MAE 41.4080
+[P1] Ep 280: Loss 0.0521 | Val MAE 69.6205
+[P1] Ep 290: Loss 0.0687 | Val MAE 70.8327
+[P1] Ep 300: Loss 0.0423 | Val MAE 78.1117
+[P1] Ep 310: Loss 0.0383 | Val MAE 67.3138
+[P1] Ep 320: Loss 0.0415 | Val MAE 66.1560
+[P1] Ep 330: Loss 0.0406 | Val MAE 70.8214
+[P1] Ep 340: Loss 0.0441 | Val MAE 58.0417
+[P1] Ep 350: Loss 0.0583 | Val MAE 82.1797
+[P1] Ep 360: Loss 0.0295 | Val MAE 37.6978
+[P1] Ep 370: Loss 0.0292 | Val MAE 40.6854
+[P1] Ep 380: Loss 0.0230 | Val MAE 40.1628
+[P1] Ep 390: Loss 0.0283 | Val MAE 36.4706
+[P1] Ep 400: Loss 0.0366 | Val MAE 29.7611
+[P1] Ep 410: Loss 0.0386 | Val MAE 35.6923
+[P1] Ep 420: Loss 0.0246 | Val MAE 27.0702
+[P1] Ep 430: Loss 0.0239 | Val MAE 46.8079
+[P1] Ep 440: Loss 0.0406 | Val MAE 32.7914
+[P1] Ep 450: Loss 0.0228 | Val MAE 43.9982
+[P1] Ep 460: Loss 0.0312 | Val MAE 39.0070
+[P1] Ep 470: Loss 0.0306 | Val MAE 30.4236
+[P1] Ep 480: Loss 0.0268 | Val MAE 40.6597
+[P1] Ep 490: Loss 0.0202 | Val MAE 40.1138
+[P1] Ep 500: Loss 0.0259 | Val MAE 58.2279
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.6803 | Val MAE 31.3128
+[FT] Ep 20: Loss 0.6626 | Val MAE 32.5720
+[FT] Ep 30: Loss 0.6612 | Val MAE 35.2251
+[FT] Ep 40: Loss 0.6321 | Val MAE 30.1857
+[FT] Ep 50: Loss 0.5760 | Val MAE 30.6334
+[FT] Ep 60: Loss 0.5307 | Val MAE 31.1373
+[FT] Ep 70: Loss 0.5534 | Val MAE 33.1378
+[FT] Ep 80: Loss 0.5711 | Val MAE 31.6393
+[FT] Ep 90: Loss 0.4859 | Val MAE 31.5767
+[FT] Ep 100: Loss 0.5321 | Val MAE 30.1328
+[FT] Ep 110: Loss 0.4675 | Val MAE 34.8957
+[FT] Ep 120: Loss 0.4532 | Val MAE 33.2953
+[FT] Ep 130: Loss 0.4378 | Val MAE 34.2078
+[FT] Ep 140: Loss 0.4754 | Val MAE 35.0358
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: DP
+   MAE:  27.8817
+   RMSE: 36.7604
+   MAPE: 97.19 %
+   Acc:  13.89 %
+------------------------------------------------------------

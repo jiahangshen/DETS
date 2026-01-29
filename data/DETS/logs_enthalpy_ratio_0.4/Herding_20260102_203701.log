@@ -1,0 +1,98 @@
+--- Enthalpy Baseline: Herding (Ratio: 0.4) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running Herding | Target: 2429/6074 (40.0%)
+Scanning Source (Herding):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Herding):  17%|█▋        | 1/6 [00:01<00:09,  1.90s/it]Scanning Source (Herding):  33%|███▎      | 2/6 [00:04<00:08,  2.02s/it]Scanning Source (Herding):  50%|█████     | 3/6 [00:05<00:05,  1.73s/it]Scanning Source (Herding):  67%|██████▋   | 4/6 [00:06<00:03,  1.63s/it]Scanning Source (Herding):  83%|████████▎ | 5/6 [00:08<00:01,  1.77s/it]Scanning Source (Herding): 100%|██████████| 6/6 [00:11<00:00,  2.02s/it]                                                                           [Note] Using K-Means approximation for Herding.
+
+[Sampler] Running K-Means | Target: 2429/6074 (40.0%)
+Scanning Source (K-Means):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (K-Means):  17%|█▋        | 1/6 [00:01<00:06,  1.22s/it]Scanning Source (K-Means):  33%|███▎      | 2/6 [00:02<00:05,  1.26s/it]Scanning Source (K-Means):  50%|█████     | 3/6 [00:04<00:04,  1.55s/it]Scanning Source (K-Means):  67%|██████▋   | 4/6 [00:05<00:02,  1.49s/it]Scanning Source (K-Means):  83%|████████▎ | 5/6 [00:07<00:01,  1.57s/it]Scanning Source (K-Means): 100%|██████████| 6/6 [00:09<00:00,  1.70s/it]                                                                           Running MiniBatchKMeans...
+Clusters:   0%|          | 0/2429 [00:00<?, ?it/s]Clusters:  29%|██▉       | 710/2429 [00:00<00:00, 7097.89it/s]Clusters:  74%|███████▍  | 1801/2429 [00:00<00:00, 9337.72it/s]                                                               -> Source reduced: 6074 -> 2364
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 10: Loss 0.4497 | Val MAE 97.2718
+[P1] Ep 20: Loss 0.2263 | Val MAE 142.1939
+[P1] Ep 30: Loss 0.1336 | Val MAE 143.3838
+[P1] Ep 40: Loss 0.1352 | Val MAE 151.7490
+[P1] Ep 50: Loss 0.1435 | Val MAE 168.1523
+[P1] Ep 60: Loss 0.1256 | Val MAE 101.8526
+[P1] Ep 70: Loss 0.0950 | Val MAE 138.1418
+[P1] Ep 80: Loss 0.0932 | Val MAE 95.9977
+[P1] Ep 90: Loss 0.1063 | Val MAE 122.1106
+[P1] Ep 100: Loss 0.1050 | Val MAE 121.8085
+[P1] Ep 110: Loss 0.0860 | Val MAE 154.2610
+[P1] Ep 120: Loss 0.0833 | Val MAE 123.9836
+[P1] Ep 130: Loss 0.0759 | Val MAE 91.1546
+[P1] Ep 140: Loss 0.0572 | Val MAE 133.0422
+[P1] Ep 150: Loss 0.0610 | Val MAE 128.2786
+[P1] Ep 160: Loss 0.0735 | Val MAE 146.3123
+[P1] Ep 170: Loss 0.0562 | Val MAE 138.0817
+[P1] Ep 180: Loss 0.0451 | Val MAE 114.4852
+[P1] Ep 190: Loss 0.0522 | Val MAE 113.7337
+[P1] Ep 200: Loss 0.0436 | Val MAE 149.0914
+[P1] Ep 210: Loss 0.0440 | Val MAE 133.9779
+[P1] Ep 220: Loss 0.0363 | Val MAE 107.4486
+[P1] Ep 230: Loss 0.0306 | Val MAE 118.9760
+[P1] Ep 240: Loss 0.0429 | Val MAE 123.9890
+[P1] Ep 250: Loss 0.0384 | Val MAE 110.6646
+[P1] Ep 260: Loss 0.0270 | Val MAE 159.9857
+[P1] Ep 270: Loss 0.0247 | Val MAE 124.3188
+[P1] Ep 280: Loss 0.0286 | Val MAE 119.3814
+[P1] Ep 290: Loss 0.0240 | Val MAE 110.4119
+[P1] Ep 300: Loss 0.0274 | Val MAE 118.0787
+[P1] Ep 310: Loss 0.0262 | Val MAE 109.1516
+[P1] Ep 320: Loss 0.0239 | Val MAE 123.8441
+[P1] Ep 330: Loss 0.0237 | Val MAE 106.7095
+[P1] Ep 340: Loss 0.0295 | Val MAE 120.2411
+[P1] Ep 350: Loss 0.0193 | Val MAE 108.9382
+[P1] Ep 360: Loss 0.0264 | Val MAE 96.1128
+[P1] Ep 370: Loss 0.0228 | Val MAE 120.0108
+[P1] Ep 380: Loss 0.0236 | Val MAE 143.6513
+[P1] Ep 390: Loss 0.0210 | Val MAE 143.8754
+[P1] Ep 400: Loss 0.0257 | Val MAE 117.6117
+[P1] Ep 410: Loss 0.0162 | Val MAE 153.4953
+[P1] Ep 420: Loss 0.0176 | Val MAE 184.2105
+[P1] Ep 430: Loss 0.0169 | Val MAE 121.3265
+[P1] Ep 440: Loss 0.0136 | Val MAE 124.5630
+[P1] Ep 450: Loss 0.0139 | Val MAE 137.9024
+[P1] Ep 460: Loss 0.0168 | Val MAE 155.1776
+[P1] Ep 470: Loss 0.0161 | Val MAE 168.2677
+[P1] Ep 480: Loss 0.0130 | Val MAE 111.1554
+[P1] Ep 490: Loss 0.0156 | Val MAE 147.5101
+[P1] Ep 500: Loss 0.0116 | Val MAE 154.0935
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.9217 | Val MAE 34.4135
+[FT] Ep 20: Loss 0.8079 | Val MAE 37.6965
+[FT] Ep 30: Loss 0.6818 | Val MAE 37.3992
+[FT] Ep 40: Loss 0.6790 | Val MAE 31.8865
+[FT] Ep 50: Loss 0.6337 | Val MAE 28.9151
+[FT] Ep 60: Loss 0.6050 | Val MAE 34.6359
+[FT] Ep 70: Loss 0.6566 | Val MAE 36.4868
+[FT] Ep 80: Loss 0.6095 | Val MAE 31.1955
+[FT] Ep 90: Loss 0.5982 | Val MAE 36.6503
+[FT] Ep 100: Loss 0.5635 | Val MAE 29.5634
+[FT] Ep 110: Loss 0.5750 | Val MAE 29.7381
+[FT] Ep 120: Loss 0.5742 | Val MAE 33.1959
+[FT] Ep 130: Loss 0.5677 | Val MAE 32.7013
+[FT] Ep 140: Loss 0.5489 | Val MAE 39.4257
+[FT] Ep 150: Loss 0.5320 | Val MAE 30.1715
+[FT] Ep 160: Loss 0.5133 | Val MAE 35.7430
+[FT] Ep 170: Loss 0.4997 | Val MAE 35.0800
+[FT] Ep 180: Loss 0.5484 | Val MAE 35.0398
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: Herding
+   MAE:  28.5255
+   RMSE: 38.9662
+   MAPE: 105.98 %
+   Acc:  16.67 %
+------------------------------------------------------------

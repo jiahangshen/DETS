@@ -1,0 +1,81 @@
+--- Baseline MLP Pipeline (Method: UCB) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [UCB] ===
+   Target Ratio: 80.0%
+
+[Sampler] Running UCB | Target: 6326/7908 (80.0%)
+Scanning Source (UCB):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (UCB):  12%|█▎        | 1/8 [00:00<00:00,  9.12it/s]                                                                    -> Selected 6326 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.8511
+[P1] Ep 40: Loss 0.7005
+[P1] Ep 60: Loss 0.6178
+[P1] Ep 80: Loss 0.5587
+[P1] Ep 100: Loss 0.5120
+[P1] Ep 120: Loss 0.4786
+[P1] Ep 140: Loss 0.4366
+[P1] Ep 160: Loss 0.4151
+[P1] Ep 180: Loss 0.3934
+[P1] Ep 200: Loss 0.3641
+[P1] Ep 220: Loss 0.3395
+[P1] Ep 240: Loss 0.3225
+[P1] Ep 260: Loss 0.3127
+[P1] Ep 280: Loss 0.3020
+[P1] Ep 300: Loss 0.2904
+[P1] Ep 320: Loss 0.2689
+[P1] Ep 340: Loss 0.2648
+[P1] Ep 360: Loss 0.2434
+[P1] Ep 380: Loss 0.2355
+[P1] Ep 400: Loss 0.2331
+[P1] Ep 420: Loss 0.2282
+[P1] Ep 440: Loss 0.2191
+[P1] Ep 460: Loss 0.2071
+[P1] Ep 480: Loss 0.2027
+[P1] Ep 500: Loss 0.1917
+[P1] Ep 520: Loss 0.1893
+[P1] Ep 540: Loss 0.1804
+[P1] Ep 560: Loss 0.1733
+[P1] Ep 580: Loss 0.1741
+[P1] Ep 600: Loss 0.1628
+[P1] Ep 620: Loss 0.1690
+[P1] Ep 640: Loss 0.1571
+[P1] Ep 660: Loss 0.1553
+[P1] Ep 680: Loss 0.1571
+[P1] Ep 700: Loss 0.1509
+[P1] Ep 720: Loss 0.1433
+[P1] Ep 740: Loss 0.1432
+[P1] Ep 760: Loss 0.1366
+[P1] Ep 780: Loss 0.1298
+[P1] Ep 800: Loss 0.1304
+[P1] Ep 820: Loss 0.1268
+[P1] Ep 840: Loss 0.1253
+[P1] Ep 860: Loss 0.1237
+[P1] Ep 880: Loss 0.1202
+[P1] Ep 900: Loss 0.1179
+[P1] Ep 920: Loss 0.1130
+[P1] Ep 940: Loss 0.1124
+[P1] Ep 960: Loss 0.1102
+[P1] Ep 980: Loss 0.1072
+[P1] Ep 1000: Loss 0.1108
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8060
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.6794
+[P2.2] Ep 40 MAE 0.6777
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: UCB (Ratio=0.8)
+MAE: 0.6115
+RMSE: 0.7607
+MAPE: 41.3801
+Acc_10: 26.7045
+Acc_20: 47.7273
+------------------------------------------------------------

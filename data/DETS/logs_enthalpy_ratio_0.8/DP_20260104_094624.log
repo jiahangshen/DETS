@@ -1,0 +1,94 @@
+--- Enthalpy Baseline: DP (Ratio: 0.8) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running DP | Target: 4859/6074 (80.0%)
+Scanning Source (DP):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (DP):  17%|█▋        | 1/6 [00:00<00:04,  1.00it/s]Scanning Source (DP):  33%|███▎      | 2/6 [00:01<00:03,  1.00it/s]Scanning Source (DP):  50%|█████     | 3/6 [00:02<00:02,  1.05it/s]Scanning Source (DP):  67%|██████▋   | 4/6 [00:03<00:01,  1.03it/s]Scanning Source (DP):  83%|████████▎ | 5/6 [00:04<00:00,  1.01it/s]Scanning Source (DP): 100%|██████████| 6/6 [00:06<00:00,  1.08s/it]                                                                   -> Source reduced: 6074 -> 4859
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 10: Loss 0.1833 | Val MAE 73.1141
+[P1] Ep 20: Loss 0.1138 | Val MAE 64.5531
+[P1] Ep 30: Loss 0.0914 | Val MAE 92.0628
+[P1] Ep 40: Loss 0.0986 | Val MAE 96.4252
+[P1] Ep 50: Loss 0.0928 | Val MAE 111.8652
+[P1] Ep 60: Loss 0.0730 | Val MAE 144.3499
+[P1] Ep 70: Loss 0.0625 | Val MAE 129.4969
+[P1] Ep 80: Loss 0.0553 | Val MAE 95.7065
+[P1] Ep 90: Loss 0.0575 | Val MAE 104.5140
+[P1] Ep 100: Loss 0.0437 | Val MAE 104.8295
+[P1] Ep 110: Loss 0.0401 | Val MAE 91.1882
+[P1] Ep 120: Loss 0.0379 | Val MAE 81.7753
+[P1] Ep 130: Loss 0.0327 | Val MAE 78.1309
+[P1] Ep 140: Loss 0.0323 | Val MAE 87.8501
+[P1] Ep 150: Loss 0.0311 | Val MAE 90.7490
+[P1] Ep 160: Loss 0.0313 | Val MAE 86.5668
+[P1] Ep 170: Loss 0.0255 | Val MAE 77.3404
+[P1] Ep 180: Loss 0.0206 | Val MAE 64.4181
+[P1] Ep 190: Loss 0.0209 | Val MAE 79.6211
+[P1] Ep 200: Loss 0.0173 | Val MAE 78.2566
+[P1] Ep 210: Loss 0.0158 | Val MAE 74.4242
+[P1] Ep 220: Loss 0.0181 | Val MAE 80.1189
+[P1] Ep 230: Loss 0.0210 | Val MAE 69.5749
+[P1] Ep 240: Loss 0.0199 | Val MAE 60.9198
+[P1] Ep 250: Loss 0.0157 | Val MAE 71.7607
+[P1] Ep 260: Loss 0.0142 | Val MAE 74.0406
+[P1] Ep 270: Loss 0.0238 | Val MAE 67.3010
+[P1] Ep 280: Loss 0.0158 | Val MAE 71.0488
+[P1] Ep 290: Loss 0.0187 | Val MAE 77.3865
+[P1] Ep 300: Loss 0.0179 | Val MAE 57.0436
+[P1] Ep 310: Loss 0.0142 | Val MAE 81.1620
+[P1] Ep 320: Loss 0.0138 | Val MAE 80.6274
+[P1] Ep 330: Loss 0.0155 | Val MAE 74.5092
+[P1] Ep 340: Loss 0.0100 | Val MAE 88.0580
+[P1] Ep 350: Loss 0.0123 | Val MAE 62.0135
+[P1] Ep 360: Loss 0.0114 | Val MAE 57.9397
+[P1] Ep 370: Loss 0.0097 | Val MAE 75.2146
+[P1] Ep 380: Loss 0.0135 | Val MAE 97.0246
+[P1] Ep 390: Loss 0.0121 | Val MAE 102.3866
+[P1] Ep 400: Loss 0.0087 | Val MAE 95.5509
+[P1] Ep 410: Loss 0.0090 | Val MAE 99.7625
+[P1] Ep 420: Loss 0.0083 | Val MAE 90.7422
+[P1] Ep 430: Loss 0.0106 | Val MAE 98.0957
+[P1] Ep 440: Loss 0.0090 | Val MAE 108.5788
+[P1] Ep 450: Loss 0.0115 | Val MAE 111.2644
+[P1] Ep 460: Loss 0.0122 | Val MAE 89.1249
+[P1] Ep 470: Loss 0.0084 | Val MAE 123.1940
+[P1] Ep 480: Loss 0.0117 | Val MAE 117.0876
+[P1] Ep 490: Loss 0.0084 | Val MAE 118.7094
+[P1] Ep 500: Loss 0.0080 | Val MAE 147.2870
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.7684 | Val MAE 31.7253
+[FT] Ep 20: Loss 0.6315 | Val MAE 32.9075
+[FT] Ep 30: Loss 0.6299 | Val MAE 34.1419
+[FT] Ep 40: Loss 0.5111 | Val MAE 29.1502
+[FT] Ep 50: Loss 0.4576 | Val MAE 32.0617
+[FT] Ep 60: Loss 0.4316 | Val MAE 28.6858
+[FT] Ep 70: Loss 0.4080 | Val MAE 25.2444
+[FT] Ep 80: Loss 0.4114 | Val MAE 30.4958
+[FT] Ep 90: Loss 0.3833 | Val MAE 28.6193
+[FT] Ep 100: Loss 0.3890 | Val MAE 29.9666
+[FT] Ep 110: Loss 0.3232 | Val MAE 29.9698
+[FT] Ep 120: Loss 0.3647 | Val MAE 28.9160
+[FT] Ep 130: Loss 0.3314 | Val MAE 29.7305
+[FT] Ep 140: Loss 0.3303 | Val MAE 32.2345
+[FT] Ep 150: Loss 0.2901 | Val MAE 30.1690
+[FT] Ep 160: Loss 0.3298 | Val MAE 29.1282
+[FT] Ep 170: Loss 0.3142 | Val MAE 27.7435
+[FT] Ep 180: Loss 0.2995 | Val MAE 30.9120
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: DP
+   MAE:  28.9288
+   RMSE: 39.8011
+   MAPE: 106.96 %
+   Acc:  8.33 %
+------------------------------------------------------------

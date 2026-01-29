@@ -1,0 +1,94 @@
+--- Baseline MLP Pipeline (Method: CSIE) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [CSIE] ===
+   Target Ratio: 80.0%
+
+[Sampler] Running CSIE | Target: 6326/7908 (80.0%)
+Scanning Source (CSIE):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (CSIE):  12%|█▎        | 1/8 [00:00<00:00,  8.75it/s]                                                                     Extracting Info:   0%|          | 0/1 [00:00<?, ?it/s]                                                      -> Selected 6326 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.8203
+[P1] Ep 40: Loss 0.6759
+[P1] Ep 60: Loss 0.5951
+[P1] Ep 80: Loss 0.5387
+[P1] Ep 100: Loss 0.4815
+[P1] Ep 120: Loss 0.4455
+[P1] Ep 140: Loss 0.4294
+[P1] Ep 160: Loss 0.3972
+[P1] Ep 180: Loss 0.3646
+[P1] Ep 200: Loss 0.3473
+[P1] Ep 220: Loss 0.3269
+[P1] Ep 240: Loss 0.3006
+[P1] Ep 260: Loss 0.2989
+[P1] Ep 280: Loss 0.2860
+[P1] Ep 300: Loss 0.2659
+[P1] Ep 320: Loss 0.2547
+[P1] Ep 340: Loss 0.2473
+[P1] Ep 360: Loss 0.2389
+[P1] Ep 380: Loss 0.2345
+[P1] Ep 400: Loss 0.2161
+[P1] Ep 420: Loss 0.2101
+[P1] Ep 440: Loss 0.2016
+[P1] Ep 460: Loss 0.1959
+[P1] Ep 480: Loss 0.1915
+[P1] Ep 500: Loss 0.1856
+[P1] Ep 520: Loss 0.1821
+[P1] Ep 540: Loss 0.1701
+[P1] Ep 560: Loss 0.1663
+[P1] Ep 580: Loss 0.1667
+[P1] Ep 600: Loss 0.1533
+[P1] Ep 620: Loss 0.1549
+[P1] Ep 640: Loss 0.1503
+[P1] Ep 660: Loss 0.1503
+[P1] Ep 680: Loss 0.1424
+[P1] Ep 700: Loss 0.1372
+[P1] Ep 720: Loss 0.1314
+[P1] Ep 740: Loss 0.1349
+[P1] Ep 760: Loss 0.1285
+[P1] Ep 780: Loss 0.1259
+[P1] Ep 800: Loss 0.1241
+[P1] Ep 820: Loss 0.1177
+[P1] Ep 840: Loss 0.1148
+[P1] Ep 860: Loss 0.1111
+[P1] Ep 880: Loss 0.1136
+[P1] Ep 900: Loss 0.1080
+[P1] Ep 920: Loss 0.1085
+[P1] Ep 940: Loss 0.1074
+[P1] Ep 960: Loss 0.1026
+[P1] Ep 980: Loss 0.0961
+[P1] Ep 1000: Loss 0.1010
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.7341
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.6624
+[P2.2] Ep 40 MAE 0.6608
+[P2.2] Ep 60 MAE 0.6611
+[P2.2] Ep 80 MAE 0.6552
+[P2.2] Ep 100 MAE 0.6483
+[P2.2] Ep 120 MAE 0.6434
+[P2.2] Ep 140 MAE 0.6456
+[P2.2] Ep 160 MAE 0.6414
+[P2.2] Ep 180 MAE 0.6423
+[P2.2] Ep 200 MAE 0.6377
+[P2.2] Ep 220 MAE 0.6374
+[P2.2] Ep 240 MAE 0.6413
+[P2.2] Ep 260 MAE 0.6423
+[P2.2] Ep 280 MAE 0.6339
+[P2.2] Ep 300 MAE 0.6362
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: CSIE (Ratio=0.8)
+MAE: 0.5917
+RMSE: 0.7614
+MAPE: 38.6682
+Acc_10: 26.1364
+Acc_20: 50.5682
+------------------------------------------------------------

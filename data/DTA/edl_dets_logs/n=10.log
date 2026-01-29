@@ -1,0 +1,641 @@
+Namespace(source_csv='./drug-target/Davis.csv', target_csv='./drug-target/CASF2016_graph_valid.csv', pretrained='/Davis80_best_model.pt', max_seq_len=1024, batch_size=128, epochs=200, ft_epochs=150, lr=5e-05, weight_decay=0.0001, dropout=0.1, device='cuda:0', save_dir='DETS_DTA', num_prototypes=10, tau_high=0.9, sigma_0=0.1, gamma=10, alpha=0.9, w_min=1e-05, edl_lambda=0.01, mlp_hidden='256,128')
+Loading datasets...
+Initializing DETS Projection Head (High Variance)...
+
+=== PHASE 1: DETS Source Training ===
+-> Extracting Anchors from Target (CASF)...
+/root/miniconda3/envs/subset/lib/python3.9/site-packages/torch/nn/modules/transformer.py:508: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /pytorch/aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(
+   Running K-Means (K=10)...
+-> Anchors Established: 10 prototypes.
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 1] Active Samples: 7486/24956
+[P1] Ep 1 | Loss 2.9727 | Val MAE 1.6038 CI 0.5673 Acc 31.6%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 2] Active Samples: 7486/24956
+[P1] Ep 2 | Loss 1.2458 | Val MAE 1.9079 CI 0.5789 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 3] Active Samples: 7486/24956
+[P1] Ep 3 | Loss 1.1126 | Val MAE 1.9999 CI 0.5906 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 4] Active Samples: 7486/24956
+[P1] Ep 4 | Loss 1.0844 | Val MAE 1.9376 CI 0.5965 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 5] Active Samples: 7486/24956
+[P1] Ep 5 | Loss 1.0526 | Val MAE 1.9946 CI 0.5965 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 6] Active Samples: 7486/24956
+[P1] Ep 6 | Loss 1.0239 | Val MAE 1.9858 CI 0.6140 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 7] Active Samples: 7486/24956
+[P1] Ep 7 | Loss 1.0187 | Val MAE 1.9439 CI 0.6491 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 8] Active Samples: 7486/24956
+[P1] Ep 8 | Loss 0.9809 | Val MAE 2.0717 CI 0.6608 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 9] Active Samples: 7486/24956
+[P1] Ep 9 | Loss 0.9882 | Val MAE 2.0133 CI 0.6667 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 10] Active Samples: 7486/24956
+[P1] Ep 10 | Loss 1.1250 | Val MAE 1.9464 CI 0.6374 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 11] Active Samples: 7486/24956
+[P1] Ep 11 | Loss 0.9783 | Val MAE 1.9317 CI 0.6433 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 12] Active Samples: 7486/24956
+[P1] Ep 12 | Loss 1.1794 | Val MAE 1.8369 CI 0.5965 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 13] Active Samples: 7486/24956
+[P1] Ep 13 | Loss 1.0418 | Val MAE 1.9642 CI 0.6023 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 14] Active Samples: 7486/24956
+[P1] Ep 14 | Loss 1.1651 | Val MAE 1.8267 CI 0.5848 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 15] Active Samples: 7486/24956
+[P1] Ep 15 | Loss 0.9654 | Val MAE 1.9897 CI 0.6082 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 16] Active Samples: 7486/24956
+[P1] Ep 16 | Loss 0.9519 | Val MAE 2.0057 CI 0.6199 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 17] Active Samples: 7486/24956
+[P1] Ep 17 | Loss 0.9208 | Val MAE 1.9287 CI 0.6199 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 18] Active Samples: 7486/24956
+[P1] Ep 18 | Loss 0.9385 | Val MAE 1.9640 CI 0.6316 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 19] Active Samples: 7486/24956
+[P1] Ep 19 | Loss 0.9501 | Val MAE 1.9339 CI 0.6257 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 20] Active Samples: 7486/24956
+[P1] Ep 20 | Loss 1.1011 | Val MAE 1.9909 CI 0.6082 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 21] Active Samples: 7486/24956
+[P1] Ep 21 | Loss 0.9718 | Val MAE 1.9514 CI 0.6316 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 22] Active Samples: 7486/24956
+[P1] Ep 22 | Loss 1.0007 | Val MAE 1.9201 CI 0.6257 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 23] Active Samples: 7486/24956
+[P1] Ep 23 | Loss 1.0406 | Val MAE 1.9371 CI 0.6316 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 24] Active Samples: 7486/24956
+[P1] Ep 24 | Loss 1.0631 | Val MAE 1.8897 CI 0.6023 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 25] Active Samples: 7486/24956
+[P1] Ep 25 | Loss 1.0994 | Val MAE 1.8433 CI 0.6199 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 26] Active Samples: 7486/24956
+[P1] Ep 26 | Loss 1.0939 | Val MAE 1.9394 CI 0.5906 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 27] Active Samples: 7486/24956
+[P1] Ep 27 | Loss 1.1192 | Val MAE 1.8301 CI 0.5906 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 28] Active Samples: 7486/24956
+[P1] Ep 28 | Loss 0.9753 | Val MAE 1.8974 CI 0.5965 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 29] Active Samples: 7486/24956
+[P1] Ep 29 | Loss 1.0730 | Val MAE 1.8949 CI 0.5965 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.3000 | Std: 0.4583
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 30] Active Samples: 7486/24956
+[P1] Ep 30 | Loss 0.9810 | Val MAE 1.8521 CI 0.5789 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2834 | Std: 0.4340
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 31] Active Samples: 7486/24956
+[P1] Ep 31 | Loss 0.9757 | Val MAE 1.9324 CI 0.5965 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2627 | Std: 0.4036
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 32] Active Samples: 7486/24956
+[P1] Ep 32 | Loss 0.9358 | Val MAE 1.9027 CI 0.5965 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2707 | Std: 0.4146
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 33] Active Samples: 7486/24956
+[P1] Ep 33 | Loss 0.8967 | Val MAE 1.9220 CI 0.6082 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2624 | Std: 0.4024
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 34] Active Samples: 7486/24956
+[P1] Ep 34 | Loss 0.8463 | Val MAE 2.0052 CI 0.5906 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2522 | Std: 0.3879
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 35] Active Samples: 7486/24956
+[P1] Ep 35 | Loss 0.8676 | Val MAE 1.9492 CI 0.5906 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2554 | Std: 0.3921
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 36] Active Samples: 7486/24956
+[P1] Ep 36 | Loss 0.8121 | Val MAE 1.9588 CI 0.5906 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2616 | Std: 0.4004
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 37] Active Samples: 7486/24956
+[P1] Ep 37 | Loss 0.8770 | Val MAE 1.9040 CI 0.5906 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2526 | Std: 0.3883
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 38] Active Samples: 7486/24956
+[P1] Ep 38 | Loss 0.9974 | Val MAE 1.9825 CI 0.5848 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2461 | Std: 0.3793
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 39] Active Samples: 7486/24956
+[P1] Ep 39 | Loss 1.0329 | Val MAE 1.8824 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2571 | Std: 0.3941
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 40] Active Samples: 7486/24956
+[P1] Ep 40 | Loss 0.9492 | Val MAE 1.9217 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2477 | Std: 0.3813
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 41] Active Samples: 7486/24956
+[P1] Ep 41 | Loss 1.0059 | Val MAE 1.8876 CI 0.5731 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2475 | Std: 0.3808
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 42] Active Samples: 7486/24956
+[P1] Ep 42 | Loss 1.0473 | Val MAE 1.9009 CI 0.5731 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2548 | Std: 0.3914
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 43] Active Samples: 7486/24956
+[P1] Ep 43 | Loss 0.9706 | Val MAE 1.9352 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2539 | Std: 0.3898
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 44] Active Samples: 7486/24956
+[P1] Ep 44 | Loss 0.9931 | Val MAE 1.9212 CI 0.5614 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2587 | Std: 0.3970
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 45] Active Samples: 7486/24956
+[P1] Ep 45 | Loss 0.9923 | Val MAE 1.8734 CI 0.5731 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2560 | Std: 0.3941
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 46] Active Samples: 7486/24956
+[P1] Ep 46 | Loss 1.0142 | Val MAE 1.8716 CI 0.5439 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2660 | Std: 0.4071
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 47] Active Samples: 7486/24956
+[P1] Ep 47 | Loss 0.8478 | Val MAE 1.9231 CI 0.5322 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2570 | Std: 0.3941
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 48] Active Samples: 7486/24956
+[P1] Ep 48 | Loss 0.8440 | Val MAE 1.9427 CI 0.5731 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2573 | Std: 0.3944
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 49] Active Samples: 7486/24956
+[P1] Ep 49 | Loss 0.8341 | Val MAE 1.9396 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2581 | Std: 0.3956
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 50] Active Samples: 7486/24956
+[P1] Ep 50 | Loss 0.8256 | Val MAE 1.9216 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2598 | Std: 0.3978
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 51] Active Samples: 7486/24956
+[P1] Ep 51 | Loss 0.9404 | Val MAE 1.8853 CI 0.5556 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2627 | Std: 0.4020
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 52] Active Samples: 7486/24956
+[P1] Ep 52 | Loss 0.9098 | Val MAE 1.9379 CI 0.5380 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2593 | Std: 0.3971
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 53] Active Samples: 7486/24956
+[P1] Ep 53 | Loss 0.8628 | Val MAE 1.8694 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2568 | Std: 0.3937
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 54] Active Samples: 7486/24956
+[P1] Ep 54 | Loss 0.8737 | Val MAE 1.8622 CI 0.5673 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2554 | Std: 0.3918
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 55] Active Samples: 7486/24956
+[P1] Ep 55 | Loss 0.8842 | Val MAE 1.9357 CI 0.5731 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2543 | Std: 0.3904
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 56] Active Samples: 7486/24956
+[P1] Ep 56 | Loss 0.8182 | Val MAE 1.9048 CI 0.5556 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2542 | Std: 0.3903
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 57] Active Samples: 7486/24956
+[P1] Ep 57 | Loss 0.8510 | Val MAE 1.9104 CI 0.5380 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2558 | Std: 0.3924
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 58] Active Samples: 7486/24956
+[P1] Ep 58 | Loss 0.8398 | Val MAE 1.8835 CI 0.5380 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2848 | Std: 0.4370
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 59] Active Samples: 7486/24956
+[P1] Ep 59 | Loss 0.8618 | Val MAE 1.8500 CI 0.5322 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2786 | Std: 0.4290
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 60] Active Samples: 7486/24956
+[P1] Ep 60 | Loss 0.8291 | Val MAE 1.9114 CI 0.5439 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2811 | Std: 0.4321
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 61] Active Samples: 7486/24956
+[P1] Ep 61 | Loss 0.8814 | Val MAE 1.9202 CI 0.5439 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2867 | Std: 0.4393
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 62] Active Samples: 7486/24956
+[P1] Ep 62 | Loss 0.8853 | Val MAE 1.9200 CI 0.5380 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2831 | Std: 0.4347
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 63] Active Samples: 7486/24956
+[P1] Ep 63 | Loss 0.9122 | Val MAE 1.9294 CI 0.5380 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2691 | Std: 0.4169
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 64] Active Samples: 7486/24956
+[P1] Ep 64 | Loss 0.8960 | Val MAE 1.8512 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2566 | Std: 0.4007
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 65] Active Samples: 7486/24956
+[P1] Ep 65 | Loss 0.9472 | Val MAE 1.8817 CI 0.5439 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2626 | Std: 0.4083
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 66] Active Samples: 7486/24956
+[P1] Ep 66 | Loss 0.9283 | Val MAE 1.8533 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2670 | Std: 0.4144
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 67] Active Samples: 7486/24956
+[P1] Ep 67 | Loss 0.9422 | Val MAE 1.8613 CI 0.5380 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2796 | Std: 0.4302
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 68] Active Samples: 7486/24956
+[P1] Ep 68 | Loss 0.9359 | Val MAE 1.8741 CI 0.5322 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2761 | Std: 0.4261
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 69] Active Samples: 7486/24956
+[P1] Ep 69 | Loss 0.8648 | Val MAE 1.8734 CI 0.5614 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2699 | Std: 0.4189
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 70] Active Samples: 7486/24956
+[P1] Ep 70 | Loss 0.8772 | Val MAE 1.8957 CI 0.5497 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2867 | Std: 0.4394
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 71] Active Samples: 7486/24956
+[P1] Ep 71 | Loss 0.8224 | Val MAE 1.9314 CI 0.5322 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2909 | Std: 0.4449
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 72] Active Samples: 7486/24956
+[P1] Ep 72 | Loss 0.8032 | Val MAE 1.9178 CI 0.5497 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2893 | Std: 0.4428
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 73] Active Samples: 7486/24956
+[P1] Ep 73 | Loss 0.8122 | Val MAE 1.8886 CI 0.5497 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2840 | Std: 0.4362
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 74] Active Samples: 7486/24956
+[P1] Ep 74 | Loss 0.8318 | Val MAE 1.8651 CI 0.5614 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2783 | Std: 0.4288
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 75] Active Samples: 7486/24956
+[P1] Ep 75 | Loss 0.8809 | Val MAE 1.9166 CI 0.5731 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2824 | Std: 0.4339
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 76] Active Samples: 7486/24956
+[P1] Ep 76 | Loss 0.8544 | Val MAE 1.8926 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2902 | Std: 0.4437
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 77] Active Samples: 7486/24956
+[P1] Ep 77 | Loss 0.8108 | Val MAE 1.9212 CI 0.5614 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2861 | Std: 0.4385
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 78] Active Samples: 7486/24956
+[P1] Ep 78 | Loss 0.8390 | Val MAE 1.8716 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2870 | Std: 0.4395
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 79] Active Samples: 7486/24956
+[P1] Ep 79 | Loss 0.8228 | Val MAE 1.8934 CI 0.5789 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2529 | Std: 0.3941
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 80] Active Samples: 7486/24956
+[P1] Ep 80 | Loss 0.7928 | Val MAE 1.8708 CI 0.5789 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2385 | Std: 0.3746
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 81] Active Samples: 7486/24956
+[P1] Ep 81 | Loss 0.7800 | Val MAE 1.8808 CI 0.5731 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2484 | Std: 0.3884
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 82] Active Samples: 7486/24956
+[P1] Ep 82 | Loss 0.7911 | Val MAE 1.9100 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2402 | Std: 0.3765
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 83] Active Samples: 7486/24956
+[P1] Ep 83 | Loss 0.8108 | Val MAE 1.8980 CI 0.5614 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2357 | Std: 0.3707
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 84] Active Samples: 7486/24956
+[P1] Ep 84 | Loss 0.7876 | Val MAE 1.8895 CI 0.5731 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2284 | Std: 0.3599
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 85] Active Samples: 7486/24956
+[P1] Ep 85 | Loss 0.8163 | Val MAE 1.8763 CI 0.5614 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2238 | Std: 0.3544
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 86] Active Samples: 7486/24956
+[P1] Ep 86 | Loss 0.8054 | Val MAE 1.8562 CI 0.5556 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2354 | Std: 0.3716
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 87] Active Samples: 7486/24956
+[P1] Ep 87 | Loss 0.7826 | Val MAE 1.8543 CI 0.5556 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2193 | Std: 0.3515
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 88] Active Samples: 7486/24956
+[P1] Ep 88 | Loss 0.7909 | Val MAE 1.9137 CI 0.5497 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2133 | Std: 0.3423
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 89] Active Samples: 7486/24956
+[P1] Ep 89 | Loss 0.7932 | Val MAE 1.9217 CI 0.5673 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2141 | Std: 0.3458
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 90] Active Samples: 7486/24956
+[P1] Ep 90 | Loss 0.7938 | Val MAE 1.8629 CI 0.5497 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2158 | Std: 0.3429
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 91] Active Samples: 7486/24956
+[P1] Ep 91 | Loss 0.7969 | Val MAE 1.8878 CI 0.5556 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1954 | Std: 0.3152
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 92] Active Samples: 7486/24956
+[P1] Ep 92 | Loss 0.8626 | Val MAE 1.8642 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1969 | Std: 0.3175
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 93] Active Samples: 7486/24956
+[P1] Ep 93 | Loss 0.8284 | Val MAE 1.8981 CI 0.5556 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1811 | Std: 0.2926
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 94] Active Samples: 7486/24956
+[P1] Ep 94 | Loss 0.8594 | Val MAE 1.8427 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1876 | Std: 0.2987
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 95] Active Samples: 7486/24956
+[P1] Ep 95 | Loss 0.8658 | Val MAE 1.8667 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1962 | Std: 0.3125
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 96] Active Samples: 7486/24956
+[P1] Ep 96 | Loss 0.8638 | Val MAE 1.8769 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1995 | Std: 0.3226
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 97] Active Samples: 7486/24956
+[P1] Ep 97 | Loss 0.8213 | Val MAE 1.8650 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2057 | Std: 0.3309
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 98] Active Samples: 7486/24956
+[P1] Ep 98 | Loss 0.7752 | Val MAE 1.9137 CI 0.5731 Acc 10.5%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2086 | Std: 0.3403
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 99] Active Samples: 7486/24956
+[P1] Ep 99 | Loss 0.7875 | Val MAE 1.8922 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2040 | Std: 0.3311
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 100] Active Samples: 7486/24956
+[P1] Ep 100 | Loss 0.7906 | Val MAE 1.9004 CI 0.5731 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2069 | Std: 0.3348
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 101] Active Samples: 7486/24956
+[P1] Ep 101 | Loss 0.8167 | Val MAE 1.8846 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2261 | Std: 0.3601
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 102] Active Samples: 7486/24956
+[P1] Ep 102 | Loss 0.8222 | Val MAE 1.8392 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2181 | Std: 0.3467
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 103] Active Samples: 7486/24956
+[P1] Ep 103 | Loss 0.8260 | Val MAE 1.9072 CI 0.5614 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2071 | Std: 0.3349
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 104] Active Samples: 7486/24956
+[P1] Ep 104 | Loss 0.8301 | Val MAE 1.8722 CI 0.5614 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.2130 | Std: 0.3410
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 105] Active Samples: 7486/24956
+[P1] Ep 105 | Loss 0.8449 | Val MAE 1.8642 CI 0.5614 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1971 | Std: 0.3225
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 106] Active Samples: 7486/24956
+[P1] Ep 106 | Loss 0.8441 | Val MAE 1.8272 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1816 | Std: 0.2939
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 107] Active Samples: 7486/24956
+[P1] Ep 107 | Loss 0.8599 | Val MAE 1.8330 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1751 | Std: 0.2858
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 108] Active Samples: 7486/24956
+[P1] Ep 108 | Loss 0.8931 | Val MAE 1.8655 CI 0.5614 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1656 | Std: 0.2769
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 109] Active Samples: 7486/24956
+[P1] Ep 109 | Loss 0.8703 | Val MAE 1.8520 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1704 | Std: 0.2778
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 110] Active Samples: 7486/24956
+[P1] Ep 110 | Loss 0.8704 | Val MAE 1.8916 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1552 | Std: 0.2599
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 111] Active Samples: 7486/24956
+[P1] Ep 111 | Loss 0.8970 | Val MAE 1.8767 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1696 | Std: 0.2797
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 112] Active Samples: 7486/24956
+[P1] Ep 112 | Loss 0.8681 | Val MAE 1.8795 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1782 | Std: 0.2894
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 113] Active Samples: 7486/24956
+[P1] Ep 113 | Loss 0.8353 | Val MAE 1.9043 CI 0.5439 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1493 | Std: 0.2560
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 114] Active Samples: 7486/24956
+[P1] Ep 114 | Loss 0.8946 | Val MAE 1.8587 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1575 | Std: 0.2714
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 115] Active Samples: 7486/24956
+[P1] Ep 115 | Loss 0.8583 | Val MAE 1.8633 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1775 | Std: 0.3005
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 116] Active Samples: 7486/24956
+[P1] Ep 116 | Loss 0.8455 | Val MAE 1.8565 CI 0.5614 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1686 | Std: 0.2782
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 117] Active Samples: 7486/24956
+[P1] Ep 117 | Loss 0.8841 | Val MAE 1.8884 CI 0.5614 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1608 | Std: 0.2677
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 118] Active Samples: 7486/24956
+[P1] Ep 118 | Loss 0.8774 | Val MAE 1.8881 CI 0.5556 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1692 | Std: 0.2782
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 119] Active Samples: 7486/24956
+[P1] Ep 119 | Loss 0.8802 | Val MAE 1.8854 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1643 | Std: 0.2727
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 120] Active Samples: 7486/24956
+[P1] Ep 120 | Loss 0.9027 | Val MAE 1.8741 CI 0.5439 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1672 | Std: 0.2769
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 121] Active Samples: 7486/24956
+[P1] Ep 121 | Loss 0.8976 | Val MAE 1.8578 CI 0.5263 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1640 | Std: 0.2737
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 122] Active Samples: 7486/24956
+[P1] Ep 122 | Loss 0.8737 | Val MAE 1.8233 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1646 | Std: 0.2741
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 123] Active Samples: 7486/24956
+[P1] Ep 123 | Loss 0.8777 | Val MAE 1.9055 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1488 | Std: 0.2550
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 124] Active Samples: 7486/24956
+[P1] Ep 124 | Loss 0.8697 | Val MAE 1.9014 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1598 | Std: 0.2686
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 125] Active Samples: 7486/24956
+[P1] Ep 125 | Loss 0.8490 | Val MAE 1.8650 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1810 | Std: 0.2940
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 126] Active Samples: 7486/24956
+[P1] Ep 126 | Loss 0.8510 | Val MAE 1.8836 CI 0.5322 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1619 | Std: 0.2712
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 127] Active Samples: 7486/24956
+[P1] Ep 127 | Loss 0.8698 | Val MAE 1.8148 CI 0.5322 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1581 | Std: 0.2660
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 128] Active Samples: 7486/24956
+[P1] Ep 128 | Loss 0.8358 | Val MAE 1.8659 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1574 | Std: 0.2662
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 129] Active Samples: 7486/24956
+[P1] Ep 129 | Loss 0.8699 | Val MAE 1.8277 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1451 | Std: 0.2510
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 130] Active Samples: 7486/24956
+[P1] Ep 130 | Loss 0.8777 | Val MAE 1.8095 CI 0.5263 Acc 21.1%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1644 | Std: 0.2742
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 131] Active Samples: 7486/24956
+[P1] Ep 131 | Loss 0.8451 | Val MAE 1.8451 CI 0.5205 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1362 | Std: 0.2415
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 132] Active Samples: 7486/24956
+[P1] Ep 132 | Loss 0.8819 | Val MAE 1.8543 CI 0.5439 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1452 | Std: 0.2532
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 133] Active Samples: 7486/24956
+[P1] Ep 133 | Loss 0.8525 | Val MAE 1.9066 CI 0.5029 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1271 | Std: 0.2331
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 134] Active Samples: 7486/24956
+[P1] Ep 134 | Loss 0.8856 | Val MAE 1.8884 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1484 | Std: 0.2580
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 135] Active Samples: 7486/24956
+[P1] Ep 135 | Loss 0.8803 | Val MAE 1.8582 CI 0.5263 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1700 | Std: 0.2836
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 136] Active Samples: 7486/24956
+[P1] Ep 136 | Loss 0.8580 | Val MAE 1.8570 CI 0.5322 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1665 | Std: 0.2783
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 137] Active Samples: 7486/24956
+[P1] Ep 137 | Loss 0.8659 | Val MAE 1.8839 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1585 | Std: 0.2696
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 138] Active Samples: 7486/24956
+[P1] Ep 138 | Loss 0.8629 | Val MAE 1.8876 CI 0.5263 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1186 | Std: 0.2223
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 139] Active Samples: 7486/24956
+[P1] Ep 139 | Loss 0.8807 | Val MAE 1.8332 CI 0.5439 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1552 | Std: 0.2662
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 140] Active Samples: 7486/24956
+[P1] Ep 140 | Loss 0.8718 | Val MAE 1.8576 CI 0.5380 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1394 | Std: 0.2466
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 141] Active Samples: 7486/24956
+[P1] Ep 141 | Loss 0.8735 | Val MAE 1.8439 CI 0.5497 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1537 | Std: 0.2654
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 142] Active Samples: 7486/24956
+[P1] Ep 142 | Loss 0.8858 | Val MAE 1.8703 CI 0.5439 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1422 | Std: 0.2489
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 143] Active Samples: 7486/24956
+[P1] Ep 143 | Loss 0.8651 | Val MAE 1.8430 CI 0.5439 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1559 | Std: 0.2663
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 144] Active Samples: 7486/24956
+[P1] Ep 144 | Loss 0.8770 | Val MAE 1.8920 CI 0.5205 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1481 | Std: 0.2588
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 145] Active Samples: 7486/24956
+[P1] Ep 145 | Loss 0.8733 | Val MAE 1.8818 CI 0.5731 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1479 | Std: 0.2593
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 146] Active Samples: 7486/24956
+[P1] Ep 146 | Loss 0.8725 | Val MAE 1.8511 CI 0.5614 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1478 | Std: 0.2567
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 147] Active Samples: 7486/24956
+[P1] Ep 147 | Loss 0.8776 | Val MAE 1.8558 CI 0.5439 Acc 15.8%
+   [Weight Stats] Min: 0.0000 | Max: 1.0000 | Mean: 0.1481 | Std: 0.2579
+   [Weight Stats] Zero Count: 17470/24956 (70.0%)
+-> [Ep 148] Active Samples: 7486/24956
+[P1] Ep 148 | Loss 0.8420 | Val MAE 1.8986 CI 0.5380 Acc 15.8%
+
+=== PHASE 2: Target Fine-tuning ===
+>>> Stage 2.1: Head Alignment...
+[Head] Ep 10 MAE 1.6012 CI 0.5088 Acc 21.1%
+[Head] Ep 20 MAE 1.5834 CI 0.5263 Acc 21.1%
+[Head] Ep 30 MAE 1.5675 CI 0.5205 Acc 15.8%
+[Head] Ep 40 MAE 1.5415 CI 0.5146 Acc 21.1%
+[Head] Ep 50 MAE 1.5244 CI 0.5322 Acc 21.1%
+[Head] Ep 60 MAE 1.5186 CI 0.5614 Acc 26.3%
+[Head] Ep 70 MAE 1.5217 CI 0.5731 Acc 26.3%
+[Head] Ep 80 MAE 1.5149 CI 0.5965 Acc 26.3%
+[Head] Ep 90 MAE 1.5164 CI 0.5848 Acc 26.3%
+[Head] Ep 100 MAE 1.5276 CI 0.5731 Acc 26.3%
+[Head] Ep 110 MAE 1.5327 CI 0.5789 Acc 26.3%
+[Head] Ep 120 MAE 1.5451 CI 0.5906 Acc 26.3%
+[Head] Ep 130 MAE 1.5524 CI 0.5439 Acc 26.3%
+[Head] Ep 140 MAE 1.5488 CI 0.5789 Acc 26.3%
+[Head] Ep 150 MAE 1.5443 CI 0.5965 Acc 26.3%
+>>> Stage 2.2: Full Fine-tuning...
+[Full] Ep 10 MAE 1.5048 CI 0.5673 RM2 0.0687 Acc 26.3%
+[Full] Ep 20 MAE 1.5158 CI 0.5965 RM2 0.0707 Acc 26.3%
+[Full] Ep 30 MAE 1.5124 CI 0.6082 RM2 0.0649 Acc 26.3%
+[Full] Ep 40 MAE 1.5157 CI 0.5965 RM2 0.0582 Acc 26.3%
+[Full] Ep 50 MAE 1.5129 CI 0.6023 RM2 0.0539 Acc 26.3%
+[Full] Ep 60 MAE 1.5095 CI 0.5965 RM2 0.0476 Acc 26.3%
+[Full] Ep 70 MAE 1.5145 CI 0.5965 RM2 0.0389 Acc 26.3%
+[Full] Ep 80 MAE 1.5191 CI 0.5965 RM2 0.0360 Acc 26.3%
+[Full] Ep 90 MAE 1.5283 CI 0.5965 RM2 0.0321 Acc 26.3%
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[FINAL RESULT] Test Set:
+   MAE:  1.3698
+   RMSE: 1.6947
+   CI:   0.6737
+   RM2:  0.1367
+   MAPE: 24.55 %
+   Acc:  30.00 %
+------------------------------------------------------------

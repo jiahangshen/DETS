@@ -1,0 +1,84 @@
+--- Baseline MLP Pipeline (Method: Glister) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [Glister] ===
+   Target Ratio: 80.0%
+
+[Sampler] Running Glister | Target: 6326/7908 (80.0%)
+Scanning Source (Glister):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (Glister):  12%|█▎        | 1/8 [00:00<00:00,  7.54it/s]                                                                        Scanning Target:   0%|          | 0/1 [00:00<?, ?it/s]                                                      -> Selected 6326 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.7521
+[P1] Ep 40: Loss 0.5863
+[P1] Ep 60: Loss 0.5124
+[P1] Ep 80: Loss 0.4564
+[P1] Ep 100: Loss 0.4163
+[P1] Ep 120: Loss 0.3920
+[P1] Ep 140: Loss 0.3535
+[P1] Ep 160: Loss 0.3426
+[P1] Ep 180: Loss 0.3068
+[P1] Ep 200: Loss 0.2939
+[P1] Ep 220: Loss 0.2804
+[P1] Ep 240: Loss 0.2691
+[P1] Ep 260: Loss 0.2575
+[P1] Ep 280: Loss 0.2421
+[P1] Ep 300: Loss 0.2477
+[P1] Ep 320: Loss 0.2230
+[P1] Ep 340: Loss 0.2167
+[P1] Ep 360: Loss 0.1996
+[P1] Ep 380: Loss 0.1950
+[P1] Ep 400: Loss 0.1914
+[P1] Ep 420: Loss 0.1773
+[P1] Ep 440: Loss 0.1788
+[P1] Ep 460: Loss 0.1720
+[P1] Ep 480: Loss 0.1640
+[P1] Ep 500: Loss 0.1665
+[P1] Ep 520: Loss 0.1590
+[P1] Ep 540: Loss 0.1516
+[P1] Ep 560: Loss 0.1510
+[P1] Ep 580: Loss 0.1462
+[P1] Ep 600: Loss 0.1421
+[P1] Ep 620: Loss 0.1376
+[P1] Ep 640: Loss 0.1298
+[P1] Ep 660: Loss 0.1303
+[P1] Ep 680: Loss 0.1233
+[P1] Ep 700: Loss 0.1237
+[P1] Ep 720: Loss 0.1183
+[P1] Ep 740: Loss 0.1145
+[P1] Ep 760: Loss 0.1131
+[P1] Ep 780: Loss 0.1191
+[P1] Ep 800: Loss 0.1106
+[P1] Ep 820: Loss 0.1100
+[P1] Ep 840: Loss 0.1070
+[P1] Ep 860: Loss 0.1026
+[P1] Ep 880: Loss 0.1023
+[P1] Ep 900: Loss 0.1021
+[P1] Ep 920: Loss 0.0955
+[P1] Ep 940: Loss 0.0918
+[P1] Ep 960: Loss 0.0963
+[P1] Ep 980: Loss 0.0927
+[P1] Ep 1000: Loss 0.0904
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8404
+[P2.1] Ep 100 MAE 0.7944
+[P2.1] Ep 150 MAE 0.7672
+[P2.1] Ep 200 MAE 0.7556
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.6856
+[P2.2] Ep 40 MAE 0.6925
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: Glister (Ratio=0.8)
+MAE: 0.7547
+RMSE: 1.0463
+MAPE: 68.6104
+Acc_10: 23.2955
+Acc_20: 43.7500
+------------------------------------------------------------

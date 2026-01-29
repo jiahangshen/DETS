@@ -1,0 +1,94 @@
+--- Enthalpy Baseline: EL2N-2 (Ratio: 0.4) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running EL2N-2 | Target: 2429/6074 (40.0%)
+Scanning Source (EL2N-2):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (EL2N-2):  17%|█▋        | 1/6 [00:01<00:05,  1.06s/it]Scanning Source (EL2N-2):  33%|███▎      | 2/6 [00:02<00:04,  1.11s/it]Scanning Source (EL2N-2):  50%|█████     | 3/6 [00:03<00:03,  1.01s/it]Scanning Source (EL2N-2):  67%|██████▋   | 4/6 [00:04<00:01,  1.02it/s]Scanning Source (EL2N-2):  83%|████████▎ | 5/6 [00:05<00:01,  1.02s/it]Scanning Source (EL2N-2): 100%|██████████| 6/6 [00:06<00:00,  1.12s/it]                                                                       -> Source reduced: 6074 -> 2429
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 10: Loss 0.3604 | Val MAE 84.4679
+[P1] Ep 20: Loss 0.1769 | Val MAE 81.4369
+[P1] Ep 30: Loss 0.1801 | Val MAE 117.8235
+[P1] Ep 40: Loss 0.1056 | Val MAE 128.0071
+[P1] Ep 50: Loss 0.0894 | Val MAE 88.5882
+[P1] Ep 60: Loss 0.0865 | Val MAE 49.6026
+[P1] Ep 70: Loss 0.0945 | Val MAE 63.0305
+[P1] Ep 80: Loss 0.1014 | Val MAE 91.6966
+[P1] Ep 90: Loss 0.0680 | Val MAE 67.4011
+[P1] Ep 100: Loss 0.1906 | Val MAE 94.2370
+[P1] Ep 110: Loss 0.0657 | Val MAE 75.0122
+[P1] Ep 120: Loss 0.0601 | Val MAE 104.2378
+[P1] Ep 130: Loss 0.0726 | Val MAE 96.5240
+[P1] Ep 140: Loss 0.0762 | Val MAE 107.4454
+[P1] Ep 150: Loss 0.0459 | Val MAE 103.1221
+[P1] Ep 160: Loss 0.0514 | Val MAE 109.2001
+[P1] Ep 170: Loss 0.0410 | Val MAE 135.3078
+[P1] Ep 180: Loss 0.0497 | Val MAE 97.0513
+[P1] Ep 190: Loss 0.0462 | Val MAE 122.4537
+[P1] Ep 200: Loss 0.0347 | Val MAE 144.5020
+[P1] Ep 210: Loss 0.0395 | Val MAE 104.9495
+[P1] Ep 220: Loss 0.0374 | Val MAE 118.2682
+[P1] Ep 230: Loss 0.0324 | Val MAE 93.9424
+[P1] Ep 240: Loss 0.0280 | Val MAE 106.2136
+[P1] Ep 250: Loss 0.0303 | Val MAE 107.7557
+[P1] Ep 260: Loss 0.0259 | Val MAE 103.2562
+[P1] Ep 270: Loss 0.0356 | Val MAE 122.8705
+[P1] Ep 280: Loss 0.0251 | Val MAE 114.6162
+[P1] Ep 290: Loss 0.0265 | Val MAE 115.1589
+[P1] Ep 300: Loss 0.0283 | Val MAE 110.5102
+[P1] Ep 310: Loss 0.0187 | Val MAE 124.1259
+[P1] Ep 320: Loss 0.0273 | Val MAE 138.6517
+[P1] Ep 330: Loss 0.0179 | Val MAE 127.2430
+[P1] Ep 340: Loss 0.0189 | Val MAE 118.2199
+[P1] Ep 350: Loss 0.0178 | Val MAE 125.0032
+[P1] Ep 360: Loss 0.0222 | Val MAE 110.7586
+[P1] Ep 370: Loss 0.0181 | Val MAE 124.2835
+[P1] Ep 380: Loss 0.0144 | Val MAE 110.6592
+[P1] Ep 390: Loss 0.0152 | Val MAE 113.2804
+[P1] Ep 400: Loss 0.0149 | Val MAE 126.1262
+[P1] Ep 410: Loss 0.0158 | Val MAE 142.2502
+[P1] Ep 420: Loss 0.0168 | Val MAE 143.2785
+[P1] Ep 430: Loss 0.0205 | Val MAE 133.5876
+[P1] Ep 440: Loss 0.0148 | Val MAE 145.9521
+[P1] Ep 450: Loss 0.0159 | Val MAE 144.6025
+[P1] Ep 460: Loss 0.0177 | Val MAE 134.9977
+[P1] Ep 470: Loss 0.0117 | Val MAE 147.0451
+[P1] Ep 480: Loss 0.0174 | Val MAE 144.3200
+[P1] Ep 490: Loss 0.0114 | Val MAE 152.9868
+[P1] Ep 500: Loss 0.0146 | Val MAE 162.0562
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.7778 | Val MAE 31.8342
+[FT] Ep 20: Loss 0.6609 | Val MAE 34.2638
+[FT] Ep 30: Loss 0.6573 | Val MAE 33.5866
+[FT] Ep 40: Loss 0.5786 | Val MAE 31.0495
+[FT] Ep 50: Loss 0.5754 | Val MAE 32.0107
+[FT] Ep 60: Loss 0.4792 | Val MAE 28.8588
+[FT] Ep 70: Loss 0.4854 | Val MAE 28.2775
+[FT] Ep 80: Loss 0.4952 | Val MAE 29.9310
+[FT] Ep 90: Loss 0.3989 | Val MAE 29.5403
+[FT] Ep 100: Loss 0.4146 | Val MAE 27.4279
+[FT] Ep 110: Loss 0.3701 | Val MAE 30.3935
+[FT] Ep 120: Loss 0.3931 | Val MAE 32.1072
+[FT] Ep 130: Loss 0.3892 | Val MAE 31.4176
+[FT] Ep 140: Loss 0.3432 | Val MAE 29.0439
+[FT] Ep 150: Loss 0.3131 | Val MAE 32.0562
+[FT] Ep 160: Loss 0.3542 | Val MAE 31.4026
+[FT] Ep 170: Loss 0.3487 | Val MAE 31.3131
+[FT] Ep 180: Loss 0.2802 | Val MAE 32.7880
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: EL2N-2
+   MAE:  26.9417
+   RMSE: 38.2485
+   MAPE: 103.99 %
+   Acc:  25.00 %
+------------------------------------------------------------

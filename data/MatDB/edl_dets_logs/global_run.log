@@ -1,0 +1,110 @@
+nohup: ignoring input
+----------------------------------------------------
+Running Experiment: sig0.2_tau0.85_wmin0.1
+Config: Sigma=0.2, Tau=0.85, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.2_tau0.85_wmin0.1.log
+Finished sig0.2_tau0.85_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.2_tau0.85_wmin0.2
+Config: Sigma=0.2, Tau=0.85, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.2_tau0.85_wmin0.2.log
+Finished sig0.2_tau0.85_wmin0.2
+----------------------------------------------------
+Running Experiment: sig0.2_tau0.90_wmin0.1
+Config: Sigma=0.2, Tau=0.90, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.2_tau0.90_wmin0.1.log
+Finished sig0.2_tau0.90_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.2_tau0.90_wmin0.2
+Config: Sigma=0.2, Tau=0.90, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.2_tau0.90_wmin0.2.log
+Finished sig0.2_tau0.90_wmin0.2
+----------------------------------------------------
+Running Experiment: sig0.2_tau0.95_wmin0.1
+Config: Sigma=0.2, Tau=0.95, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.2_tau0.95_wmin0.1.log
+Finished sig0.2_tau0.95_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.2_tau0.95_wmin0.2
+Config: Sigma=0.2, Tau=0.95, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.2_tau0.95_wmin0.2.log
+Finished sig0.2_tau0.95_wmin0.2
+----------------------------------------------------
+Running Experiment: sig0.3_tau0.85_wmin0.1
+Config: Sigma=0.3, Tau=0.85, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.3_tau0.85_wmin0.1.log
+Finished sig0.3_tau0.85_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.3_tau0.85_wmin0.2
+Config: Sigma=0.3, Tau=0.85, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.3_tau0.85_wmin0.2.log
+Finished sig0.3_tau0.85_wmin0.2
+----------------------------------------------------
+Running Experiment: sig0.3_tau0.90_wmin0.1
+Config: Sigma=0.3, Tau=0.90, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.3_tau0.90_wmin0.1.log
+Finished sig0.3_tau0.90_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.3_tau0.90_wmin0.2
+Config: Sigma=0.3, Tau=0.90, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.3_tau0.90_wmin0.2.log
+Finished sig0.3_tau0.90_wmin0.2
+----------------------------------------------------
+Running Experiment: sig0.3_tau0.95_wmin0.1
+Config: Sigma=0.3, Tau=0.95, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.3_tau0.95_wmin0.1.log
+Finished sig0.3_tau0.95_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.3_tau0.95_wmin0.2
+Config: Sigma=0.3, Tau=0.95, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.3_tau0.95_wmin0.2.log
+Finished sig0.3_tau0.95_wmin0.2
+----------------------------------------------------
+Running Experiment: sig0.5_tau0.85_wmin0.1
+Config: Sigma=0.5, Tau=0.85, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.5_tau0.85_wmin0.1.log
+Finished sig0.5_tau0.85_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.5_tau0.85_wmin0.2
+Config: Sigma=0.5, Tau=0.85, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.5_tau0.85_wmin0.2.log
+Finished sig0.5_tau0.85_wmin0.2
+----------------------------------------------------
+Running Experiment: sig0.5_tau0.90_wmin0.1
+Config: Sigma=0.5, Tau=0.90, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.5_tau0.90_wmin0.1.log
+Finished sig0.5_tau0.90_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.5_tau0.90_wmin0.2
+Config: Sigma=0.5, Tau=0.90, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.5_tau0.90_wmin0.2.log
+Finished sig0.5_tau0.90_wmin0.2
+----------------------------------------------------
+Running Experiment: sig0.5_tau0.95_wmin0.1
+Config: Sigma=0.5, Tau=0.95, W_Min=0.1
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.1
+Logging to: ./MatDB/edl_dets_logs/sig0.5_tau0.95_wmin0.1.log
+Finished sig0.5_tau0.95_wmin0.1
+----------------------------------------------------
+Running Experiment: sig0.5_tau0.95_wmin0.2
+Config: Sigma=0.5, Tau=0.95, W_Min=0.2
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.2
+Logging to: ./MatDB/edl_dets_logs/sig0.5_tau0.95_wmin0.2.log
+Finished sig0.5_tau0.95_wmin0.2
+All Grid Search Experiments Completed!

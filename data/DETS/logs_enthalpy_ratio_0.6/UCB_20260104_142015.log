@@ -1,0 +1,359 @@
+--- Enthalpy Baseline: UCB (Ratio: 0.6) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:04,  1.24it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:03,  1.24it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.40it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.44it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.27it/s]                                                                    -> Source reduced: 6074 -> 3644
+
+=== Phase 1: Source Pre-training ===
+
+-> [Ep 10] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.66it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.61it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.34it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 10: Loss 0.3030 | Val MAE 128.9704
+
+-> [Ep 20] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.55it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.58it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.53it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.34it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 20: Loss 0.1674 | Val MAE 168.6189
+
+-> [Ep 30] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.87it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.72it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.64it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.53it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.41it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 30: Loss 0.1508 | Val MAE 137.8860
+
+-> [Ep 40] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.57it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.56it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.52it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.42it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.30it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 40: Loss 0.0921 | Val MAE 119.9857
+
+-> [Ep 50] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:04,  1.18it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.37it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.40it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 50: Loss 0.0920 | Val MAE 107.5949
+
+-> [Ep 60] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.28it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.46it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:01,  1.51it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.31it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 60: Loss 0.1370 | Val MAE 129.5808
+
+-> [Ep 70] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.69it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.43it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.47it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.33it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 70: Loss 0.1264 | Val MAE 143.5543
+
+-> [Ep 80] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.45it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.33it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 80: Loss 0.1113 | Val MAE 147.7904
+
+-> [Ep 90] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.67it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.71it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.69it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.59it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.38it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 90: Loss 0.0834 | Val MAE 147.1849
+
+-> [Ep 100] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.66it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.65it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.60it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.56it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.51it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 100: Loss 0.0744 | Val MAE 151.5730
+
+-> [Ep 110] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.61it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.53it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.47it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 110: Loss 0.0651 | Val MAE 126.4161
+
+-> [Ep 120] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.27it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.52it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.55it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.47it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.40it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 120: Loss 0.0718 | Val MAE 182.3613
+
+-> [Ep 130] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:04,  1.17it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.34it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.34it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:03<00:01,  1.33it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 130: Loss 0.0624 | Val MAE 126.3968
+
+-> [Ep 140] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.69it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.68it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.40it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.39it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.40it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 140: Loss 0.0358 | Val MAE 157.3703
+
+-> [Ep 150] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.53it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.47it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.24it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:03<00:01,  1.29it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.30it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 150: Loss 0.0590 | Val MAE 159.9031
+
+-> [Ep 160] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.67it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.60it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.57it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.54it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.36it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 160: Loss 0.0436 | Val MAE 125.3538
+
+-> [Ep 170] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.55it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.50it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.20it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.10it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 170: Loss 0.0436 | Val MAE 154.1112
+
+-> [Ep 180] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.72it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.43it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 180: Loss 0.0292 | Val MAE 147.7379
+
+-> [Ep 190] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.89it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.78it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.72it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.62it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.50it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.32it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 190: Loss 0.0363 | Val MAE 174.3643
+
+-> [Ep 200] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:04,  1.21it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.41it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:01,  1.50it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.47it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.30it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 200: Loss 0.0334 | Val MAE 154.0567
+
+-> [Ep 210] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.80it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.49it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.55it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.28it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 210: Loss 0.0363 | Val MAE 116.8446
+
+-> [Ep 220] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.62it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.36it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.37it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 220: Loss 0.0236 | Val MAE 152.0254
+
+-> [Ep 230] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.44it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.47it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.45it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.27it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.25it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.13it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 230: Loss 0.0290 | Val MAE 136.8531
+
+-> [Ep 240] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.60it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.69it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.69it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.63it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.53it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 240: Loss 0.0281 | Val MAE 125.5848
+
+-> [Ep 250] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.80it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.57it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.52it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 250: Loss 0.0255 | Val MAE 130.0208
+
+-> [Ep 260] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.56it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.55it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.56it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.48it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.39it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 260: Loss 0.0233 | Val MAE 160.9338
+
+-> [Ep 270] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:04,  1.22it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:01,  1.51it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.48it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.44it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.28it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 270: Loss 0.0195 | Val MAE 152.4322
+
+-> [Ep 280] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.48it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 280: Loss 0.0298 | Val MAE 147.6277
+
+-> [Ep 290] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.74it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.53it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.38it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.28it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 290: Loss 0.0194 | Val MAE 184.6623
+
+-> [Ep 300] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.70it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.69it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.41it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 300: Loss 0.0267 | Val MAE 164.0098
+
+-> [Ep 310] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.71it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.68it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.63it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.56it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 310: Loss 0.0294 | Val MAE 172.5658
+
+-> [Ep 320] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.53it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.51it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.49it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.44it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.18it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.13it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 320: Loss 0.0185 | Val MAE 157.3388
+
+-> [Ep 330] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.72it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.68it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.61it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.55it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.48it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 330: Loss 0.0215 | Val MAE 146.8190
+
+-> [Ep 340] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.93it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.67it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.60it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.44it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.31it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 340: Loss 0.0198 | Val MAE 189.8889
+
+-> [Ep 350] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:04,  1.17it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.41it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.48it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.47it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.40it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 350: Loss 0.0178 | Val MAE 197.7157
+
+-> [Ep 360] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.35it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.34it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 360: Loss 0.0178 | Val MAE 149.7996
+
+-> [Ep 370] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.67it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.69it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.66it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.39it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 370: Loss 0.0175 | Val MAE 180.2097
+
+-> [Ep 380] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.79it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.69it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.59it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.53it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 380: Loss 0.0270 | Val MAE 141.4860
+
+-> [Ep 390] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.84it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.65it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.62it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.59it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.27it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 390: Loss 0.0118 | Val MAE 155.1781
+
+-> [Ep 400] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.28it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.47it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 400: Loss 0.0145 | Val MAE 164.8976
+
+-> [Ep 410] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:04,  1.18it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.37it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.46it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.44it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 410: Loss 0.0140 | Val MAE 151.7105
+
+-> [Ep 420] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.69it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.40it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.39it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 420: Loss 0.0156 | Val MAE 129.9459
+
+-> [Ep 430] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.65it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.38it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 430: Loss 0.0163 | Val MAE 131.7804
+
+-> [Ep 440] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.88it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.71it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.63it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.56it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.34it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 440: Loss 0.0130 | Val MAE 156.3189
+
+-> [Ep 450] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.59it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.55it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.48it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.21it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 450: Loss 0.0120 | Val MAE 154.0508
+
+-> [Ep 460] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.73it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.69it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:01<00:01,  1.65it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.57it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.44it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.27it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 460: Loss 0.0204 | Val MAE 173.1747
+
+-> [Ep 470] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:04,  1.14it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.43it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.43it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.41it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.31it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 470: Loss 0.0122 | Val MAE 166.4343
+
+-> [Ep 480] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.26it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 480: Loss 0.0192 | Val MAE 163.0061
+
+-> [Ep 490] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:02,  1.69it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.67it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.41it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.37it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 490: Loss 0.0114 | Val MAE 149.8220
+
+-> [Ep 500] Re-sampling Coreset via UCB...
+
+[Sampler] Running UCB | Target: 3644/6074 (60.0%)
+Scanning Source (UCB):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (UCB):  17%|█▋        | 1/6 [00:00<00:03,  1.62it/s]Scanning Source (UCB):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (UCB):  50%|█████     | 3/6 [00:02<00:02,  1.31it/s]Scanning Source (UCB):  67%|██████▋   | 4/6 [00:02<00:01,  1.32it/s]Scanning Source (UCB):  83%|████████▎ | 5/6 [00:03<00:00,  1.27it/s]Scanning Source (UCB): 100%|██████████| 6/6 [00:04<00:00,  1.20it/s]                                                                    -> Coreset Updated. Size: 3644
+[P1] Ep 500: Loss 0.0121 | Val MAE 136.2677
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.7877 | Val MAE 33.5133
+[FT] Ep 20: Loss 0.8203 | Val MAE 31.2980
+[FT] Ep 30: Loss 0.7008 | Val MAE 32.6513
+[FT] Ep 40: Loss 0.6684 | Val MAE 36.3693
+[FT] Ep 50: Loss 0.6438 | Val MAE 34.5035
+[FT] Ep 60: Loss 0.6648 | Val MAE 29.1271
+[FT] Ep 70: Loss 0.6201 | Val MAE 32.0598
+[FT] Ep 80: Loss 0.6528 | Val MAE 33.3243
+[FT] Ep 90: Loss 0.5865 | Val MAE 33.8410
+[FT] Ep 100: Loss 0.5861 | Val MAE 32.3137
+[FT] Ep 110: Loss 0.6028 | Val MAE 28.9637
+[FT] Ep 120: Loss 0.6178 | Val MAE 30.1228
+[FT] Ep 130: Loss 0.6300 | Val MAE 31.4964
+[FT] Ep 140: Loss 0.5647 | Val MAE 29.4727
+[FT] Ep 150: Loss 0.5951 | Val MAE 35.5003
+[FT] Ep 160: Loss 0.5215 | Val MAE 28.4689
+[FT] Ep 170: Loss 0.6365 | Val MAE 35.2071
+[FT] Ep 180: Loss 0.4994 | Val MAE 33.0091
+[FT] Ep 190: Loss 0.5084 | Val MAE 32.3652
+[FT] Ep 200: Loss 0.5700 | Val MAE 30.6195
+[FT] Ep 210: Loss 0.5249 | Val MAE 30.1215
+[FT] Ep 220: Loss 0.5167 | Val MAE 33.9442
+[FT] Ep 230: Loss 0.4938 | Val MAE 32.9687
+[FT] Ep 240: Loss 0.4841 | Val MAE 36.2105
+[FT] Ep 250: Loss 0.5048 | Val MAE 30.5606
+[FT] Ep 260: Loss 0.4505 | Val MAE 32.3311
+[FT] Ep 270: Loss 0.4716 | Val MAE 32.2606
+[FT] Ep 280: Loss 0.4968 | Val MAE 30.7186
+[FT] Ep 290: Loss 0.4899 | Val MAE 33.3018
+[FT] Ep 300: Loss 0.4535 | Val MAE 30.0462
+[FT] Ep 310: Loss 0.4754 | Val MAE 31.5123
+[FT] Ep 320: Loss 0.4534 | Val MAE 30.7429
+[FT] Ep 330: Loss 0.4038 | Val MAE 31.4238
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: UCB
+   MAE:  29.0867
+   RMSE: 40.9961
+   MAPE: 109.63 %
+   Acc:  8.33 %
+------------------------------------------------------------

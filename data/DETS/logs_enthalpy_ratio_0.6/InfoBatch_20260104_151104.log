@@ -1,0 +1,357 @@
+--- Enthalpy Baseline: InfoBatch (Ratio: 0.6) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:04,  1.16it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:03,  1.16it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.29it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:03<00:01,  1.33it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.21it/s]                                                                          -> Source reduced: 6074 -> 3644
+
+=== Phase 1: Source Pre-training ===
+
+-> [Ep 10] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.63it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.61it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.32it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 10: Loss 0.2802 | Val MAE 112.2031
+
+-> [Ep 20] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.62it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.62it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.57it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.25it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.29it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 20: Loss 0.1836 | Val MAE 107.7377
+
+-> [Ep 30] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.60it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.64it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.60it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.54it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 30: Loss 0.1225 | Val MAE 97.9821
+
+-> [Ep 40] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.63it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.58it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.53it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.47it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.30it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 40: Loss 0.1195 | Val MAE 145.1317
+
+-> [Ep 50] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.89it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.72it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.64it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.56it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.44it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 50: Loss 0.0979 | Val MAE 120.9852
+
+-> [Ep 60] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:04,  1.24it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.43it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.43it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.40it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 60: Loss 0.1026 | Val MAE 71.5752
+
+-> [Ep 70] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.65it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.38it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 70: Loss 0.1158 | Val MAE 53.6506
+
+-> [Ep 80] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.33it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.35it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.28it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 80: Loss 0.1023 | Val MAE 73.6528
+
+-> [Ep 90] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.56it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.60it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.60it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 90: Loss 0.0648 | Val MAE 89.3625
+
+-> [Ep 100] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.48it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.50it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.52it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.50it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.30it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 100: Loss 0.0601 | Val MAE 106.2065
+
+-> [Ep 110] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.59it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.54it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 110: Loss 0.0759 | Val MAE 105.5545
+
+-> [Ep 120] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.60it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.54it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 120: Loss 0.0715 | Val MAE 105.0484
+
+-> [Ep 130] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:04,  1.20it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:01,  1.52it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.31it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 130: Loss 0.0584 | Val MAE 115.6514
+
+-> [Ep 140] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.34it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.40it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.40it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.27it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 140: Loss 0.0604 | Val MAE 103.1331
+
+-> [Ep 150] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.68it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.40it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.38it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 150: Loss 0.0560 | Val MAE 133.0925
+
+-> [Ep 160] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.63it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.61it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.37it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 160: Loss 0.0465 | Val MAE 125.6365
+
+-> [Ep 170] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.83it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.51it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.45it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.41it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.15it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 170: Loss 0.0580 | Val MAE 101.4244
+
+-> [Ep 180] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.72it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.59it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 180: Loss 0.0506 | Val MAE 117.7554
+
+-> [Ep 190] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.68it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.65it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.62it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.54it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.31it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 190: Loss 0.0358 | Val MAE 96.9245
+
+-> [Ep 200] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.25it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.47it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:01,  1.51it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.30it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 200: Loss 0.0461 | Val MAE 124.6000
+
+-> [Ep 210] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.85it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:02,  1.48it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.46it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.41it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 210: Loss 0.0402 | Val MAE 118.5321
+
+-> [Ep 220] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.60it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.53it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.29it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.26it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 220: Loss 0.0349 | Val MAE 137.4749
+
+-> [Ep 230] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.83it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.73it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:02,  1.44it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.45it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 230: Loss 0.0306 | Val MAE 105.2290
+
+-> [Ep 240] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.58it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.54it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.16it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 240: Loss 0.0287 | Val MAE 105.1511
+
+-> [Ep 250] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.86it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.68it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.56it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.30it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 250: Loss 0.0270 | Val MAE 131.6766
+
+-> [Ep 260] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.73it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.57it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.50it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.36it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.16it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 260: Loss 0.0242 | Val MAE 117.6905
+
+-> [Ep 270] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.67it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:02,  1.47it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.20it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 270: Loss 0.0198 | Val MAE 141.8639
+
+-> [Ep 280] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:04,  1.22it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.43it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.49it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.48it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 280: Loss 0.0266 | Val MAE 143.9902
+
+-> [Ep 290] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.81it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.62it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.43it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.28it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 290: Loss 0.0227 | Val MAE 123.2622
+
+-> [Ep 300] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.62it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.60it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.55it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 300: Loss 0.0237 | Val MAE 115.7106
+
+-> [Ep 310] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.63it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.62it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.56it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.34it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 310: Loss 0.0215 | Val MAE 111.1074
+
+-> [Ep 320] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.89it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.84it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.75it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.66it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.58it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:03<00:00,  1.35it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 320: Loss 0.0227 | Val MAE 88.8991
+
+-> [Ep 330] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.27it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.50it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.47it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.44it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 330: Loss 0.0217 | Val MAE 132.3625
+
+-> [Ep 340] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:04,  1.16it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.35it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.45it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.43it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.38it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 340: Loss 0.0208 | Val MAE 161.7987
+
+-> [Ep 350] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.68it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.44it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.40it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 350: Loss 0.0165 | Val MAE 135.3838
+
+-> [Ep 360] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.68it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.41it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.42it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.39it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 360: Loss 0.0162 | Val MAE 179.3090
+
+-> [Ep 370] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.53it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.54it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.53it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 370: Loss 0.0210 | Val MAE 119.7056
+
+-> [Ep 380] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.67it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.65it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.54it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.16it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 380: Loss 0.0159 | Val MAE 102.8913
+
+-> [Ep 390] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.87it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.77it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.70it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.65it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.57it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:03<00:00,  1.38it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 390: Loss 0.0157 | Val MAE 144.8426
+
+-> [Ep 400] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.52it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:01,  1.50it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.46it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.41it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 400: Loss 0.0154 | Val MAE 177.5984
+
+-> [Ep 410] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:01,  1.54it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.53it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.45it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.32it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 410: Loss 0.0160 | Val MAE 103.8338
+
+-> [Ep 420] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.80it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.73it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.39it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 420: Loss 0.0199 | Val MAE 185.4699
+
+-> [Ep 430] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.57it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.52it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.32it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.34it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 430: Loss 0.0185 | Val MAE 136.8968
+
+-> [Ep 440] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.53it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.55it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.53it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.48it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.27it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 440: Loss 0.0145 | Val MAE 149.5026
+
+-> [Ep 450] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.73it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.69it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.62it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.54it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 450: Loss 0.0147 | Val MAE 135.0480
+
+-> [Ep 460] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.62it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.56it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.50it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.16it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 460: Loss 0.0127 | Val MAE 155.4382
+
+-> [Ep 470] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.90it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.67it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:01<00:01,  1.60it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.55it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 470: Loss 0.0122 | Val MAE 132.8059
+
+-> [Ep 480] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:04,  1.21it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.39it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 480: Loss 0.0143 | Val MAE 165.5209
+
+-> [Ep 490] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:02,  1.86it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.39it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.46it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.47it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 490: Loss 0.0198 | Val MAE 132.3734
+
+-> [Ep 500] Re-sampling Coreset via InfoBatch...
+
+[Sampler] Running InfoBatch | Target: 3644/6074 (60.0%)
+Scanning Source (InfoBatch):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (InfoBatch):  17%|█▋        | 1/6 [00:00<00:03,  1.53it/s]Scanning Source (InfoBatch):  33%|███▎      | 2/6 [00:01<00:02,  1.57it/s]Scanning Source (InfoBatch):  50%|█████     | 3/6 [00:02<00:02,  1.30it/s]Scanning Source (InfoBatch):  67%|██████▋   | 4/6 [00:02<00:01,  1.29it/s]Scanning Source (InfoBatch):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (InfoBatch): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                          -> Coreset Updated. Size: 3644
+[P1] Ep 500: Loss 0.0128 | Val MAE 128.6559
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.7985 | Val MAE 34.3699
+[FT] Ep 20: Loss 0.6791 | Val MAE 33.3514
+[FT] Ep 30: Loss 0.6977 | Val MAE 32.4618
+[FT] Ep 40: Loss 0.6111 | Val MAE 36.8055
+[FT] Ep 50: Loss 0.6368 | Val MAE 35.8759
+[FT] Ep 60: Loss 0.6524 | Val MAE 32.6445
+[FT] Ep 70: Loss 0.5742 | Val MAE 31.1038
+[FT] Ep 80: Loss 0.5741 | Val MAE 30.9554
+[FT] Ep 90: Loss 0.5630 | Val MAE 34.0295
+[FT] Ep 100: Loss 0.5508 | Val MAE 32.2770
+[FT] Ep 110: Loss 0.5640 | Val MAE 34.5273
+[FT] Ep 120: Loss 0.5225 | Val MAE 30.7708
+[FT] Ep 130: Loss 0.6067 | Val MAE 33.1051
+[FT] Ep 140: Loss 0.5744 | Val MAE 31.5843
+[FT] Ep 150: Loss 0.5768 | Val MAE 34.0810
+[FT] Ep 160: Loss 0.5912 | Val MAE 30.7219
+[FT] Ep 170: Loss 0.6001 | Val MAE 38.0649
+[FT] Ep 180: Loss 0.5088 | Val MAE 32.9121
+[FT] Ep 190: Loss 0.5622 | Val MAE 33.3132
+[FT] Ep 200: Loss 0.5154 | Val MAE 31.0001
+[FT] Ep 210: Loss 0.5636 | Val MAE 34.5806
+[FT] Ep 220: Loss 0.4969 | Val MAE 33.5799
+[FT] Ep 230: Loss 0.4811 | Val MAE 33.3634
+[FT] Ep 240: Loss 0.4759 | Val MAE 32.2912
+[FT] Ep 250: Loss 0.4895 | Val MAE 30.3365
+[FT] Ep 260: Loss 0.4697 | Val MAE 34.5339
+[FT] Ep 270: Loss 0.4470 | Val MAE 32.6201
+[FT] Ep 280: Loss 0.4798 | Val MAE 33.7908
+[FT] Ep 290: Loss 0.4548 | Val MAE 32.6588
+[FT] Ep 300: Loss 0.4614 | Val MAE 33.4773
+[FT] Ep 310: Loss 0.4933 | Val MAE 32.5132
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: InfoBatch
+   MAE:  28.3498
+   RMSE: 37.9343
+   MAPE: 116.27 %
+   Acc:  8.33 %
+------------------------------------------------------------

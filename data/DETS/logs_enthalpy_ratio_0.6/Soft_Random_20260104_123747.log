@@ -1,0 +1,342 @@
+--- Enthalpy Baseline: Soft Random (Ratio: 0.6) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:04,  1.10it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:03,  1.15it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.20it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.22it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:04<00:00,  1.20it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]                                                                            -> Source reduced: 6074 -> 3644
+
+=== Phase 1: Source Pre-training ===
+
+-> [Ep 10] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.80it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.65it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.54it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.31it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.27it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.14it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 10: Loss 0.2521 | Val MAE 95.1117
+
+-> [Ep 20] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.54it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.44it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.20it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.19it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 20: Loss 0.1599 | Val MAE 146.8175
+
+-> [Ep 30] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.51it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.48it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.43it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.10it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 30: Loss 0.1221 | Val MAE 160.0271
+
+-> [Ep 40] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.74it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.60it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:02,  1.46it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.30it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 40: Loss 0.1032 | Val MAE 186.2396
+
+-> [Ep 50] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.41it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.43it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 50: Loss 0.0831 | Val MAE 124.3917
+
+-> [Ep 60] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:04,  1.19it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:03,  1.33it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.40it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.14it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 60: Loss 0.2361 | Val MAE 165.7473
+
+-> [Ep 70] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.65it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.35it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.41it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 70: Loss 0.0776 | Val MAE 164.1803
+
+-> [Ep 80] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.78it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.67it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.37it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.34it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.27it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.16it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 80: Loss 0.0653 | Val MAE 164.3816
+
+-> [Ep 90] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.75it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.63it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.55it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.30it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.29it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 90: Loss 0.0634 | Val MAE 132.4841
+
+-> [Ep 100] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.58it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.55it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.50it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.34it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.11it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 100: Loss 0.0727 | Val MAE 140.6337
+
+-> [Ep 110] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.82it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.57it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.53it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 110: Loss 0.0617 | Val MAE 112.3190
+
+-> [Ep 120] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.26it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.31it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.31it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.28it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 120: Loss 0.0699 | Val MAE 127.8917
+
+-> [Ep 130] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.52it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:03,  1.28it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.33it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.33it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.28it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.15it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 130: Loss 0.0562 | Val MAE 125.2249
+
+-> [Ep 140] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.65it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.33it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.31it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.28it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.15it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 140: Loss 0.0599 | Val MAE 76.2234
+
+-> [Ep 150] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.68it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.23it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.23it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.10it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 150: Loss 0.0509 | Val MAE 100.1746
+
+-> [Ep 160] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.67it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.58it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:02,  1.48it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.35it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.20it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.11it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 160: Loss 0.0420 | Val MAE 99.1202
+
+-> [Ep 170] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.68it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.51it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.29it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.09it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 170: Loss 0.0329 | Val MAE 115.3318
+
+-> [Ep 180] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.49it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.42it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.43it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 180: Loss 0.0408 | Val MAE 78.7157
+
+-> [Ep 190] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.40it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.41it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.20it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 190: Loss 0.0480 | Val MAE 109.8299
+
+-> [Ep 200] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:04,  1.17it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:03,  1.25it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.32it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.24it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.26it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:05<00:00,  1.14it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 200: Loss 0.0305 | Val MAE 110.2616
+
+-> [Ep 210] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.68it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.32it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.29it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.20it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.11it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 210: Loss 0.0290 | Val MAE 109.1822
+
+-> [Ep 220] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.56it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.47it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.27it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.26it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.25it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.14it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 220: Loss 0.0331 | Val MAE 108.1878
+
+-> [Ep 230] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.65it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.56it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.39it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.17it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.07it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 230: Loss 0.0235 | Val MAE 98.0598
+
+-> [Ep 240] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.68it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:02,  1.47it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.43it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.23it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.13it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 240: Loss 0.0409 | Val MAE 105.3916
+
+-> [Ep 250] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.54it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.51it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.07it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 250: Loss 0.0245 | Val MAE 97.9194
+
+-> [Ep 260] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.59it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.51it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.48it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.43it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.34it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.20it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 260: Loss 0.0274 | Val MAE 104.0680
+
+-> [Ep 270] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.29it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.43it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.45it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.39it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 270: Loss 0.0268 | Val MAE 90.1479
+
+-> [Ep 280] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.81it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 280: Loss 0.0297 | Val MAE 90.0631
+
+-> [Ep 290] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.57it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.58it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.34it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 290: Loss 0.0278 | Val MAE 87.5324
+
+-> [Ep 300] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.63it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.52it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.51it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.24it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.23it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.15it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 300: Loss 0.0206 | Val MAE 110.9428
+
+-> [Ep 310] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.71it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.45it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.33it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.30it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.07it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 310: Loss 0.0176 | Val MAE 116.0785
+
+-> [Ep 320] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.57it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.46it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.44it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.39it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.10it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 320: Loss 0.0189 | Val MAE 114.9016
+
+-> [Ep 330] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.72it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.57it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.53it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.44it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.39it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 330: Loss 0.0214 | Val MAE 131.9520
+
+-> [Ep 340] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:04,  1.19it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:03,  1.29it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.36it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 340: Loss 0.0152 | Val MAE 88.7959
+
+-> [Ep 350] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.81it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.37it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.36it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.34it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.30it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 350: Loss 0.0184 | Val MAE 99.4461
+
+-> [Ep 360] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.60it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.52it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.44it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.23it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.24it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.14it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 360: Loss 0.0173 | Val MAE 102.9266
+
+-> [Ep 370] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.52it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.29it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.29it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.21it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 370: Loss 0.0191 | Val MAE 95.5261
+
+-> [Ep 380] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.84it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.50it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.45it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.24it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.14it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 380: Loss 0.0149 | Val MAE 79.4819
+
+-> [Ep 390] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.56it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.19it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 390: Loss 0.0140 | Val MAE 87.4547
+
+-> [Ep 400] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.67it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.50it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.46it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.40it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.14it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 400: Loss 0.0183 | Val MAE 108.1431
+
+-> [Ep 410] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.74it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.62it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:01<00:01,  1.52it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.32it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.27it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.09it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 410: Loss 0.0188 | Val MAE 106.3526
+
+-> [Ep 420] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.37it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 420: Loss 0.0145 | Val MAE 127.9393
+
+-> [Ep 430] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.79it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.30it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.32it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.32it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 430: Loss 0.0149 | Val MAE 93.2384
+
+-> [Ep 440] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:02,  1.72it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.56it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.44it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.27it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.28it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 440: Loss 0.0142 | Val MAE 92.4594
+
+-> [Ep 450] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.55it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.55it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.43it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.35it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.15it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.09it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 450: Loss 0.0135 | Val MAE 104.4207
+
+-> [Ep 460] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.66it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.50it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.46it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.11it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 460: Loss 0.0197 | Val MAE 70.3039
+
+-> [Ep 470] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.53it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.40it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:02<00:01,  1.35it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.29it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 470: Loss 0.0130 | Val MAE 60.2798
+
+-> [Ep 480] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:04,  1.14it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:03,  1.32it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.35it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.32it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.29it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 480: Loss 0.0126 | Val MAE 72.8892
+
+-> [Ep 490] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:03,  1.59it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:02,  1.55it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.29it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.28it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:03<00:00,  1.27it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:04<00:00,  1.15it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 490: Loss 0.0115 | Val MAE 75.2750
+
+-> [Ep 500] Re-sampling Coreset via Soft Random...
+
+[Sampler] Running Soft Random | Target: 3644/6074 (60.0%)
+Scanning Source (Soft Random):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (Soft Random):  17%|█▋        | 1/6 [00:00<00:04,  1.22it/s]Scanning Source (Soft Random):  33%|███▎      | 2/6 [00:01<00:03,  1.28it/s]Scanning Source (Soft Random):  50%|█████     | 3/6 [00:02<00:02,  1.10it/s]Scanning Source (Soft Random):  67%|██████▋   | 4/6 [00:03<00:01,  1.11it/s]Scanning Source (Soft Random):  83%|████████▎ | 5/6 [00:04<00:00,  1.11it/s]Scanning Source (Soft Random): 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]                                                                            -> Coreset Updated. Size: 3644
+[P1] Ep 500: Loss 0.0126 | Val MAE 88.0993
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.7120 | Val MAE 33.3940
+[FT] Ep 20: Loss 0.6654 | Val MAE 34.7943
+[FT] Ep 30: Loss 0.5917 | Val MAE 32.4834
+[FT] Ep 40: Loss 0.6126 | Val MAE 34.1646
+[FT] Ep 50: Loss 0.5812 | Val MAE 33.8542
+[FT] Ep 60: Loss 0.5422 | Val MAE 34.6885
+[FT] Ep 70: Loss 0.5088 | Val MAE 34.0484
+[FT] Ep 80: Loss 0.4740 | Val MAE 41.6537
+[FT] Ep 90: Loss 0.4553 | Val MAE 34.7574
+[FT] Ep 100: Loss 0.4007 | Val MAE 33.8857
+[FT] Ep 110: Loss 0.4317 | Val MAE 34.6866
+[FT] Ep 120: Loss 0.3784 | Val MAE 32.0024
+[FT] Ep 130: Loss 0.4692 | Val MAE 34.7575
+[FT] Ep 140: Loss 0.3705 | Val MAE 31.3863
+[FT] Ep 150: Loss 0.3412 | Val MAE 35.8415
+[FT] Ep 160: Loss 0.3477 | Val MAE 32.7779
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: Soft Random
+   MAE:  27.7200
+   RMSE: 36.9733
+   MAPE: 114.56 %
+   Acc:  5.56 %
+------------------------------------------------------------

@@ -1,0 +1,82 @@
+--- Baseline MLP Pipeline (Method: InfoBatch) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [InfoBatch] ===
+   Target Ratio: 40.0%
+
+[Sampler] Running InfoBatch | Target: 3163/7908 (40.0%)
+Scanning Source (InfoBatch):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (InfoBatch):  12%|█▎        | 1/8 [00:00<00:00,  7.25it/s]                                                                          -> Selected 3163 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.8524
+[P1] Ep 40: Loss 0.6060
+[P1] Ep 60: Loss 0.5213
+[P1] Ep 80: Loss 0.4854
+[P1] Ep 100: Loss 0.4348
+[P1] Ep 120: Loss 0.3899
+[P1] Ep 140: Loss 0.3789
+[P1] Ep 160: Loss 0.3482
+[P1] Ep 180: Loss 0.3154
+[P1] Ep 200: Loss 0.2930
+[P1] Ep 220: Loss 0.2803
+[P1] Ep 240: Loss 0.2632
+[P1] Ep 260: Loss 0.2541
+[P1] Ep 280: Loss 0.2344
+[P1] Ep 300: Loss 0.2317
+[P1] Ep 320: Loss 0.2306
+[P1] Ep 340: Loss 0.2111
+[P1] Ep 360: Loss 0.1975
+[P1] Ep 380: Loss 0.1883
+[P1] Ep 400: Loss 0.1960
+[P1] Ep 420: Loss 0.1811
+[P1] Ep 440: Loss 0.1720
+[P1] Ep 460: Loss 0.1668
+[P1] Ep 480: Loss 0.1630
+[P1] Ep 500: Loss 0.1582
+[P1] Ep 520: Loss 0.1477
+[P1] Ep 540: Loss 0.1455
+[P1] Ep 560: Loss 0.1425
+[P1] Ep 580: Loss 0.1391
+[P1] Ep 600: Loss 0.1295
+[P1] Ep 620: Loss 0.1336
+[P1] Ep 640: Loss 0.1256
+[P1] Ep 660: Loss 0.1216
+[P1] Ep 680: Loss 0.1151
+[P1] Ep 700: Loss 0.1203
+[P1] Ep 720: Loss 0.1170
+[P1] Ep 740: Loss 0.1061
+[P1] Ep 760: Loss 0.1068
+[P1] Ep 780: Loss 0.1050
+[P1] Ep 800: Loss 0.1107
+[P1] Ep 820: Loss 0.0973
+[P1] Ep 840: Loss 0.0973
+[P1] Ep 860: Loss 0.0946
+[P1] Ep 880: Loss 0.0999
+[P1] Ep 900: Loss 0.0902
+[P1] Ep 920: Loss 0.0911
+[P1] Ep 940: Loss 0.0858
+[P1] Ep 960: Loss 0.0891
+[P1] Ep 980: Loss 0.0847
+[P1] Ep 1000: Loss 0.0815
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.7792
+[P2.1] Ep 100 MAE 0.7882
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.7386
+[P2.2] Ep 40 MAE 0.7451
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: InfoBatch (Ratio=0.4)
+MAE: 0.6343
+RMSE: 0.7986
+MAPE: 52.2531
+Acc_10: 23.2955
+Acc_20: 49.4318
+------------------------------------------------------------

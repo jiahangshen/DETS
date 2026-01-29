@@ -1,0 +1,85 @@
+--- Baseline MLP Pipeline (Method: Hard Random) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [Hard Random] ===
+   Target Ratio: 60.0%
+
+[Sampler] Running Hard Random | Target: 4744/7908 (60.0%)
+-> Selected 4744 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.9418
+[P1] Ep 40: Loss 0.7360
+[P1] Ep 60: Loss 0.6772
+[P1] Ep 80: Loss 0.6094
+[P1] Ep 100: Loss 0.5525
+[P1] Ep 120: Loss 0.5098
+[P1] Ep 140: Loss 0.4792
+[P1] Ep 160: Loss 0.4422
+[P1] Ep 180: Loss 0.4279
+[P1] Ep 200: Loss 0.3946
+[P1] Ep 220: Loss 0.3787
+[P1] Ep 240: Loss 0.3509
+[P1] Ep 260: Loss 0.3482
+[P1] Ep 280: Loss 0.3304
+[P1] Ep 300: Loss 0.3301
+[P1] Ep 320: Loss 0.3087
+[P1] Ep 340: Loss 0.2861
+[P1] Ep 360: Loss 0.2735
+[P1] Ep 380: Loss 0.2743
+[P1] Ep 400: Loss 0.2542
+[P1] Ep 420: Loss 0.2473
+[P1] Ep 440: Loss 0.2390
+[P1] Ep 460: Loss 0.2320
+[P1] Ep 480: Loss 0.2382
+[P1] Ep 500: Loss 0.2184
+[P1] Ep 520: Loss 0.2084
+[P1] Ep 540: Loss 0.2157
+[P1] Ep 560: Loss 0.2144
+[P1] Ep 580: Loss 0.1891
+[P1] Ep 600: Loss 0.1916
+[P1] Ep 620: Loss 0.1820
+[P1] Ep 640: Loss 0.1812
+[P1] Ep 660: Loss 0.1725
+[P1] Ep 680: Loss 0.1765
+[P1] Ep 700: Loss 0.1706
+[P1] Ep 720: Loss 0.1646
+[P1] Ep 740: Loss 0.1634
+[P1] Ep 760: Loss 0.1543
+[P1] Ep 780: Loss 0.1561
+[P1] Ep 800: Loss 0.1525
+[P1] Ep 820: Loss 0.1489
+[P1] Ep 840: Loss 0.1517
+[P1] Ep 860: Loss 0.1346
+[P1] Ep 880: Loss 0.1402
+[P1] Ep 900: Loss 0.1375
+[P1] Ep 920: Loss 0.1359
+[P1] Ep 940: Loss 0.1293
+[P1] Ep 960: Loss 0.1311
+[P1] Ep 980: Loss 0.1251
+[P1] Ep 1000: Loss 0.1399
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8806
+[P2.1] Ep 100 MAE 0.8776
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.7210
+[P2.2] Ep 40 MAE 0.7117
+[P2.2] Ep 60 MAE 0.7066
+[P2.2] Ep 80 MAE 0.7076
+[P2.2] Ep 100 MAE 0.7151
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: Hard Random (Ratio=0.6)
+MAE: 0.6360
+RMSE: 0.8127
+MAPE: 45.4594
+Acc_10: 23.8636
+Acc_20: 46.0227
+------------------------------------------------------------

@@ -1,0 +1,351 @@
+++ date
++ echo '--- Script Start: Mon Dec 15 10:04:33 UTC 2025 ---'
+--- Script Start: Mon Dec 15 10:04:33 UTC 2025 ---
++ PYTHON_SCRIPT=./MatDB/edl_dets_train.py
++ BASE_LOG_DIR=./MatDB/edlL_dets_logs
++ mkdir -p ./MatDB/edlL_dets_logs
++ SIGMAS=(0.2 0.3 0.5)
++ TAUS=(0.85 0.90 0.95)
++ W_MINS=(0.1 0.2)
++ ABS_PYTHON=/root/miniconda3/envs/subset/bin/python
++ for sigma in "${SIGMAS[@]}"
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.2_tau0.85_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.2_tau0.85_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.2_tau0.85_wmin0.1'
+Running Experiment: sig0.2_tau0.85_wmin0.1
++ echo 'Config: Sigma=0.2, Tau=0.85, W_Min=0.1'
+Config: Sigma=0.2, Tau=0.85, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.85_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.85_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.2 --tau_high 0.85 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.2_tau0.85_wmin0.1'
+Finished execution attempt for sig0.2_tau0.85_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.2_tau0.85_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.2_tau0.85_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.2_tau0.85_wmin0.2'
+Running Experiment: sig0.2_tau0.85_wmin0.2
++ echo 'Config: Sigma=0.2, Tau=0.85, W_Min=0.2'
+Config: Sigma=0.2, Tau=0.85, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.85_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.85_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.2 --tau_high 0.85 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.2_tau0.85_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.2_tau0.85_wmin0.2'
+Finished execution attempt for sig0.2_tau0.85_wmin0.2
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.2_tau0.90_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.2_tau0.90_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.2_tau0.90_wmin0.1'
+Running Experiment: sig0.2_tau0.90_wmin0.1
++ echo 'Config: Sigma=0.2, Tau=0.90, W_Min=0.1'
+Config: Sigma=0.2, Tau=0.90, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.90_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.90_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.2 --tau_high 0.90 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.2_tau0.90_wmin0.1'
+Finished execution attempt for sig0.2_tau0.90_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.2_tau0.90_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.2_tau0.90_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.2_tau0.90_wmin0.2'
+Running Experiment: sig0.2_tau0.90_wmin0.2
++ echo 'Config: Sigma=0.2, Tau=0.90, W_Min=0.2'
+Config: Sigma=0.2, Tau=0.90, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.90_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.90_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.2 --tau_high 0.90 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.2_tau0.90_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.2_tau0.90_wmin0.2'
+Finished execution attempt for sig0.2_tau0.90_wmin0.2
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.2_tau0.95_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.2_tau0.95_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.2_tau0.95_wmin0.1'
+Running Experiment: sig0.2_tau0.95_wmin0.1
++ echo 'Config: Sigma=0.2, Tau=0.95, W_Min=0.1'
+Config: Sigma=0.2, Tau=0.95, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.95_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.95_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.2 --tau_high 0.95 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.2_tau0.95_wmin0.1'
+Finished execution attempt for sig0.2_tau0.95_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.2_tau0.95_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.2_tau0.95_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.2_tau0.95_wmin0.2'
+Running Experiment: sig0.2_tau0.95_wmin0.2
++ echo 'Config: Sigma=0.2, Tau=0.95, W_Min=0.2'
+Config: Sigma=0.2, Tau=0.95, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.95_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.2_tau0.95_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.2 --tau_high 0.95 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.2_tau0.95_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.2_tau0.95_wmin0.2'
+Finished execution attempt for sig0.2_tau0.95_wmin0.2
++ for sigma in "${SIGMAS[@]}"
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.3_tau0.85_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.3_tau0.85_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.3_tau0.85_wmin0.1'
+Running Experiment: sig0.3_tau0.85_wmin0.1
++ echo 'Config: Sigma=0.3, Tau=0.85, W_Min=0.1'
+Config: Sigma=0.3, Tau=0.85, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.85_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.85_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.3 --tau_high 0.85 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.3_tau0.85_wmin0.1'
+Finished execution attempt for sig0.3_tau0.85_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.3_tau0.85_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.3_tau0.85_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.3_tau0.85_wmin0.2'
+Running Experiment: sig0.3_tau0.85_wmin0.2
++ echo 'Config: Sigma=0.3, Tau=0.85, W_Min=0.2'
+Config: Sigma=0.3, Tau=0.85, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.85_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.85_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.3 --tau_high 0.85 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.3_tau0.85_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.3_tau0.85_wmin0.2'
+Finished execution attempt for sig0.3_tau0.85_wmin0.2
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.3_tau0.90_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.3_tau0.90_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.3_tau0.90_wmin0.1'
+Running Experiment: sig0.3_tau0.90_wmin0.1
++ echo 'Config: Sigma=0.3, Tau=0.90, W_Min=0.1'
+Config: Sigma=0.3, Tau=0.90, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.90_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.90_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.3 --tau_high 0.90 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.3_tau0.90_wmin0.1'
+Finished execution attempt for sig0.3_tau0.90_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.3_tau0.90_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.3_tau0.90_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.3_tau0.90_wmin0.2'
+Running Experiment: sig0.3_tau0.90_wmin0.2
++ echo 'Config: Sigma=0.3, Tau=0.90, W_Min=0.2'
+Config: Sigma=0.3, Tau=0.90, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.90_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.90_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.3 --tau_high 0.90 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.3_tau0.90_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.3_tau0.90_wmin0.2'
+Finished execution attempt for sig0.3_tau0.90_wmin0.2
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.3_tau0.95_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.3_tau0.95_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.3_tau0.95_wmin0.1'
+Running Experiment: sig0.3_tau0.95_wmin0.1
++ echo 'Config: Sigma=0.3, Tau=0.95, W_Min=0.1'
+Config: Sigma=0.3, Tau=0.95, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.95_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.95_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.3 --tau_high 0.95 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.3_tau0.95_wmin0.1'
+Finished execution attempt for sig0.3_tau0.95_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.3_tau0.95_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.3_tau0.95_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.3_tau0.95_wmin0.2'
+Running Experiment: sig0.3_tau0.95_wmin0.2
++ echo 'Config: Sigma=0.3, Tau=0.95, W_Min=0.2'
+Config: Sigma=0.3, Tau=0.95, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.95_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.3_tau0.95_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.3 --tau_high 0.95 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.3_tau0.95_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.3_tau0.95_wmin0.2'
+Finished execution attempt for sig0.3_tau0.95_wmin0.2
++ for sigma in "${SIGMAS[@]}"
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.5_tau0.85_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.5_tau0.85_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.5_tau0.85_wmin0.1'
+Running Experiment: sig0.5_tau0.85_wmin0.1
++ echo 'Config: Sigma=0.5, Tau=0.85, W_Min=0.1'
+Config: Sigma=0.5, Tau=0.85, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.85_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.85_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.5 --tau_high 0.85 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.5_tau0.85_wmin0.1'
+Finished execution attempt for sig0.5_tau0.85_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.5_tau0.85_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.5_tau0.85_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.5_tau0.85_wmin0.2'
+Running Experiment: sig0.5_tau0.85_wmin0.2
++ echo 'Config: Sigma=0.5, Tau=0.85, W_Min=0.2'
+Config: Sigma=0.5, Tau=0.85, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.85_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.85_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.5 --tau_high 0.85 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.5_tau0.85_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.5_tau0.85_wmin0.2'
+Finished execution attempt for sig0.5_tau0.85_wmin0.2
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.5_tau0.90_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.5_tau0.90_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.5_tau0.90_wmin0.1'
+Running Experiment: sig0.5_tau0.90_wmin0.1
++ echo 'Config: Sigma=0.5, Tau=0.90, W_Min=0.1'
+Config: Sigma=0.5, Tau=0.90, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.90_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.90_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.5 --tau_high 0.90 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.5_tau0.90_wmin0.1'
+Finished execution attempt for sig0.5_tau0.90_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.5_tau0.90_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.5_tau0.90_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.5_tau0.90_wmin0.2'
+Running Experiment: sig0.5_tau0.90_wmin0.2
++ echo 'Config: Sigma=0.5, Tau=0.90, W_Min=0.2'
+Config: Sigma=0.5, Tau=0.90, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.90_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.90_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.5 --tau_high 0.90 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.5_tau0.90_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.5_tau0.90_wmin0.2'
+Finished execution attempt for sig0.5_tau0.90_wmin0.2
++ for tau in "${TAUS[@]}"
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.5_tau0.95_wmin0.1
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.1
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.5_tau0.95_wmin0.1.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.5_tau0.95_wmin0.1'
+Running Experiment: sig0.5_tau0.95_wmin0.1
++ echo 'Config: Sigma=0.5, Tau=0.95, W_Min=0.1'
+Config: Sigma=0.5, Tau=0.95, W_Min=0.1
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.1'
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.1
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.95_wmin0.1.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.95_wmin0.1.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.5 --tau_high 0.95 --w_min 0.1 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.1 --device cuda
++ echo 'Finished execution attempt for sig0.5_tau0.95_wmin0.1'
+Finished execution attempt for sig0.5_tau0.95_wmin0.1
++ for w_min in "${W_MINS[@]}"
++ EXP_NAME=sig0.5_tau0.95_wmin0.2
++ SAVE_DIR=checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.2
++ LOG_FILE=./MatDB/edlL_dets_logs/sig0.5_tau0.95_wmin0.2.log
++ echo ----------------------------------------------------
+----------------------------------------------------
++ echo 'Running Experiment: sig0.5_tau0.95_wmin0.2'
+Running Experiment: sig0.5_tau0.95_wmin0.2
++ echo 'Config: Sigma=0.5, Tau=0.95, W_Min=0.2'
+Config: Sigma=0.5, Tau=0.95, W_Min=0.2
++ echo 'Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.2'
+Saving to: checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.2
++ echo 'Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.95_wmin0.2.log'
+Attempting to log to: ./MatDB/edlL_dets_logs/sig0.5_tau0.95_wmin0.2.log
++ sleep 1
++ nohup /root/miniconda3/envs/subset/bin/python -u ./MatDB/edl_dets_train.py --sigma_0 0.5 --tau_high 0.95 --w_min 0.2 --num_prototypes 5 --save_dir checkpoints_bandgap_tuning/sig0.5_tau0.95_wmin0.2 --device cuda
++ echo 'Finished execution attempt for sig0.5_tau0.95_wmin0.2'
+Finished execution attempt for sig0.5_tau0.95_wmin0.2
++ echo 'All Grid Search Experiments Completed!'
+All Grid Search Experiments Completed!
+++ date
++ echo '--- Script End: Mon Dec 15 10:04:51 UTC 2025 ---'
+--- Script End: Mon Dec 15 10:04:51 UTC 2025 ---

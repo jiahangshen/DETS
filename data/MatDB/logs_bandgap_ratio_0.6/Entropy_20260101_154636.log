@@ -1,0 +1,86 @@
+--- Baseline MLP Pipeline (Method: Entropy) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [Entropy] ===
+   Target Ratio: 60.0%
+
+[Sampler] Running Entropy | Target: 4744/7908 (60.0%)
+Scanning Source (Entropy):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (Entropy):  12%|█▎        | 1/8 [00:00<00:00,  7.34it/s]                                                                        -> Selected 4744 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.7829
+[P1] Ep 40: Loss 0.5754
+[P1] Ep 60: Loss 0.4980
+[P1] Ep 80: Loss 0.4319
+[P1] Ep 100: Loss 0.4030
+[P1] Ep 120: Loss 0.3656
+[P1] Ep 140: Loss 0.3570
+[P1] Ep 160: Loss 0.3444
+[P1] Ep 180: Loss 0.3019
+[P1] Ep 200: Loss 0.3010
+[P1] Ep 220: Loss 0.2729
+[P1] Ep 240: Loss 0.2645
+[P1] Ep 260: Loss 0.2468
+[P1] Ep 280: Loss 0.2309
+[P1] Ep 300: Loss 0.2241
+[P1] Ep 320: Loss 0.2194
+[P1] Ep 340: Loss 0.1963
+[P1] Ep 360: Loss 0.2010
+[P1] Ep 380: Loss 0.1946
+[P1] Ep 400: Loss 0.1901
+[P1] Ep 420: Loss 0.1813
+[P1] Ep 440: Loss 0.1751
+[P1] Ep 460: Loss 0.1732
+[P1] Ep 480: Loss 0.1630
+[P1] Ep 500: Loss 0.1596
+[P1] Ep 520: Loss 0.1561
+[P1] Ep 540: Loss 0.1487
+[P1] Ep 560: Loss 0.1502
+[P1] Ep 580: Loss 0.1451
+[P1] Ep 600: Loss 0.1410
+[P1] Ep 620: Loss 0.1413
+[P1] Ep 640: Loss 0.1360
+[P1] Ep 660: Loss 0.1286
+[P1] Ep 680: Loss 0.1323
+[P1] Ep 700: Loss 0.1416
+[P1] Ep 720: Loss 0.1231
+[P1] Ep 740: Loss 0.1302
+[P1] Ep 760: Loss 0.1228
+[P1] Ep 780: Loss 0.1217
+[P1] Ep 800: Loss 0.1170
+[P1] Ep 820: Loss 0.1082
+[P1] Ep 840: Loss 0.1222
+[P1] Ep 860: Loss 0.1131
+[P1] Ep 880: Loss 0.1008
+[P1] Ep 900: Loss 0.1055
+[P1] Ep 920: Loss 0.1031
+[P1] Ep 940: Loss 0.1006
+[P1] Ep 960: Loss 0.0953
+[P1] Ep 980: Loss 0.0948
+[P1] Ep 1000: Loss 0.0919
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8022
+[P2.1] Ep 100 MAE 0.7962
+[P2.1] Ep 150 MAE 0.7535
+[P2.1] Ep 200 MAE 0.7755
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.7013
+[P2.2] Ep 40 MAE 0.6948
+[P2.2] Ep 60 MAE 0.6881
+[P2.2] Ep 80 MAE 0.6940
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: Entropy (Ratio=0.6)
+MAE: 0.7637
+RMSE: 1.0130
+MAPE: 57.5813
+Acc_10: 24.4318
+Acc_20: 43.1818
+------------------------------------------------------------

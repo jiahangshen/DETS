@@ -1,0 +1,124 @@
+-> Loading CSVs...
+-> Selected 128 features.
+-> Target Stats: Mean=2.7508, Std=1.5292
+Source Data: 7908 | Target Train: 632
+Initializing ResNet DETS Model (Dim=128)...
+-> Applying Sparsity Init...
+
+=== PHASE 1: Source Pre-training (Soft DETS) ===
+-> Extracting Prototypes...
+[P1] Ep 20: Loss 0.6715 | Val MAE 1.3833
+[P1] Ep 40: Loss 0.6127 | Val MAE 1.3168
+[P1] Ep 60: Loss 0.5652 | Val MAE 1.3041
+[P1] Ep 80: Loss 0.5268 | Val MAE 1.2299
+[P1] Ep 100: Loss 0.4920 | Val MAE 1.2236
+[P1] Ep 120: Loss 0.4615 | Val MAE 1.3180
+[P1] Ep 140: Loss 0.4177 | Val MAE 1.1705
+[P1] Ep 160: Loss 0.3800 | Val MAE 1.2359
+[P1] Ep 180: Loss 0.3824 | Val MAE 1.2226
+[P1] Ep 200: Loss 0.3480 | Val MAE 1.2747
+[P1] Ep 220: Loss 0.3467 | Val MAE 1.2321
+[P1] Ep 240: Loss 0.2948 | Val MAE 1.2774
+[P1] Ep 260: Loss 0.3072 | Val MAE 1.2706
+[P1] Ep 280: Loss 0.2673 | Val MAE 1.2441
+[P1] Ep 300: Loss 0.2474 | Val MAE 1.2554
+[P1] Ep 320: Loss 0.2243 | Val MAE 1.2427
+[P1] Ep 340: Loss 0.2308 | Val MAE 1.2292
+[P1] Ep 360: Loss 0.1975 | Val MAE 1.2534
+[P1] Ep 380: Loss 0.1814 | Val MAE 1.2605
+[P1] Ep 400: Loss 0.1717 | Val MAE 1.2871
+[P1] Ep 420: Loss 0.1524 | Val MAE 1.2476
+[P1] Ep 440: Loss 0.1395 | Val MAE 1.1966
+[P1] Ep 460: Loss 0.1244 | Val MAE 1.2132
+[P1] Ep 480: Loss 0.1200 | Val MAE 1.2487
+[P1] Ep 500: Loss 0.0978 | Val MAE 1.2230
+[P1] Ep 520: Loss 0.0991 | Val MAE 1.2719
+[P1] Ep 540: Loss 0.0805 | Val MAE 1.2543
+[P1] Ep 560: Loss 0.0739 | Val MAE 1.2662
+[P1] Ep 580: Loss 0.0731 | Val MAE 1.2566
+[P1] Ep 600: Loss 0.0619 | Val MAE 1.2674
+[P1] Ep 620: Loss 0.0596 | Val MAE 1.2788
+[P1] Ep 640: Loss 0.0280 | Val MAE 1.2919
+[P1] Ep 660: Loss 0.0245 | Val MAE 1.2597
+[P1] Ep 680: Loss 0.0131 | Val MAE 1.2551
+[P1] Ep 700: Loss 0.0104 | Val MAE 1.2659
+[P1] Ep 720: Loss 0.0020 | Val MAE 1.2376
+[P1] Ep 740: Loss -0.0078 | Val MAE 1.2556
+[P1] Ep 760: Loss -0.0286 | Val MAE 1.2368
+[P1] Ep 780: Loss -0.0238 | Val MAE 1.2632
+[P1] Ep 800: Loss -0.0210 | Val MAE 1.2649
+[P1] Ep 820: Loss -0.0336 | Val MAE 1.2690
+[P1] Ep 840: Loss -0.0390 | Val MAE 1.2521
+[P1] Ep 860: Loss -0.0578 | Val MAE 1.2455
+[P1] Ep 880: Loss -0.0602 | Val MAE 1.2343
+[P1] Ep 900: Loss -0.0716 | Val MAE 1.2734
+[P1] Ep 920: Loss -0.0830 | Val MAE 1.2396
+[P1] Ep 940: Loss -0.0859 | Val MAE 1.2649
+[P1] Ep 960: Loss -0.0880 | Val MAE 1.2712
+[P1] Ep 980: Loss -0.0971 | Val MAE 1.2421
+[P1] Ep 1000: Loss -0.1151 | Val MAE 1.2652
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 20 MAE 0.6728
+[P2.1] Ep 40 MAE 0.6551
+[P2.1] Ep 60 MAE 0.6485
+[P2.1] Ep 80 MAE 0.6441
+[P2.1] Ep 100 MAE 0.6509
+[P2.1] Ep 120 MAE 0.6289
+[P2.1] Ep 140 MAE 0.6245
+[P2.1] Ep 160 MAE 0.6320
+[P2.1] Ep 180 MAE 0.6257
+[P2.1] Ep 200 MAE 0.6353
+[P2.1] Ep 220 MAE 0.6398
+[P2.1] Ep 240 MAE 0.6278
+[P2.1] Ep 260 MAE 0.6368
+[P2.1] Ep 280 MAE 0.6280
+[P2.1] Ep 300 MAE 0.6229
+[P2.1] Ep 320 MAE 0.6296
+[P2.1] Ep 340 MAE 0.6339
+[P2.1] Ep 360 MAE 0.6232
+[P2.1] Ep 380 MAE 0.6085
+[P2.1] Ep 400 MAE 0.6512
+[P2.1] Ep 420 MAE 0.6234
+[P2.1] Ep 440 MAE 0.6357
+[P2.1] Ep 460 MAE 0.6205
+[P2.1] Ep 480 MAE 0.6318
+[P2.1] Ep 500 MAE 0.6259
+[P2.1] Ep 520 MAE 0.6290
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.6023
+[P2.2] Ep 40 MAE 0.6073
+[P2.2] Ep 60 MAE 0.5984
+[P2.2] Ep 80 MAE 0.5986
+[P2.2] Ep 100 MAE 0.5936
+[P2.2] Ep 120 MAE 0.5848
+[P2.2] Ep 140 MAE 0.5923
+[P2.2] Ep 160 MAE 0.5873
+[P2.2] Ep 180 MAE 0.5857
+[P2.2] Ep 200 MAE 0.5811
+[P2.2] Ep 220 MAE 0.5813
+[P2.2] Ep 240 MAE 0.5826
+[P2.2] Ep 260 MAE 0.5799
+[P2.2] Ep 280 MAE 0.5707
+[P2.2] Ep 300 MAE 0.5741
+[P2.2] Ep 320 MAE 0.5756
+[P2.2] Ep 340 MAE 0.5697
+[P2.2] Ep 360 MAE 0.5750
+[P2.2] Ep 380 MAE 0.5723
+[P2.2] Ep 400 MAE 0.5775
+[P2.2] Ep 420 MAE 0.5690
+[P2.2] Ep 440 MAE 0.5763
+[P2.2] Ep 460 MAE 0.5733
+[P2.2] Ep 480 MAE 0.5693
+[P2.2] Ep 500 MAE 0.5698
+[P2.2] Ep 520 MAE 0.5706
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+MAE: 0.4893
+RMSE: 0.6528
+MAPE: 34.2466
+Acc_10: 35.7955
+Acc_20: 60.7955
+------------------------------------------------------------

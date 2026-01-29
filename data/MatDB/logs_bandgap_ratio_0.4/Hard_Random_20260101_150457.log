@@ -1,0 +1,87 @@
+--- Baseline MLP Pipeline (Method: Hard Random) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [Hard Random] ===
+   Target Ratio: 40.0%
+
+[Sampler] Running Hard Random | Target: 3163/7908 (40.0%)
+-> Selected 3163 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 1.0246
+[P1] Ep 40: Loss 0.7960
+[P1] Ep 60: Loss 0.6814
+[P1] Ep 80: Loss 0.6312
+[P1] Ep 100: Loss 0.5548
+[P1] Ep 120: Loss 0.5203
+[P1] Ep 140: Loss 0.4853
+[P1] Ep 160: Loss 0.4586
+[P1] Ep 180: Loss 0.4240
+[P1] Ep 200: Loss 0.4065
+[P1] Ep 220: Loss 0.3595
+[P1] Ep 240: Loss 0.3502
+[P1] Ep 260: Loss 0.3382
+[P1] Ep 280: Loss 0.3205
+[P1] Ep 300: Loss 0.3049
+[P1] Ep 320: Loss 0.2843
+[P1] Ep 340: Loss 0.2738
+[P1] Ep 360: Loss 0.2530
+[P1] Ep 380: Loss 0.2523
+[P1] Ep 400: Loss 0.2368
+[P1] Ep 420: Loss 0.2432
+[P1] Ep 440: Loss 0.2267
+[P1] Ep 460: Loss 0.2058
+[P1] Ep 480: Loss 0.2003
+[P1] Ep 500: Loss 0.1902
+[P1] Ep 520: Loss 0.1951
+[P1] Ep 540: Loss 0.1811
+[P1] Ep 560: Loss 0.1731
+[P1] Ep 580: Loss 0.1774
+[P1] Ep 600: Loss 0.1693
+[P1] Ep 620: Loss 0.1671
+[P1] Ep 640: Loss 0.1624
+[P1] Ep 660: Loss 0.1579
+[P1] Ep 680: Loss 0.1487
+[P1] Ep 700: Loss 0.1365
+[P1] Ep 720: Loss 0.1433
+[P1] Ep 740: Loss 0.1378
+[P1] Ep 760: Loss 0.1337
+[P1] Ep 780: Loss 0.1379
+[P1] Ep 800: Loss 0.1312
+[P1] Ep 820: Loss 0.1229
+[P1] Ep 840: Loss 0.1204
+[P1] Ep 860: Loss 0.1225
+[P1] Ep 880: Loss 0.1237
+[P1] Ep 900: Loss 0.1176
+[P1] Ep 920: Loss 0.1120
+[P1] Ep 940: Loss 0.1157
+[P1] Ep 960: Loss 0.1043
+[P1] Ep 980: Loss 0.1105
+[P1] Ep 1000: Loss 0.1054
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8391
+[P2.1] Ep 100 MAE 0.8287
+[P2.1] Ep 150 MAE 0.7893
+[P2.1] Ep 200 MAE 0.7798
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.7529
+[P2.2] Ep 40 MAE 0.7366
+[P2.2] Ep 60 MAE 0.7341
+[P2.2] Ep 80 MAE 0.7277
+[P2.2] Ep 100 MAE 0.7336
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: Hard Random (Ratio=0.4)
+MAE: 0.7381
+RMSE: 0.9768
+MAPE: 50.1256
+Acc_10: 22.7273
+Acc_20: 45.4545
+------------------------------------------------------------

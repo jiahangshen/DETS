@@ -1,0 +1,38 @@
+--- Enthalpy Baseline: DP (Ratio: 0.6) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running DP | Target: 3644/6074 (60.0%)
+Scanning Source (DP):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (DP):  17%|█▋        | 1/6 [00:01<00:06,  1.36s/it]Scanning Source (DP):  33%|███▎      | 2/6 [00:02<00:05,  1.28s/it]Scanning Source (DP):  50%|█████     | 3/6 [00:03<00:03,  1.08s/it]Scanning Source (DP):  67%|██████▋   | 4/6 [00:04<00:02,  1.06s/it]Scanning Source (DP):  83%|████████▎ | 5/6 [00:05<00:01,  1.05s/it]Scanning Source (DP): 100%|██████████| 6/6 [00:07<00:00,  1.34s/it]                                                                   -> Source reduced: 6074 -> 3644
+
+=== Phase 1: Source Pre-training ===
+Traceback (most recent call last):
+  File "/opt/data/private/noisey4dataset/data/DETS/baseline_all_train.py", line 373, in <module>
+    main(args)
+  File "/opt/data/private/noisey4dataset/data/DETS/baseline_all_train.py", line 271, in main
+    loss = train_epoch(model, source_loader, optimizer, args.device, y_mean, y_std)
+  File "/opt/data/private/noisey4dataset/data/DETS/baseline_all_train.py", line 134, in train_epoch
+    for batch in loader:
+  File "/root/miniconda3/envs/subset/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 708, in __next__
+    data = self._next_data()
+  File "/root/miniconda3/envs/subset/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 764, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/root/miniconda3/envs/subset/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/root/miniconda3/envs/subset/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/root/miniconda3/envs/subset/lib/python3.9/site-packages/torch_geometric/data/dataset.py", line 291, in __getitem__
+    data = self.get(self.indices()[idx])
+  File "/opt/data/private/noisey4dataset/data/DETS/dataset.py", line 58, in get
+    gdict = smiles2graph(smiles)
+  File "/root/miniconda3/envs/subset/lib/python3.9/site-packages/ogb/utils/mol.py", line 18, in smiles2graph
+    atom_features_list.append(atom_to_feature_vector(atom))
+  File "/root/miniconda3/envs/subset/lib/python3.9/site-packages/ogb/utils/features.py", line 65, in atom_to_feature_vector
+    safe_index(allowable_features['possible_number_radical_e_list'], atom.GetNumRadicalElectrons()),
+KeyboardInterrupt

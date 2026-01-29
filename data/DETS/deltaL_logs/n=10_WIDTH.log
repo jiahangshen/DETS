@@ -1,0 +1,801 @@
+!!! PROCESSED CACHE DELETED !!!
+Namespace(target_csv='enthalpy/atct.csv', source_csv='enthalpy/wudily_cho.csv', pretrained='DETS1/new_df_core.pt', batch_size=128, epochs=200, ft_epochs=150, hidden_dim=256, layers=3, dropout=0.2, lr=0.0005, wd=1e-06, patience=50, device='cuda:0', num_prototypes=10, tau_high=0.85, sigma_0=0.15, gamma=0.5, alpha=0.9, w_min=0.0001)
+--- DETS Full Pipeline: Stabilized Loss & Orthogonal Init ---
+Device: cuda:0
+-> Loading TARGET (Experiment) Dataset: enthalpy/atct.csv
+Processing enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+-> Loading SOURCE (Theory) Dataset: enthalpy/wudily_cho.csv
+Processing enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+DEBUG: Source Dataset Length from __len__: 6074
+DEBUG: Source SMILES List Length: 6074
+-> Target Statistics: Mean=14.0561, Std=51.2793
+-> [Warning] No pretrained weights found. Starting from SCRATCH.
+
+==================================================
+PHASE 1: DETS Source Training
+==================================================
+-> Extracting Anchors from Target (Experiment) Data...
+   Note: Consensus will be calculated based on INTENSIVE property (Energy per Atom).
+   Running K-Means (K=10)...
+-> Anchors Established: 10 prototypes.
+   (Consensus values are now 'Energy/Atom', scaling invariant.)
+   [Debug] Avg Sim: 0.9361 | Avg Delta_L (Per Atom): 3.6014
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 1.0000 (Count: 5861)
+-> [Epoch 1] Weight Audit:
+   Potential Candidates (w>0): 5861/6074 (96.5%)
+   Core Samples (w>0.1):       5861/6074
+   [Exploration] This Epoch Seen: 3768 unique samples
+   [Exploration] Cumulative Seen: 3768/6074 (62.03%)
+[P1] Epoch 001 | Loss 8.5567 | Val MAE 79.0472 | Acc 5.56%
+   [Debug] Avg Sim: 0.6073 | Avg Delta_L (Per Atom): 10.6992
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9777 (Count: 1822)
+-> [Epoch 2] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1749 unique samples
+   [Exploration] Cumulative Seen: 4379/6074 (72.09%)
+[P1] Epoch 002 | Loss 1.8776 | Val MAE 73.2067 | Acc 2.78%
+   [Debug] Avg Sim: 0.6078 | Avg Delta_L (Per Atom): 8.7322
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9623 (Count: 1822)
+-> [Epoch 3] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1753 unique samples
+   [Exploration] Cumulative Seen: 4670/6074 (76.89%)
+[P1] Epoch 003 | Loss 0.6496 | Val MAE 49.6989 | Acc 2.78%
+   [Debug] Avg Sim: 0.6141 | Avg Delta_L (Per Atom): 6.7554
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9419 (Count: 1822)
+-> [Epoch 4] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1749 unique samples
+   [Exploration] Cumulative Seen: 4843/6074 (79.73%)
+[P1] Epoch 004 | Loss 0.3650 | Val MAE 58.5033 | Acc 5.56%
+   [Debug] Avg Sim: 0.6164 | Avg Delta_L (Per Atom): 7.8286
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9608 (Count: 1822)
+-> [Epoch 5] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1758 unique samples
+   [Exploration] Cumulative Seen: 4985/6074 (82.07%)
+[P1] Epoch 005 | Loss 0.2738 | Val MAE 48.5949 | Acc 8.33%
+   [Debug] Avg Sim: 0.6142 | Avg Delta_L (Per Atom): 7.8634
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9625 (Count: 1822)
+-> [Epoch 6] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1745 unique samples
+   [Exploration] Cumulative Seen: 5102/6074 (84.00%)
+[P1] Epoch 006 | Loss 0.2240 | Val MAE 50.2318 | Acc 13.89%
+   [Debug] Avg Sim: 0.5967 | Avg Delta_L (Per Atom): 10.0635
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9763 (Count: 1822)
+-> [Epoch 7] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1758 unique samples
+   [Exploration] Cumulative Seen: 5180/6074 (85.28%)
+[P1] Epoch 007 | Loss 0.1979 | Val MAE 46.3690 | Acc 8.33%
+   [Debug] Avg Sim: 0.6071 | Avg Delta_L (Per Atom): 9.6850
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9724 (Count: 1822)
+-> [Epoch 8] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1750 unique samples
+   [Exploration] Cumulative Seen: 5235/6074 (86.19%)
+[P1] Epoch 008 | Loss 0.1816 | Val MAE 48.6043 | Acc 11.11%
+   [Debug] Avg Sim: 0.6059 | Avg Delta_L (Per Atom): 8.8656
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9682 (Count: 1822)
+-> [Epoch 9] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1759 unique samples
+   [Exploration] Cumulative Seen: 5271/6074 (86.78%)
+[P1] Epoch 009 | Loss 0.1711 | Val MAE 41.9283 | Acc 2.78%
+   [Debug] Avg Sim: 0.5981 | Avg Delta_L (Per Atom): 10.0635
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9745 (Count: 1822)
+-> [Epoch 10] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1752 unique samples
+   [Exploration] Cumulative Seen: 5289/6074 (87.08%)
+[P1] Epoch 010 | Loss 0.1477 | Val MAE 44.3772 | Acc 5.56%
+   [Debug] Avg Sim: 0.6118 | Avg Delta_L (Per Atom): 10.5348
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9773 (Count: 1822)
+-> [Epoch 11] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1749 unique samples
+   [Exploration] Cumulative Seen: 5319/6074 (87.57%)
+[P1] Epoch 011 | Loss 0.1489 | Val MAE 36.8063 | Acc 13.89%
+   [Debug] Avg Sim: 0.6060 | Avg Delta_L (Per Atom): 10.8852
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9803 (Count: 1822)
+-> [Epoch 12] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1749 unique samples
+   [Exploration] Cumulative Seen: 5351/6074 (88.10%)
+[P1] Epoch 012 | Loss 0.1251 | Val MAE 34.0899 | Acc 5.56%
+   [Debug] Avg Sim: 0.6238 | Avg Delta_L (Per Atom): 9.5090
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9736 (Count: 1822)
+-> [Epoch 13] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1761 unique samples
+   [Exploration] Cumulative Seen: 5382/6074 (88.61%)
+[P1] Epoch 013 | Loss 0.1329 | Val MAE 35.5740 | Acc 13.89%
+   [Debug] Avg Sim: 0.6130 | Avg Delta_L (Per Atom): 10.0928
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9754 (Count: 1822)
+-> [Epoch 14] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1756 unique samples
+   [Exploration] Cumulative Seen: 5395/6074 (88.82%)
+[P1] Epoch 014 | Loss 0.1277 | Val MAE 37.8074 | Acc 8.33%
+   [Debug] Avg Sim: 0.6045 | Avg Delta_L (Per Atom): 10.2740
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9747 (Count: 1822)
+-> [Epoch 15] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1744 unique samples
+   [Exploration] Cumulative Seen: 5405/6074 (88.99%)
+[P1] Epoch 015 | Loss 0.1127 | Val MAE 41.2737 | Acc 5.56%
+   [Debug] Avg Sim: 0.5968 | Avg Delta_L (Per Atom): 10.5272
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9762 (Count: 1822)
+-> [Epoch 16] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1739 unique samples
+   [Exploration] Cumulative Seen: 5413/6074 (89.12%)
+[P1] Epoch 016 | Loss 0.1072 | Val MAE 43.0257 | Acc 8.33%
+   [Debug] Avg Sim: 0.6207 | Avg Delta_L (Per Atom): 10.5818
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9782 (Count: 1822)
+-> [Epoch 17] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1762 unique samples
+   [Exploration] Cumulative Seen: 5428/6074 (89.36%)
+[P1] Epoch 017 | Loss 0.1049 | Val MAE 40.6933 | Acc 13.89%
+   [Debug] Avg Sim: 0.5955 | Avg Delta_L (Per Atom): 10.2806
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9764 (Count: 1822)
+-> [Epoch 18] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1750 unique samples
+   [Exploration] Cumulative Seen: 5440/6074 (89.56%)
+[P1] Epoch 018 | Loss 0.1105 | Val MAE 48.2748 | Acc 11.11%
+   [Debug] Avg Sim: 0.6126 | Avg Delta_L (Per Atom): 10.7191
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9783 (Count: 1822)
+-> [Epoch 19] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1767 unique samples
+   [Exploration] Cumulative Seen: 5444/6074 (89.63%)
+[P1] Epoch 019 | Loss 0.1005 | Val MAE 37.1248 | Acc 8.33%
+   [Debug] Avg Sim: 0.5985 | Avg Delta_L (Per Atom): 10.6817
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9758 (Count: 1822)
+-> [Epoch 20] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1764 unique samples
+   [Exploration] Cumulative Seen: 5452/6074 (89.76%)
+[P1] Epoch 020 | Loss 0.0997 | Val MAE 38.1466 | Acc 5.56%
+   [Debug] Avg Sim: 0.6140 | Avg Delta_L (Per Atom): 10.1617
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9745 (Count: 1822)
+-> [Epoch 21] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1756 unique samples
+   [Exploration] Cumulative Seen: 5454/6074 (89.79%)
+[P1] Epoch 021 | Loss 0.1072 | Val MAE 36.0725 | Acc 2.78%
+   [Debug] Avg Sim: 0.6069 | Avg Delta_L (Per Atom): 10.8059
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9770 (Count: 1822)
+-> [Epoch 22] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1756 unique samples
+   [Exploration] Cumulative Seen: 5468/6074 (90.02%)
+[P1] Epoch 022 | Loss 0.0991 | Val MAE 36.0871 | Acc 2.78%
+   [Debug] Avg Sim: 0.6006 | Avg Delta_L (Per Atom): 10.5516
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9752 (Count: 1822)
+-> [Epoch 23] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1760 unique samples
+   [Exploration] Cumulative Seen: 5473/6074 (90.11%)
+[P1] Epoch 023 | Loss 0.1079 | Val MAE 35.3000 | Acc 11.11%
+   [Debug] Avg Sim: 0.6070 | Avg Delta_L (Per Atom): 9.8422
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9729 (Count: 1822)
+-> [Epoch 24] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1752 unique samples
+   [Exploration] Cumulative Seen: 5480/6074 (90.22%)
+[P1] Epoch 024 | Loss 0.0997 | Val MAE 38.1029 | Acc 0.00%
+   [Debug] Avg Sim: 0.6080 | Avg Delta_L (Per Atom): 10.8683
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9783 (Count: 1822)
+-> [Epoch 25] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1751 unique samples
+   [Exploration] Cumulative Seen: 5485/6074 (90.30%)
+[P1] Epoch 025 | Loss 0.1099 | Val MAE 34.8631 | Acc 8.33%
+   [Debug] Avg Sim: 0.6124 | Avg Delta_L (Per Atom): 9.8463
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9721 (Count: 1822)
+-> [Epoch 26] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1768 unique samples
+   [Exploration] Cumulative Seen: 5493/6074 (90.43%)
+[P1] Epoch 026 | Loss 0.0975 | Val MAE 36.7480 | Acc 5.56%
+   [Debug] Avg Sim: 0.6103 | Avg Delta_L (Per Atom): 9.9211
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9742 (Count: 1822)
+-> [Epoch 27] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1747 unique samples
+   [Exploration] Cumulative Seen: 5499/6074 (90.53%)
+[P1] Epoch 027 | Loss 0.1041 | Val MAE 36.6965 | Acc 8.33%
+   [Debug] Avg Sim: 0.6064 | Avg Delta_L (Per Atom): 10.2487
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9752 (Count: 1822)
+-> [Epoch 28] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1750 unique samples
+   [Exploration] Cumulative Seen: 5505/6074 (90.63%)
+[P1] Epoch 028 | Loss 0.0945 | Val MAE 35.3609 | Acc 11.11%
+   [Debug] Avg Sim: 0.6112 | Avg Delta_L (Per Atom): 9.6635
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9753 (Count: 1822)
+-> [Epoch 29] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1765 unique samples
+   [Exploration] Cumulative Seen: 5508/6074 (90.68%)
+[P1] Epoch 029 | Loss 0.0883 | Val MAE 37.5078 | Acc 13.89%
+   [Debug] Avg Sim: 0.6112 | Avg Delta_L (Per Atom): 9.1155
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9680 (Count: 1822)
+-> [Epoch 30] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1752 unique samples
+   [Exploration] Cumulative Seen: 5514/6074 (90.78%)
+[P1] Epoch 030 | Loss 0.1018 | Val MAE 35.1907 | Acc 13.89%
+   [Debug] Avg Sim: 0.5907 | Avg Delta_L (Per Atom): 9.1361
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9624 (Count: 1822)
+-> [Epoch 31] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1749 unique samples
+   [Exploration] Cumulative Seen: 5523/6074 (90.93%)
+[P1] Epoch 031 | Loss 0.0972 | Val MAE 34.0935 | Acc 11.11%
+   [Debug] Avg Sim: 0.6120 | Avg Delta_L (Per Atom): 10.4546
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9764 (Count: 1822)
+-> [Epoch 32] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1755 unique samples
+   [Exploration] Cumulative Seen: 5526/6074 (90.98%)
+[P1] Epoch 032 | Loss 0.0903 | Val MAE 32.8639 | Acc 22.22%
+   [Debug] Avg Sim: 0.6079 | Avg Delta_L (Per Atom): 9.8116
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9736 (Count: 1823)
+-> [Epoch 33] Weight Audit:
+   Potential Candidates (w>0): 1823/6074 (30.0%)
+   Core Samples (w>0.1):       1823/6074
+   [Exploration] This Epoch Seen: 1759 unique samples
+   [Exploration] Cumulative Seen: 5530/6074 (91.04%)
+[P1] Epoch 033 | Loss 0.0967 | Val MAE 33.9664 | Acc 2.78%
+   [Debug] Avg Sim: 0.6092 | Avg Delta_L (Per Atom): 9.5088
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9723 (Count: 1822)
+-> [Epoch 34] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1773 unique samples
+   [Exploration] Cumulative Seen: 5539/6074 (91.19%)
+[P1] Epoch 034 | Loss 0.0923 | Val MAE 32.9633 | Acc 2.78%
+   [Debug] Avg Sim: 0.6014 | Avg Delta_L (Per Atom): 9.6141
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9714 (Count: 1822)
+-> [Epoch 35] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1761 unique samples
+   [Exploration] Cumulative Seen: 5543/6074 (91.26%)
+[P1] Epoch 035 | Loss 0.0955 | Val MAE 39.2216 | Acc 13.89%
+   [Debug] Avg Sim: 0.6014 | Avg Delta_L (Per Atom): 9.5932
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9727 (Count: 1822)
+-> [Epoch 36] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1762 unique samples
+   [Exploration] Cumulative Seen: 5544/6074 (91.27%)
+[P1] Epoch 036 | Loss 0.0895 | Val MAE 34.8530 | Acc 8.33%
+   [Debug] Avg Sim: 0.6036 | Avg Delta_L (Per Atom): 9.4937
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9699 (Count: 1822)
+-> [Epoch 37] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1757 unique samples
+   [Exploration] Cumulative Seen: 5546/6074 (91.31%)
+[P1] Epoch 037 | Loss 0.0837 | Val MAE 34.3511 | Acc 2.78%
+   [Debug] Avg Sim: 0.6028 | Avg Delta_L (Per Atom): 9.1521
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9674 (Count: 1822)
+-> [Epoch 38] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1744 unique samples
+   [Exploration] Cumulative Seen: 5549/6074 (91.36%)
+[P1] Epoch 038 | Loss 0.0829 | Val MAE 33.9234 | Acc 11.11%
+   [Debug] Avg Sim: 0.6048 | Avg Delta_L (Per Atom): 10.5036
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9745 (Count: 1822)
+-> [Epoch 39] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1767 unique samples
+   [Exploration] Cumulative Seen: 5556/6074 (91.47%)
+[P1] Epoch 039 | Loss 0.0981 | Val MAE 37.4845 | Acc 8.33%
+   [Debug] Avg Sim: 0.6030 | Avg Delta_L (Per Atom): 9.0182
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9662 (Count: 1823)
+-> [Epoch 40] Weight Audit:
+   Potential Candidates (w>0): 1823/6074 (30.0%)
+   Core Samples (w>0.1):       1823/6074
+   [Exploration] This Epoch Seen: 1760 unique samples
+   [Exploration] Cumulative Seen: 5561/6074 (91.55%)
+[P1] Epoch 040 | Loss 0.0882 | Val MAE 35.9193 | Acc 11.11%
+   [Debug] Avg Sim: 0.6094 | Avg Delta_L (Per Atom): 9.8143
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9731 (Count: 1822)
+-> [Epoch 41] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1746 unique samples
+   [Exploration] Cumulative Seen: 5563/6074 (91.59%)
+[P1] Epoch 041 | Loss 0.0885 | Val MAE 34.6310 | Acc 11.11%
+   [Debug] Avg Sim: 0.6089 | Avg Delta_L (Per Atom): 10.4150
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9770 (Count: 1822)
+-> [Epoch 42] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1759 unique samples
+   [Exploration] Cumulative Seen: 5565/6074 (91.62%)
+[P1] Epoch 042 | Loss 0.0812 | Val MAE 38.1143 | Acc 8.33%
+   [Debug] Avg Sim: 0.6002 | Avg Delta_L (Per Atom): 10.0337
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9728 (Count: 1822)
+-> [Epoch 43] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1758 unique samples
+   [Exploration] Cumulative Seen: 5566/6074 (91.64%)
+[P1] Epoch 043 | Loss 0.0891 | Val MAE 35.8520 | Acc 5.56%
+   [Debug] Avg Sim: 0.6127 | Avg Delta_L (Per Atom): 9.6694
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9713 (Count: 1822)
+-> [Epoch 44] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1763 unique samples
+   [Exploration] Cumulative Seen: 5570/6074 (91.70%)
+[P1] Epoch 044 | Loss 0.0809 | Val MAE 37.3563 | Acc 11.11%
+   [Debug] Avg Sim: 0.6069 | Avg Delta_L (Per Atom): 9.7563
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9716 (Count: 1822)
+-> [Epoch 45] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1751 unique samples
+   [Exploration] Cumulative Seen: 5571/6074 (91.72%)
+[P1] Epoch 045 | Loss 0.0861 | Val MAE 37.4131 | Acc 2.78%
+   [Debug] Avg Sim: 0.6011 | Avg Delta_L (Per Atom): 9.8078
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9719 (Count: 1822)
+-> [Epoch 46] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1768 unique samples
+   [Exploration] Cumulative Seen: 5574/6074 (91.77%)
+[P1] Epoch 046 | Loss 0.0821 | Val MAE 39.9375 | Acc 0.00%
+   [Debug] Avg Sim: 0.6017 | Avg Delta_L (Per Atom): 10.4307
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9755 (Count: 1822)
+-> [Epoch 47] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1754 unique samples
+   [Exploration] Cumulative Seen: 5574/6074 (91.77%)
+[P1] Epoch 047 | Loss 0.0922 | Val MAE 34.6482 | Acc 16.67%
+   [Debug] Avg Sim: 0.6049 | Avg Delta_L (Per Atom): 10.3997
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9777 (Count: 1822)
+-> [Epoch 48] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1749 unique samples
+   [Exploration] Cumulative Seen: 5574/6074 (91.77%)
+[P1] Epoch 048 | Loss 0.0840 | Val MAE 37.9918 | Acc 8.33%
+   [Debug] Avg Sim: 0.6055 | Avg Delta_L (Per Atom): 9.3184
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9689 (Count: 1822)
+-> [Epoch 49] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1760 unique samples
+   [Exploration] Cumulative Seen: 5575/6074 (91.78%)
+[P1] Epoch 049 | Loss 0.0820 | Val MAE 38.4156 | Acc 8.33%
+   [Debug] Avg Sim: 0.6018 | Avg Delta_L (Per Atom): 10.2815
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9763 (Count: 1822)
+-> [Epoch 50] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1760 unique samples
+   [Exploration] Cumulative Seen: 5577/6074 (91.82%)
+[P1] Epoch 050 | Loss 0.0816 | Val MAE 38.9787 | Acc 13.89%
+   [Debug] Avg Sim: 0.6061 | Avg Delta_L (Per Atom): 10.4595
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9776 (Count: 1822)
+-> [Epoch 51] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1748 unique samples
+   [Exploration] Cumulative Seen: 5577/6074 (91.82%)
+[P1] Epoch 051 | Loss 0.0810 | Val MAE 35.9421 | Acc 16.67%
+   [Debug] Avg Sim: 0.6054 | Avg Delta_L (Per Atom): 10.4919
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9780 (Count: 1822)
+-> [Epoch 52] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1745 unique samples
+   [Exploration] Cumulative Seen: 5578/6074 (91.83%)
+[P1] Epoch 052 | Loss 0.0755 | Val MAE 36.4383 | Acc 13.89%
+   [Debug] Avg Sim: 0.6104 | Avg Delta_L (Per Atom): 9.6780
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9729 (Count: 1822)
+-> [Epoch 53] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1764 unique samples
+   [Exploration] Cumulative Seen: 5579/6074 (91.85%)
+[P1] Epoch 053 | Loss 0.0767 | Val MAE 34.9880 | Acc 13.89%
+   [Debug] Avg Sim: 0.6070 | Avg Delta_L (Per Atom): 9.9074
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9725 (Count: 1823)
+-> [Epoch 54] Weight Audit:
+   Potential Candidates (w>0): 1823/6074 (30.0%)
+   Core Samples (w>0.1):       1823/6074
+   [Exploration] This Epoch Seen: 1750 unique samples
+   [Exploration] Cumulative Seen: 5580/6074 (91.87%)
+[P1] Epoch 054 | Loss 0.0773 | Val MAE 36.9904 | Acc 8.33%
+   [Debug] Avg Sim: 0.6172 | Avg Delta_L (Per Atom): 10.2358
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9755 (Count: 1822)
+-> [Epoch 55] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1754 unique samples
+   [Exploration] Cumulative Seen: 5583/6074 (91.92%)
+[P1] Epoch 055 | Loss 0.0999 | Val MAE 36.7899 | Acc 16.67%
+   [Debug] Avg Sim: 0.6129 | Avg Delta_L (Per Atom): 9.6097
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9712 (Count: 1823)
+-> [Epoch 56] Weight Audit:
+   Potential Candidates (w>0): 1823/6074 (30.0%)
+   Core Samples (w>0.1):       1823/6074
+   [Exploration] This Epoch Seen: 1765 unique samples
+   [Exploration] Cumulative Seen: 5584/6074 (91.93%)
+[P1] Epoch 056 | Loss 0.0759 | Val MAE 35.7325 | Acc 11.11%
+   [Debug] Avg Sim: 0.6095 | Avg Delta_L (Per Atom): 9.7017
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9715 (Count: 1822)
+-> [Epoch 57] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1752 unique samples
+   [Exploration] Cumulative Seen: 5587/6074 (91.98%)
+[P1] Epoch 057 | Loss 0.0820 | Val MAE 42.4185 | Acc 2.78%
+   [Debug] Avg Sim: 0.5971 | Avg Delta_L (Per Atom): 9.9641
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9719 (Count: 1823)
+-> [Epoch 58] Weight Audit:
+   Potential Candidates (w>0): 1823/6074 (30.0%)
+   Core Samples (w>0.1):       1823/6074
+   [Exploration] This Epoch Seen: 1767 unique samples
+   [Exploration] Cumulative Seen: 5588/6074 (92.00%)
+[P1] Epoch 058 | Loss 0.0803 | Val MAE 36.9299 | Acc 2.78%
+   [Debug] Avg Sim: 0.6127 | Avg Delta_L (Per Atom): 10.7197
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9792 (Count: 1822)
+-> [Epoch 59] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1748 unique samples
+   [Exploration] Cumulative Seen: 5588/6074 (92.00%)
+[P1] Epoch 059 | Loss 0.0760 | Val MAE 39.8531 | Acc 11.11%
+   [Debug] Avg Sim: 0.6099 | Avg Delta_L (Per Atom): 10.2466
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9761 (Count: 1822)
+-> [Epoch 60] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1764 unique samples
+   [Exploration] Cumulative Seen: 5588/6074 (92.00%)
+[P1] Epoch 060 | Loss 0.0814 | Val MAE 38.9919 | Acc 5.56%
+   [Debug] Avg Sim: 0.5973 | Avg Delta_L (Per Atom): 10.3891
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9757 (Count: 1822)
+-> [Epoch 61] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1762 unique samples
+   [Exploration] Cumulative Seen: 5589/6074 (92.02%)
+[P1] Epoch 061 | Loss 0.0741 | Val MAE 35.1237 | Acc 16.67%
+   [Debug] Avg Sim: 0.6085 | Avg Delta_L (Per Atom): 9.8254
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9729 (Count: 1822)
+-> [Epoch 62] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1774 unique samples
+   [Exploration] Cumulative Seen: 5593/6074 (92.08%)
+[P1] Epoch 062 | Loss 0.0715 | Val MAE 36.4276 | Acc 8.33%
+   [Debug] Avg Sim: 0.6189 | Avg Delta_L (Per Atom): 9.8879
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9734 (Count: 1822)
+-> [Epoch 63] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1760 unique samples
+   [Exploration] Cumulative Seen: 5593/6074 (92.08%)
+[P1] Epoch 063 | Loss 0.0776 | Val MAE 35.4384 | Acc 11.11%
+   [Debug] Avg Sim: 0.5997 | Avg Delta_L (Per Atom): 9.6710
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9713 (Count: 1822)
+-> [Epoch 64] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1763 unique samples
+   [Exploration] Cumulative Seen: 5593/6074 (92.08%)
+[P1] Epoch 064 | Loss 0.0686 | Val MAE 34.7515 | Acc 13.89%
+   [Debug] Avg Sim: 0.5995 | Avg Delta_L (Per Atom): 10.3983
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9753 (Count: 1822)
+-> [Epoch 65] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1757 unique samples
+   [Exploration] Cumulative Seen: 5596/6074 (92.13%)
+[P1] Epoch 065 | Loss 0.0758 | Val MAE 37.3022 | Acc 16.67%
+   [Debug] Avg Sim: 0.6065 | Avg Delta_L (Per Atom): 10.8424
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9750 (Count: 1822)
+-> [Epoch 66] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1773 unique samples
+   [Exploration] Cumulative Seen: 5597/6074 (92.15%)
+[P1] Epoch 066 | Loss 0.0755 | Val MAE 33.6801 | Acc 11.11%
+   [Debug] Avg Sim: 0.5992 | Avg Delta_L (Per Atom): 10.8890
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9768 (Count: 1822)
+-> [Epoch 67] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1752 unique samples
+   [Exploration] Cumulative Seen: 5602/6074 (92.23%)
+[P1] Epoch 067 | Loss 0.0889 | Val MAE 40.8724 | Acc 8.33%
+   [Debug] Avg Sim: 0.6061 | Avg Delta_L (Per Atom): 9.7948
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9712 (Count: 1822)
+-> [Epoch 68] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1765 unique samples
+   [Exploration] Cumulative Seen: 5607/6074 (92.31%)
+[P1] Epoch 068 | Loss 0.0757 | Val MAE 37.5740 | Acc 8.33%
+   [Debug] Avg Sim: 0.5895 | Avg Delta_L (Per Atom): 10.5511
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9731 (Count: 1822)
+-> [Epoch 69] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1759 unique samples
+   [Exploration] Cumulative Seen: 5608/6074 (92.33%)
+[P1] Epoch 069 | Loss 0.0806 | Val MAE 38.9018 | Acc 8.33%
+   [Debug] Avg Sim: 0.6094 | Avg Delta_L (Per Atom): 10.3546
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9762 (Count: 1822)
+-> [Epoch 70] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1759 unique samples
+   [Exploration] Cumulative Seen: 5611/6074 (92.38%)
+[P1] Epoch 070 | Loss 0.0673 | Val MAE 35.2501 | Acc 11.11%
+   [Debug] Avg Sim: 0.5976 | Avg Delta_L (Per Atom): 10.0685
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9716 (Count: 1823)
+-> [Epoch 71] Weight Audit:
+   Potential Candidates (w>0): 1823/6074 (30.0%)
+   Core Samples (w>0.1):       1823/6074
+   [Exploration] This Epoch Seen: 1749 unique samples
+   [Exploration] Cumulative Seen: 5616/6074 (92.46%)
+[P1] Epoch 071 | Loss 0.0692 | Val MAE 40.2385 | Acc 2.78%
+   [Debug] Avg Sim: 0.6034 | Avg Delta_L (Per Atom): 10.0332
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9712 (Count: 1822)
+-> [Epoch 72] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1756 unique samples
+   [Exploration] Cumulative Seen: 5619/6074 (92.51%)
+[P1] Epoch 072 | Loss 0.0693 | Val MAE 33.5970 | Acc 8.33%
+   [Debug] Avg Sim: 0.6074 | Avg Delta_L (Per Atom): 10.3681
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9746 (Count: 1822)
+-> [Epoch 73] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1761 unique samples
+   [Exploration] Cumulative Seen: 5619/6074 (92.51%)
+[P1] Epoch 073 | Loss 0.0742 | Val MAE 39.0486 | Acc 5.56%
+   [Debug] Avg Sim: 0.6131 | Avg Delta_L (Per Atom): 10.9598
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9782 (Count: 1822)
+-> [Epoch 74] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1746 unique samples
+   [Exploration] Cumulative Seen: 5622/6074 (92.56%)
+[P1] Epoch 074 | Loss 0.0717 | Val MAE 39.2381 | Acc 2.78%
+   [Debug] Avg Sim: 0.6066 | Avg Delta_L (Per Atom): 10.0239
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9744 (Count: 1822)
+-> [Epoch 75] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1753 unique samples
+   [Exploration] Cumulative Seen: 5624/6074 (92.59%)
+[P1] Epoch 075 | Loss 0.0910 | Val MAE 36.8480 | Acc 11.11%
+   [Debug] Avg Sim: 0.5977 | Avg Delta_L (Per Atom): 10.3995
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9750 (Count: 1822)
+-> [Epoch 76] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1753 unique samples
+   [Exploration] Cumulative Seen: 5624/6074 (92.59%)
+[P1] Epoch 076 | Loss 0.0842 | Val MAE 38.9161 | Acc 11.11%
+   [Debug] Avg Sim: 0.6017 | Avg Delta_L (Per Atom): 10.3469
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9732 (Count: 1822)
+-> [Epoch 77] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1749 unique samples
+   [Exploration] Cumulative Seen: 5625/6074 (92.61%)
+[P1] Epoch 077 | Loss 0.0707 | Val MAE 38.4848 | Acc 11.11%
+   [Debug] Avg Sim: 0.6002 | Avg Delta_L (Per Atom): 10.0365
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9731 (Count: 1822)
+-> [Epoch 78] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1764 unique samples
+   [Exploration] Cumulative Seen: 5625/6074 (92.61%)
+[P1] Epoch 078 | Loss 0.0685 | Val MAE 34.4593 | Acc 8.33%
+   [Debug] Avg Sim: 0.6046 | Avg Delta_L (Per Atom): 10.2969
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9749 (Count: 1822)
+-> [Epoch 79] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1761 unique samples
+   [Exploration] Cumulative Seen: 5626/6074 (92.62%)
+[P1] Epoch 079 | Loss 0.0667 | Val MAE 35.0410 | Acc 11.11%
+   [Debug] Avg Sim: 0.6056 | Avg Delta_L (Per Atom): 10.1036
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9725 (Count: 1822)
+-> [Epoch 80] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1758 unique samples
+   [Exploration] Cumulative Seen: 5629/6074 (92.67%)
+[P1] Epoch 080 | Loss 0.0637 | Val MAE 36.8099 | Acc 13.89%
+   [Debug] Avg Sim: 0.5987 | Avg Delta_L (Per Atom): 10.0926
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9732 (Count: 1822)
+-> [Epoch 81] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1751 unique samples
+   [Exploration] Cumulative Seen: 5630/6074 (92.69%)
+[P1] Epoch 081 | Loss 0.0665 | Val MAE 43.5237 | Acc 8.33%
+   [Debug] Avg Sim: 0.6031 | Avg Delta_L (Per Atom): 9.8285
+   [Debug] Range Filter dropped 213 molecules.
+   [Debug] Active Weights Mean: 0.9706 (Count: 1822)
+-> [Epoch 82] Weight Audit:
+   Potential Candidates (w>0): 1822/6074 (30.0%)
+   Core Samples (w>0.1):       1822/6074
+   [Exploration] This Epoch Seen: 1756 unique samples
+   [Exploration] Cumulative Seen: 5635/6074 (92.77%)
+[P1] Epoch 082 | Loss 0.0690 | Val MAE 41.7468 | Acc 22.22%
+Phase 1 Early stopping.
+------------------------------------------------------------
+[phase1 RESULT] Performance on Test Set:
+   MAE:      56.4122 kcal/mol
+   RMSE:     70.6177 kcal/mol
+   MAPE:     258.58 %
+   Acc(10%): 2.78 %  <-- Key Metric
+------------------------------------------------------------
+
+==================================================
+PHASE 2: Target Fine-tuning
+   Strategy: Freeze GNN first -> Align Head -> Unfreeze All
+==================================================
+>>> Stage 2.1: Aligning Prediction Head (Backbone Frozen)...
+[P2-Head] Epoch 10 | Val MAE 36.3530 | Acc 8.33%
+[P2-Head] Epoch 20 | Val MAE 33.1266 | Acc 2.78%
+[P2-Head] Epoch 30 | Val MAE 35.6133 | Acc 2.78%
+[P2-Head] Epoch 40 | Val MAE 36.9211 | Acc 5.56%
+[P2-Head] Epoch 50 | Val MAE 38.1302 | Acc 2.78%
+[P2-Head] Epoch 60 | Val MAE 35.8404 | Acc 5.56%
+[P2-Head] Epoch 70 | Val MAE 36.8556 | Acc 2.78%
+[P2-Head] Early stopping at epoch 72 (Best MAE: 32.8539)
+-> Loading best aligned head for full fine-tuning...
+
+>>> Stage 2.2: Fine-tuning Whole Model...
+[P2-Full] Epoch 010 | Loss 0.6975 | Val MAE 34.3875 | Acc 0.00%
+[P2-Full] Epoch 020 | Loss 0.6485 | Val MAE 33.5886 | Acc 2.78%
+[P2-Full] Epoch 030 | Loss 0.5956 | Val MAE 34.7267 | Acc 2.78%
+[P2-Full] Epoch 040 | Loss 0.5840 | Val MAE 33.2734 | Acc 0.00%
+[P2-Full] Epoch 050 | Loss 0.5490 | Val MAE 33.3612 | Acc 0.00%
+Phase 2 Early stopping.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[FINAL RESULT] Performance on Test Set:
+   MAE:      30.5106 kcal/mol
+   RMSE:     40.3652 kcal/mol
+   MAPE:     99.13 %
+   Acc(10%): 11.11 %  <-- Key Metric
+------------------------------------------------------------

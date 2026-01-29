@@ -1,0 +1,95 @@
+--- Baseline MLP Pipeline (Method: EL2N-2) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [EL2N-2] ===
+   Target Ratio: 80.0%
+
+[Sampler] Running EL2N-2 | Target: 6326/7908 (80.0%)
+Scanning Source (EL2N-2):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (EL2N-2):  12%|█▎        | 1/8 [00:00<00:00,  8.05it/s]                                                                       -> Selected 6326 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.7278
+[P1] Ep 40: Loss 0.5776
+[P1] Ep 60: Loss 0.4986
+[P1] Ep 80: Loss 0.4372
+[P1] Ep 100: Loss 0.4000
+[P1] Ep 120: Loss 0.3779
+[P1] Ep 140: Loss 0.3498
+[P1] Ep 160: Loss 0.3227
+[P1] Ep 180: Loss 0.3013
+[P1] Ep 200: Loss 0.2791
+[P1] Ep 220: Loss 0.2671
+[P1] Ep 240: Loss 0.2561
+[P1] Ep 260: Loss 0.2480
+[P1] Ep 280: Loss 0.2315
+[P1] Ep 300: Loss 0.2193
+[P1] Ep 320: Loss 0.2152
+[P1] Ep 340: Loss 0.2043
+[P1] Ep 360: Loss 0.2004
+[P1] Ep 380: Loss 0.1952
+[P1] Ep 400: Loss 0.1800
+[P1] Ep 420: Loss 0.1767
+[P1] Ep 440: Loss 0.1773
+[P1] Ep 460: Loss 0.1700
+[P1] Ep 480: Loss 0.1568
+[P1] Ep 500: Loss 0.1585
+[P1] Ep 520: Loss 0.1500
+[P1] Ep 540: Loss 0.1466
+[P1] Ep 560: Loss 0.1422
+[P1] Ep 580: Loss 0.1386
+[P1] Ep 600: Loss 0.1380
+[P1] Ep 620: Loss 0.1301
+[P1] Ep 640: Loss 0.1273
+[P1] Ep 660: Loss 0.1224
+[P1] Ep 680: Loss 0.1194
+[P1] Ep 700: Loss 0.1176
+[P1] Ep 720: Loss 0.1151
+[P1] Ep 740: Loss 0.1115
+[P1] Ep 760: Loss 0.1078
+[P1] Ep 780: Loss 0.1026
+[P1] Ep 800: Loss 0.1063
+[P1] Ep 820: Loss 0.1035
+[P1] Ep 840: Loss 0.0996
+[P1] Ep 860: Loss 0.0963
+[P1] Ep 880: Loss 0.0990
+[P1] Ep 900: Loss 0.0956
+[P1] Ep 920: Loss 0.0908
+[P1] Ep 940: Loss 0.0884
+[P1] Ep 960: Loss 0.0893
+[P1] Ep 980: Loss 0.0881
+[P1] Ep 1000: Loss 0.0865
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8574
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.7261
+[P2.2] Ep 40 MAE 0.7353
+[P2.2] Ep 60 MAE 0.7185
+[P2.2] Ep 80 MAE 0.7209
+[P2.2] Ep 100 MAE 0.7213
+[P2.2] Ep 120 MAE 0.7230
+[P2.2] Ep 140 MAE 0.7216
+[P2.2] Ep 160 MAE 0.7107
+[P2.2] Ep 180 MAE 0.7078
+[P2.2] Ep 200 MAE 0.7043
+[P2.2] Ep 220 MAE 0.7075
+[P2.2] Ep 240 MAE 0.7189
+[P2.2] Ep 260 MAE 0.7120
+[P2.2] Ep 280 MAE 0.7073
+[P2.2] Ep 300 MAE 0.7138
+[P2.2] Ep 320 MAE 0.7123
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: EL2N-2 (Ratio=0.8)
+MAE: 0.6600
+RMSE: 0.8534
+MAPE: 43.5227
+Acc_10: 22.7273
+Acc_20: 44.3182
+------------------------------------------------------------

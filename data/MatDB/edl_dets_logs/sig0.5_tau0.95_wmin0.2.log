@@ -1,0 +1,127 @@
+-> Loading CSVs...
+-> Selected 128 features.
+-> Target Stats: Mean=2.7508, Std=1.5292
+Source Data: 7908 | Target Train: 632
+Initializing ResNet DETS Model (Dim=128)...
+-> Applying Sparsity Init...
+
+=== PHASE 1: Source Pre-training (Soft DETS) ===
+-> Extracting Prototypes...
+[P1] Ep 20: Loss 0.6730 | Val MAE 1.3490
+[P1] Ep 40: Loss 0.6037 | Val MAE 1.3028
+[P1] Ep 60: Loss 0.5626 | Val MAE 1.3116
+[P1] Ep 80: Loss 0.5233 | Val MAE 1.2388
+[P1] Ep 100: Loss 0.4790 | Val MAE 1.2304
+[P1] Ep 120: Loss 0.4504 | Val MAE 1.2023
+[P1] Ep 140: Loss 0.4132 | Val MAE 1.2783
+[P1] Ep 160: Loss 0.4133 | Val MAE 1.1992
+[P1] Ep 180: Loss 0.3750 | Val MAE 1.1800
+[P1] Ep 200: Loss 0.3570 | Val MAE 1.2001
+[P1] Ep 220: Loss 0.3289 | Val MAE 1.2821
+[P1] Ep 240: Loss 0.3052 | Val MAE 1.2277
+[P1] Ep 260: Loss 0.2956 | Val MAE 1.2156
+[P1] Ep 280: Loss 0.2622 | Val MAE 1.2577
+[P1] Ep 300: Loss 0.2356 | Val MAE 1.2845
+[P1] Ep 320: Loss 0.2508 | Val MAE 1.2189
+[P1] Ep 340: Loss 0.2455 | Val MAE 1.2214
+[P1] Ep 360: Loss 0.2217 | Val MAE 1.2354
+[P1] Ep 380: Loss 0.1959 | Val MAE 1.2171
+[P1] Ep 400: Loss 0.1773 | Val MAE 1.2016
+[P1] Ep 420: Loss 0.1705 | Val MAE 1.2540
+[P1] Ep 440: Loss 0.1349 | Val MAE 1.2120
+[P1] Ep 460: Loss 0.1252 | Val MAE 1.2841
+[P1] Ep 480: Loss 0.1292 | Val MAE 1.2916
+[P1] Ep 500: Loss 0.1168 | Val MAE 1.2478
+[P1] Ep 520: Loss 0.0982 | Val MAE 1.2215
+[P1] Ep 540: Loss 0.1011 | Val MAE 1.2218
+[P1] Ep 560: Loss 0.0857 | Val MAE 1.2565
+[P1] Ep 580: Loss 0.0874 | Val MAE 1.2624
+[P1] Ep 600: Loss 0.0826 | Val MAE 1.2420
+[P1] Ep 620: Loss 0.0511 | Val MAE 1.2263
+[P1] Ep 640: Loss 0.0196 | Val MAE 1.2338
+[P1] Ep 660: Loss 0.0399 | Val MAE 1.2551
+[P1] Ep 680: Loss 0.0164 | Val MAE 1.2546
+[P1] Ep 700: Loss 0.0328 | Val MAE 1.2632
+[P1] Ep 720: Loss 0.0042 | Val MAE 1.1895
+[P1] Ep 740: Loss -0.0003 | Val MAE 1.2578
+[P1] Ep 760: Loss -0.0199 | Val MAE 1.2241
+[P1] Ep 780: Loss -0.0115 | Val MAE 1.2201
+[P1] Ep 800: Loss -0.0237 | Val MAE 1.2392
+[P1] Ep 820: Loss -0.0309 | Val MAE 1.2236
+[P1] Ep 840: Loss -0.0384 | Val MAE 1.2614
+[P1] Ep 860: Loss -0.0487 | Val MAE 1.2617
+[P1] Ep 880: Loss -0.0438 | Val MAE 1.2626
+[P1] Ep 900: Loss -0.0621 | Val MAE 1.2812
+[P1] Ep 920: Loss -0.0689 | Val MAE 1.2208
+[P1] Ep 940: Loss -0.0531 | Val MAE 1.2348
+[P1] Ep 960: Loss -0.0904 | Val MAE 1.2337
+[P1] Ep 980: Loss -0.1056 | Val MAE 1.1739
+[P1] Ep 1000: Loss -0.0902 | Val MAE 1.2805
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 20 MAE 0.7078
+[P2.1] Ep 40 MAE 0.6988
+[P2.1] Ep 60 MAE 0.7107
+[P2.1] Ep 80 MAE 0.7097
+[P2.1] Ep 100 MAE 0.7089
+[P2.1] Ep 120 MAE 0.6938
+[P2.1] Ep 140 MAE 0.6949
+[P2.1] Ep 160 MAE 0.6914
+[P2.1] Ep 180 MAE 0.6838
+[P2.1] Ep 200 MAE 0.6857
+[P2.1] Ep 220 MAE 0.6867
+[P2.1] Ep 240 MAE 0.6674
+[P2.1] Ep 260 MAE 0.6626
+[P2.1] Ep 280 MAE 0.6765
+[P2.1] Ep 300 MAE 0.6667
+[P2.1] Ep 320 MAE 0.6587
+[P2.1] Ep 340 MAE 0.6549
+[P2.1] Ep 360 MAE 0.6646
+[P2.1] Ep 380 MAE 0.6288
+[P2.1] Ep 400 MAE 0.6484
+[P2.1] Ep 420 MAE 0.6422
+[P2.1] Ep 440 MAE 0.6465
+[P2.1] Ep 460 MAE 0.6464
+[P2.1] Ep 480 MAE 0.6452
+[P2.1] Ep 500 MAE 0.6470
+[P2.1] Ep 520 MAE 0.6303
+[P2.1] Ep 540 MAE 0.6453
+[P2.1] Ep 560 MAE 0.6239
+[P2.1] Ep 580 MAE 0.6382
+[P2.1] Ep 600 MAE 0.6203
+[P2.1] Ep 620 MAE 0.6131
+[P2.1] Ep 640 MAE 0.6268
+[P2.1] Ep 660 MAE 0.6156
+[P2.1] Ep 680 MAE 0.6117
+[P2.1] Ep 700 MAE 0.6140
+[P2.1] Ep 720 MAE 0.6184
+[P2.1] Ep 740 MAE 0.6199
+[P2.1] Ep 760 MAE 0.6192
+[P2.1] Ep 780 MAE 0.6144
+[P2.1] Ep 800 MAE 0.6103
+[P2.1] Ep 820 MAE 0.6246
+[P2.1] Ep 840 MAE 0.6182
+[P2.1] Ep 860 MAE 0.6255
+[P2.1] Ep 880 MAE 0.6132
+[P2.1] Ep 900 MAE 0.6120
+[P2.1] Ep 920 MAE 0.6298
+[P2.1] Ep 940 MAE 0.6132
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.5695
+[P2.2] Ep 40 MAE 0.5701
+[P2.2] Ep 60 MAE 0.5618
+[P2.2] Ep 80 MAE 0.5649
+[P2.2] Ep 100 MAE 0.5594
+[P2.2] Ep 120 MAE 0.5544
+[P2.2] Ep 140 MAE 0.5515
+[P2.2] Ep 160 MAE 0.5543
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+MAE: 0.4983
+RMSE: 0.6493
+MAPE: 35.9033
+Acc_10: 32.3864
+Acc_20: 57.3864
+------------------------------------------------------------

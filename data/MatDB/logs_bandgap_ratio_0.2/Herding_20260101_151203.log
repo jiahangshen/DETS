@@ -1,0 +1,78 @@
+--- Baseline MLP Pipeline (Method: Herding) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [Herding] ===
+   Target Ratio: 20.0%
+
+[Sampler] Running Herding | Target: 1581/7908 (20.0%)
+Scanning Source (Herding):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (Herding):  12%|█▎        | 1/8 [00:00<00:01,  5.89it/s]                                                                        -> Selected 1581 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 1.1316
+[P1] Ep 40: Loss 0.8905
+[P1] Ep 60: Loss 0.7394
+[P1] Ep 80: Loss 0.6868
+[P1] Ep 100: Loss 0.6363
+[P1] Ep 120: Loss 0.5360
+[P1] Ep 140: Loss 0.5259
+[P1] Ep 160: Loss 0.4680
+[P1] Ep 180: Loss 0.4639
+[P1] Ep 200: Loss 0.4213
+[P1] Ep 220: Loss 0.4124
+[P1] Ep 240: Loss 0.3776
+[P1] Ep 260: Loss 0.3686
+[P1] Ep 280: Loss 0.3394
+[P1] Ep 300: Loss 0.3292
+[P1] Ep 320: Loss 0.3245
+[P1] Ep 340: Loss 0.2849
+[P1] Ep 360: Loss 0.2901
+[P1] Ep 380: Loss 0.2699
+[P1] Ep 400: Loss 0.2530
+[P1] Ep 420: Loss 0.2324
+[P1] Ep 440: Loss 0.2445
+[P1] Ep 460: Loss 0.2248
+[P1] Ep 480: Loss 0.2064
+[P1] Ep 500: Loss 0.2094
+[P1] Ep 520: Loss 0.2048
+[P1] Ep 540: Loss 0.2095
+[P1] Ep 560: Loss 0.1881
+[P1] Ep 580: Loss 0.1897
+[P1] Ep 600: Loss 0.1711
+[P1] Ep 620: Loss 0.1801
+[P1] Ep 640: Loss 0.1715
+[P1] Ep 660: Loss 0.1620
+[P1] Ep 680: Loss 0.1718
+[P1] Ep 700: Loss 0.1416
+[P1] Ep 720: Loss 0.1578
+[P1] Ep 740: Loss 0.1525
+[P1] Ep 760: Loss 0.1343
+[P1] Ep 780: Loss 0.1397
+[P1] Ep 800: Loss 0.1327
+[P1] Ep 820: Loss 0.1343
+[P1] Ep 840: Loss 0.1298
+[P1] Ep 860: Loss 0.1165
+[P1] Ep 880: Loss 0.1205
+[P1] Ep 900: Loss 0.1135
+Phase 1 Early Stopping
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8015
+[P2.1] Ep 100 MAE 0.8108
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.6638
+[P2.2] Ep 40 MAE 0.6649
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: Herding (Ratio=0.2)
+MAE: 0.6099
+RMSE: 0.7765
+MAPE: 43.5244
+Acc_10: 25.0000
+Acc_20: 49.4318
+------------------------------------------------------------

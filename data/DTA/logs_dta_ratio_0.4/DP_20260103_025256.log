@@ -1,0 +1,282 @@
+--- DTA Baseline: DP (Ratio: 0.4) ---
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running DP | Target: 9982/24956 (40.0%)
+Scanning Source (DP):   0%|          | 0/25 [00:00<?, ?it/s]/root/miniconda3/envs/subset/lib/python3.9/site-packages/torch/nn/modules/transformer.py:508: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /pytorch/aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(
+Scanning Source (DP):   4%|▍         | 1/25 [00:03<01:24,  3.51s/it]Scanning Source (DP):   8%|▊         | 2/25 [00:03<00:36,  1.57s/it]Scanning Source (DP):  12%|█▏        | 3/25 [00:03<00:21,  1.03it/s]Scanning Source (DP):  16%|█▌        | 4/25 [00:04<00:14,  1.49it/s]Scanning Source (DP):  20%|██        | 5/25 [00:05<00:19,  1.02it/s]Scanning Source (DP):  24%|██▍       | 6/25 [00:05<00:13,  1.40it/s]Scanning Source (DP):  28%|██▊       | 7/25 [00:06<00:09,  1.81it/s]Scanning Source (DP):  32%|███▏      | 8/25 [00:06<00:07,  2.20it/s]Scanning Source (DP):  36%|███▌      | 9/25 [00:07<00:12,  1.25it/s]Scanning Source (DP):  40%|████      | 10/25 [00:08<00:09,  1.60it/s]Scanning Source (DP):  44%|████▍     | 11/25 [00:08<00:07,  2.00it/s]Scanning Source (DP):  48%|████▊     | 12/25 [00:08<00:05,  2.41it/s]Scanning Source (DP):  52%|█████▏    | 13/25 [00:10<00:08,  1.40it/s]Scanning Source (DP):  56%|█████▌    | 14/25 [00:10<00:06,  1.77it/s]Scanning Source (DP):  60%|██████    | 15/25 [00:10<00:04,  2.13it/s]Scanning Source (DP):  64%|██████▍   | 16/25 [00:10<00:03,  2.54it/s]Scanning Source (DP):  68%|██████▊   | 17/25 [00:12<00:06,  1.27it/s]Scanning Source (DP):  72%|███████▏  | 18/25 [00:12<00:04,  1.62it/s]Scanning Source (DP):  76%|███████▌  | 19/25 [00:12<00:02,  2.01it/s]Scanning Source (DP):  80%|████████  | 20/25 [00:13<00:02,  2.39it/s]Scanning Source (DP):  84%|████████▍ | 21/25 [00:14<00:03,  1.22it/s]Scanning Source (DP):  88%|████████▊ | 22/25 [00:15<00:01,  1.57it/s]Scanning Source (DP):  92%|█████████▏| 23/25 [00:15<00:01,  1.97it/s]Scanning Source (DP):  96%|█████████▌| 24/25 [00:15<00:00,  2.38it/s]                                                                     -> Source reduced: 24956 -> 9982
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 1: Loss 2.4722 | Val MAE 1.7110
+[P1] Ep 2: Loss 1.2372 | Val MAE 1.6133
+[P1] Ep 3: Loss 1.0657 | Val MAE 1.7901
+[P1] Ep 4: Loss 0.9793 | Val MAE 1.7106
+[P1] Ep 5: Loss 0.9367 | Val MAE 1.6825
+[P1] Ep 6: Loss 0.9242 | Val MAE 1.7238
+[P1] Ep 7: Loss 0.8842 | Val MAE 1.7005
+[P1] Ep 8: Loss 0.8845 | Val MAE 1.6831
+[P1] Ep 9: Loss 0.8573 | Val MAE 1.7846
+[P1] Ep 10: Loss 0.8596 | Val MAE 1.6964
+[P1] Ep 11: Loss 0.8298 | Val MAE 1.6758
+[P1] Ep 12: Loss 0.8201 | Val MAE 1.6647
+[P1] Ep 13: Loss 0.7929 | Val MAE 1.6495
+[P1] Ep 14: Loss 0.7974 | Val MAE 1.7643
+[P1] Ep 15: Loss 0.7736 | Val MAE 1.6668
+[P1] Ep 16: Loss 0.7496 | Val MAE 1.7179
+[P1] Ep 17: Loss 0.7546 | Val MAE 1.7029
+[P1] Ep 18: Loss 0.7466 | Val MAE 1.7308
+[P1] Ep 19: Loss 0.7473 | Val MAE 1.7080
+[P1] Ep 20: Loss 0.7338 | Val MAE 1.6953
+[P1] Ep 21: Loss 0.7237 | Val MAE 1.6700
+[P1] Ep 22: Loss 0.7179 | Val MAE 1.6556
+[P1] Ep 23: Loss 0.7096 | Val MAE 1.6002
+[P1] Ep 24: Loss 0.7140 | Val MAE 1.7078
+[P1] Ep 25: Loss 0.7089 | Val MAE 1.7979
+[P1] Ep 26: Loss 0.7162 | Val MAE 1.6816
+[P1] Ep 27: Loss 0.7243 | Val MAE 1.6912
+[P1] Ep 28: Loss 0.7036 | Val MAE 1.7968
+[P1] Ep 29: Loss 0.7051 | Val MAE 1.6758
+[P1] Ep 30: Loss 0.6774 | Val MAE 1.6838
+[P1] Ep 31: Loss 0.6811 | Val MAE 1.7255
+[P1] Ep 32: Loss 0.6747 | Val MAE 1.6675
+[P1] Ep 33: Loss 0.6829 | Val MAE 1.6930
+[P1] Ep 34: Loss 0.6779 | Val MAE 1.7198
+[P1] Ep 35: Loss 0.6891 | Val MAE 1.6551
+[P1] Ep 36: Loss 0.6711 | Val MAE 1.6964
+[P1] Ep 37: Loss 0.6537 | Val MAE 1.7340
+[P1] Ep 38: Loss 0.6550 | Val MAE 1.6995
+[P1] Ep 39: Loss 0.6673 | Val MAE 1.7861
+[P1] Ep 40: Loss 0.6542 | Val MAE 1.7165
+[P1] Ep 41: Loss 0.6545 | Val MAE 1.7381
+[P1] Ep 42: Loss 0.6406 | Val MAE 1.7284
+[P1] Ep 43: Loss 0.6436 | Val MAE 1.7600
+[P1] Ep 44: Loss 0.6378 | Val MAE 1.7453
+[P1] Ep 45: Loss 0.6336 | Val MAE 1.7251
+[P1] Ep 46: Loss 0.6453 | Val MAE 1.7620
+[P1] Ep 47: Loss 0.6350 | Val MAE 1.6591
+[P1] Ep 48: Loss 0.6338 | Val MAE 1.7111
+[P1] Ep 49: Loss 0.6222 | Val MAE 1.6639
+[P1] Ep 50: Loss 0.6440 | Val MAE 1.6806
+[P1] Ep 51: Loss 0.6093 | Val MAE 1.7624
+[P1] Ep 52: Loss 0.6138 | Val MAE 1.6839
+[P1] Ep 53: Loss 0.6146 | Val MAE 1.6591
+[P1] Ep 54: Loss 0.6128 | Val MAE 1.6648
+[P1] Ep 55: Loss 0.6132 | Val MAE 1.7679
+[P1] Ep 56: Loss 0.6222 | Val MAE 1.7316
+[P1] Ep 57: Loss 0.5960 | Val MAE 1.6910
+[P1] Ep 58: Loss 0.6010 | Val MAE 1.6991
+[P1] Ep 59: Loss 0.5931 | Val MAE 1.7010
+[P1] Ep 60: Loss 0.6030 | Val MAE 1.7422
+[P1] Ep 61: Loss 0.5850 | Val MAE 1.7374
+[P1] Ep 62: Loss 0.5945 | Val MAE 1.8143
+[P1] Ep 63: Loss 0.5774 | Val MAE 1.7405
+[P1] Ep 64: Loss 0.5738 | Val MAE 1.7468
+[P1] Ep 65: Loss 0.5739 | Val MAE 1.8012
+[P1] Ep 66: Loss 0.5789 | Val MAE 1.7514
+[P1] Ep 67: Loss 0.5538 | Val MAE 1.7660
+[P1] Ep 68: Loss 0.5572 | Val MAE 1.8009
+[P1] Ep 69: Loss 0.5712 | Val MAE 1.6873
+[P1] Ep 70: Loss 0.5627 | Val MAE 1.6970
+[P1] Ep 71: Loss 0.5529 | Val MAE 1.7451
+[P1] Ep 72: Loss 0.5454 | Val MAE 1.7256
+[P1] Ep 73: Loss 0.5349 | Val MAE 1.7229
+[P1] Ep 74: Loss 0.5429 | Val MAE 1.6998
+[P1] Ep 75: Loss 0.5422 | Val MAE 1.7685
+[P1] Ep 76: Loss 0.5304 | Val MAE 1.7204
+[P1] Ep 77: Loss 0.5342 | Val MAE 1.7464
+[P1] Ep 78: Loss 0.5233 | Val MAE 1.7387
+[P1] Ep 79: Loss 0.5195 | Val MAE 1.7661
+[P1] Ep 80: Loss 0.5193 | Val MAE 1.6486
+[P1] Ep 81: Loss 0.5161 | Val MAE 1.6187
+[P1] Ep 82: Loss 0.5077 | Val MAE 1.7111
+[P1] Ep 83: Loss 0.5005 | Val MAE 1.6442
+[P1] Ep 84: Loss 0.5040 | Val MAE 1.5732
+[P1] Ep 85: Loss 0.5030 | Val MAE 1.6295
+[P1] Ep 86: Loss 0.4993 | Val MAE 1.6372
+[P1] Ep 87: Loss 0.4930 | Val MAE 1.6346
+[P1] Ep 88: Loss 0.5036 | Val MAE 1.6207
+[P1] Ep 89: Loss 0.4967 | Val MAE 1.7019
+[P1] Ep 90: Loss 0.4956 | Val MAE 1.6402
+[P1] Ep 91: Loss 0.4942 | Val MAE 1.7249
+[P1] Ep 92: Loss 0.4915 | Val MAE 1.7493
+[P1] Ep 93: Loss 0.4831 | Val MAE 1.6348
+[P1] Ep 94: Loss 0.4669 | Val MAE 1.6050
+[P1] Ep 95: Loss 0.4709 | Val MAE 1.6871
+[P1] Ep 96: Loss 0.4801 | Val MAE 1.6263
+[P1] Ep 97: Loss 0.4753 | Val MAE 1.6913
+[P1] Ep 98: Loss 0.4646 | Val MAE 1.7277
+[P1] Ep 99: Loss 0.4618 | Val MAE 1.6597
+[P1] Ep 100: Loss 0.4507 | Val MAE 1.6693
+[P1] Ep 101: Loss 0.4545 | Val MAE 1.6739
+[P1] Ep 102: Loss 0.4510 | Val MAE 1.7387
+[P1] Ep 103: Loss 0.4533 | Val MAE 1.6863
+[P1] Ep 104: Loss 0.4564 | Val MAE 1.6861
+[P1] Ep 105: Loss 0.4522 | Val MAE 1.7141
+[P1] Ep 106: Loss 0.4567 | Val MAE 1.7226
+[P1] Ep 107: Loss 0.4582 | Val MAE 1.6595
+[P1] Ep 108: Loss 0.4422 | Val MAE 1.6842
+[P1] Ep 109: Loss 0.4565 | Val MAE 1.7313
+[P1] Ep 110: Loss 0.4327 | Val MAE 1.6715
+[P1] Ep 111: Loss 0.4412 | Val MAE 1.7839
+[P1] Ep 112: Loss 0.4351 | Val MAE 1.7555
+[P1] Ep 113: Loss 0.4226 | Val MAE 1.7163
+[P1] Ep 114: Loss 0.4358 | Val MAE 1.6896
+[P1] Ep 115: Loss 0.4365 | Val MAE 1.6612
+[P1] Ep 116: Loss 0.4284 | Val MAE 1.6450
+[P1] Ep 117: Loss 0.4189 | Val MAE 1.7328
+[P1] Ep 118: Loss 0.4233 | Val MAE 1.6268
+[P1] Ep 119: Loss 0.4261 | Val MAE 1.6879
+[P1] Ep 120: Loss 0.4302 | Val MAE 1.6149
+[P1] Ep 121: Loss 0.4059 | Val MAE 1.6664
+[P1] Ep 122: Loss 0.4118 | Val MAE 1.6609
+[P1] Ep 123: Loss 0.4148 | Val MAE 1.7457
+[P1] Ep 124: Loss 0.4067 | Val MAE 1.6748
+[P1] Ep 125: Loss 0.3986 | Val MAE 1.7112
+[P1] Ep 126: Loss 0.4076 | Val MAE 1.7441
+[P1] Ep 127: Loss 0.4059 | Val MAE 1.6950
+[P1] Ep 128: Loss 0.4026 | Val MAE 1.6625
+[P1] Ep 129: Loss 0.4036 | Val MAE 1.7096
+[P1] Ep 130: Loss 0.3955 | Val MAE 1.6690
+[P1] Ep 131: Loss 0.3991 | Val MAE 1.6050
+[P1] Ep 132: Loss 0.3901 | Val MAE 1.6030
+[P1] Ep 133: Loss 0.3999 | Val MAE 1.6518
+[P1] Ep 134: Loss 0.3819 | Val MAE 1.5659
+[P1] Ep 135: Loss 0.3814 | Val MAE 1.7240
+[P1] Ep 136: Loss 0.3841 | Val MAE 1.6768
+[P1] Ep 137: Loss 0.3775 | Val MAE 1.5664
+[P1] Ep 138: Loss 0.3839 | Val MAE 1.5748
+[P1] Ep 139: Loss 0.3820 | Val MAE 1.6799
+[P1] Ep 140: Loss 0.3773 | Val MAE 1.7233
+[P1] Ep 141: Loss 0.3680 | Val MAE 1.6108
+[P1] Ep 142: Loss 0.3573 | Val MAE 1.7528
+[P1] Ep 143: Loss 0.3737 | Val MAE 1.7470
+[P1] Ep 144: Loss 0.3605 | Val MAE 1.6868
+[P1] Ep 145: Loss 0.3650 | Val MAE 1.7705
+[P1] Ep 146: Loss 0.3724 | Val MAE 1.7012
+[P1] Ep 147: Loss 0.3632 | Val MAE 1.6305
+[P1] Ep 148: Loss 0.3630 | Val MAE 1.6250
+[P1] Ep 149: Loss 0.3536 | Val MAE 1.8735
+[P1] Ep 150: Loss 0.3567 | Val MAE 1.7034
+[P1] Ep 151: Loss 0.3500 | Val MAE 1.7866
+[P1] Ep 152: Loss 0.3562 | Val MAE 1.6379
+[P1] Ep 153: Loss 0.3487 | Val MAE 1.7340
+[P1] Ep 154: Loss 0.3484 | Val MAE 1.7481
+[P1] Ep 155: Loss 0.3497 | Val MAE 1.7025
+[P1] Ep 156: Loss 0.3452 | Val MAE 1.7639
+[P1] Ep 157: Loss 0.3359 | Val MAE 1.6476
+[P1] Ep 158: Loss 0.3373 | Val MAE 1.7603
+[P1] Ep 159: Loss 0.3347 | Val MAE 1.6670
+[P1] Ep 160: Loss 0.3326 | Val MAE 1.7180
+[P1] Ep 161: Loss 0.3352 | Val MAE 1.6789
+[P1] Ep 162: Loss 0.3358 | Val MAE 1.6467
+[P1] Ep 163: Loss 0.3321 | Val MAE 1.7096
+[P1] Ep 164: Loss 0.3304 | Val MAE 1.6703
+[P1] Ep 165: Loss 0.3231 | Val MAE 1.7244
+[P1] Ep 166: Loss 0.3313 | Val MAE 1.6551
+[P1] Ep 167: Loss 0.3273 | Val MAE 1.7089
+[P1] Ep 168: Loss 0.3257 | Val MAE 1.7799
+[P1] Ep 169: Loss 0.3272 | Val MAE 1.6708
+[P1] Ep 170: Loss 0.3226 | Val MAE 1.8051
+[P1] Ep 171: Loss 0.3191 | Val MAE 1.6553
+[P1] Ep 172: Loss 0.3176 | Val MAE 1.6601
+[P1] Ep 173: Loss 0.3128 | Val MAE 1.6587
+[P1] Ep 174: Loss 0.3072 | Val MAE 1.6875
+[P1] Ep 175: Loss 0.3096 | Val MAE 1.7726
+[P1] Ep 176: Loss 0.3073 | Val MAE 1.7329
+[P1] Ep 177: Loss 0.2971 | Val MAE 1.6980
+[P1] Ep 178: Loss 0.3053 | Val MAE 1.6513
+[P1] Ep 179: Loss 0.2981 | Val MAE 1.7004
+[P1] Ep 180: Loss 0.3063 | Val MAE 1.6345
+[P1] Ep 181: Loss 0.3001 | Val MAE 1.6749
+[P1] Ep 182: Loss 0.2962 | Val MAE 1.6994
+[P1] Ep 183: Loss 0.2914 | Val MAE 1.7908
+[P1] Ep 184: Loss 0.2905 | Val MAE 1.6114
+[P1] Ep 185: Loss 0.2947 | Val MAE 1.6796
+[P1] Ep 186: Loss 0.2930 | Val MAE 1.6419
+[P1] Ep 187: Loss 0.2866 | Val MAE 1.6540
+[P1] Ep 188: Loss 0.2860 | Val MAE 1.7384
+[P1] Ep 189: Loss 0.2936 | Val MAE 1.7052
+[P1] Ep 190: Loss 0.2863 | Val MAE 1.7465
+[P1] Ep 191: Loss 0.2844 | Val MAE 1.7069
+[P1] Ep 192: Loss 0.2775 | Val MAE 1.6524
+[P1] Ep 193: Loss 0.2798 | Val MAE 1.7503
+[P1] Ep 194: Loss 0.2755 | Val MAE 1.7388
+[P1] Ep 195: Loss 0.2822 | Val MAE 1.6860
+[P1] Ep 196: Loss 0.2744 | Val MAE 1.6408
+[P1] Ep 197: Loss 0.2752 | Val MAE 1.7769
+[P1] Ep 198: Loss 0.2702 | Val MAE 1.8668
+[P1] Ep 199: Loss 0.2636 | Val MAE 1.7664
+[P1] Ep 200: Loss 0.2735 | Val MAE 1.5755
+
+=== Phase 2: Target Fine-tuning ===
+Freezing backbone layers...
+[FT] Ep 1: Loss 9.0348 | Val MAE 1.5360 CI 0.5497
+[FT] Ep 2: Loss 8.6329 | Val MAE 1.5179 CI 0.5673
+[FT] Ep 3: Loss 8.2140 | Val MAE 1.5075 CI 0.5731
+[FT] Ep 4: Loss 8.2349 | Val MAE 1.5098 CI 0.5789
+[FT] Ep 5: Loss 6.6850 | Val MAE 1.5014 CI 0.5965
+[FT] Ep 6: Loss 6.6417 | Val MAE 1.4913 CI 0.5906
+[FT] Ep 7: Loss 6.7567 | Val MAE 1.4699 CI 0.5906
+[FT] Ep 8: Loss 6.3636 | Val MAE 1.4759 CI 0.5965
+[FT] Ep 9: Loss 6.2594 | Val MAE 1.4826 CI 0.6082
+[FT] Ep 10: Loss 6.1638 | Val MAE 1.4974 CI 0.5965
+[FT] Ep 11: Loss 5.7808 | Val MAE 1.5141 CI 0.5789
+[FT] Ep 12: Loss 5.7784 | Val MAE 1.5260 CI 0.5731
+[FT] Ep 13: Loss 5.5415 | Val MAE 1.5369 CI 0.5731
+[FT] Ep 14: Loss 5.3538 | Val MAE 1.5482 CI 0.5614
+[FT] Ep 15: Loss 5.6945 | Val MAE 1.5627 CI 0.5673
+[FT] Ep 16: Loss 5.5904 | Val MAE 1.5778 CI 0.5673
+[FT] Ep 17: Loss 5.4444 | Val MAE 1.5857 CI 0.5731
+[FT] Ep 18: Loss 5.2714 | Val MAE 1.5952 CI 0.5614
+[FT] Ep 19: Loss 5.1423 | Val MAE 1.6031 CI 0.5614
+[FT] Ep 20: Loss 5.0359 | Val MAE 1.6038 CI 0.5731
+[FT] Ep 21: Loss 4.9803 | Val MAE 1.6049 CI 0.5848
+[FT] Ep 22: Loss 4.9987 | Val MAE 1.6066 CI 0.5906
+[FT] Ep 23: Loss 5.0673 | Val MAE 1.6093 CI 0.5965
+[FT] Ep 24: Loss 4.8514 | Val MAE 1.6147 CI 0.5906
+[FT] Ep 25: Loss 4.7346 | Val MAE 1.6177 CI 0.5906
+[FT] Ep 26: Loss 4.5960 | Val MAE 1.6225 CI 0.5789
+[FT] Ep 27: Loss 4.7774 | Val MAE 1.6286 CI 0.5789
+[FT] Ep 28: Loss 4.5163 | Val MAE 1.6305 CI 0.5848
+[FT] Ep 29: Loss 4.6251 | Val MAE 1.6295 CI 0.5906
+[FT] Ep 30: Loss 4.5096 | Val MAE 1.6274 CI 0.5906
+[FT] Ep 31: Loss 4.4918 | Val MAE 1.6258 CI 0.5789
+[FT] Ep 32: Loss 4.5647 | Val MAE 1.6248 CI 0.5789
+[FT] Ep 33: Loss 4.2009 | Val MAE 1.6232 CI 0.5906
+[FT] Ep 34: Loss 4.1740 | Val MAE 1.6177 CI 0.5965
+[FT] Ep 35: Loss 4.1636 | Val MAE 1.6196 CI 0.6082
+[FT] Ep 36: Loss 4.2234 | Val MAE 1.6179 CI 0.6023
+[FT] Ep 37: Loss 4.3814 | Val MAE 1.6159 CI 0.6082
+[FT] Ep 38: Loss 4.0121 | Val MAE 1.6146 CI 0.6023
+[FT] Ep 39: Loss 4.1941 | Val MAE 1.6196 CI 0.6023
+[FT] Ep 40: Loss 4.0419 | Val MAE 1.6216 CI 0.6023
+[FT] Ep 41: Loss 4.1586 | Val MAE 1.6195 CI 0.6023
+[FT] Ep 42: Loss 4.1370 | Val MAE 1.6171 CI 0.6140
+[FT] Ep 43: Loss 4.0283 | Val MAE 1.6149 CI 0.6140
+[FT] Ep 44: Loss 3.6539 | Val MAE 1.6113 CI 0.6257
+[FT] Ep 45: Loss 3.8991 | Val MAE 1.6042 CI 0.6374
+[FT] Ep 46: Loss 3.6226 | Val MAE 1.6008 CI 0.6374
+[FT] Ep 47: Loss 3.7616 | Val MAE 1.6003 CI 0.6433
+[FT] Ep 48: Loss 4.0639 | Val MAE 1.5962 CI 0.6491
+[FT] Ep 49: Loss 3.5688 | Val MAE 1.5914 CI 0.6491
+[FT] Ep 50: Loss 3.7700 | Val MAE 1.5902 CI 0.6491
+[FT] Ep 51: Loss 3.6078 | Val MAE 1.5874 CI 0.6433
+[FT] Ep 52: Loss 3.8493 | Val MAE 1.5885 CI 0.6491
+[FT] Ep 53: Loss 3.6117 | Val MAE 1.5875 CI 0.6491
+[FT] Ep 54: Loss 3.7781 | Val MAE 1.5859 CI 0.6491
+[FT] Ep 55: Loss 3.5943 | Val MAE 1.5825 CI 0.6491
+[FT] Ep 56: Loss 3.8095 | Val MAE 1.5854 CI 0.6374
+[FT] Ep 57: Loss 3.7639 | Val MAE 1.5944 CI 0.6316
+Early stopping triggered.
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+[BASELINE RESULT] Method: DP
+   MAE:  1.3967
+   RMSE: 1.7992
+   CI:   0.5842
+   RM2:  0.0545
+   MAPE: 22.55 %
+   Acc:  25.00 %
+------------------------------------------------------------

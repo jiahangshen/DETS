@@ -1,0 +1,345 @@
+Namespace(target_csv='enthalpy/atct.csv', source_csv='enthalpy/wudily_cho.csv', pretrained='DETS/new_df_core.pt', batch_size=128, epochs=200, ft_epochs=150, hidden_dim=256, layers=3, dropout=0.2, lr=0.0005, wd=1e-06, patience=50, device='cuda:0', num_prototypes=20, tau_high=0.9, sigma_0=0.1, gamma=0.5, alpha=0.9, w_min=1e-05)
+--- DETS Full Pipeline: Stabilized Loss & Orthogonal Init ---
+Device: cuda:0
+-> Loading TARGET (Experiment) Dataset: enthalpy/atct.csv
+Processing enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+-> Loading SOURCE (Theory) Dataset: enthalpy/wudily_cho.csv
+Processing enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+-> Target Statistics: Mean=14.0561, Std=51.2793
+-> Loading base pretrained weights from DETS/new_df_core.pt...
+
+==================================================
+PHASE 1: DETS Source Training
+==================================================
+-> Extracting Anchors from Target (Experiment) Data...
+   Running K-Means (K=20)...
+-> Anchors Established: 20 prototypes.
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.3577
+-> [Epoch 1] HighConf>0.1: 1826 (30.1%)
+[P1] Epoch 001 | Loss 1.5526 | Val MAE 64.2497 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.2219
+-> [Epoch 2] HighConf>0.1: 1354 (22.3%)
+[P1] Epoch 002 | Loss 0.1830 | Val MAE 92.4530 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1182
+-> [Epoch 3] HighConf>0.1: 788 (13.0%)
+[P1] Epoch 003 | Loss 0.0257 | Val MAE 57.9433 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1048
+-> [Epoch 4] HighConf>0.1: 652 (10.7%)
+[P1] Epoch 004 | Loss 0.0157 | Val MAE 49.5598 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.0911
+-> [Epoch 5] HighConf>0.1: 603 (9.9%)
+[P1] Epoch 005 | Loss 0.0113 | Val MAE 43.0211 | Acc 0.00%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.0964
+-> [Epoch 6] HighConf>0.1: 574 (9.5%)
+[P1] Epoch 006 | Loss 0.0085 | Val MAE 40.0955 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.0922
+-> [Epoch 7] HighConf>0.1: 561 (9.2%)
+[P1] Epoch 007 | Loss 0.0081 | Val MAE 38.8454 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.0949
+-> [Epoch 8] HighConf>0.1: 557 (9.2%)
+[P1] Epoch 008 | Loss 0.0075 | Val MAE 39.7471 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1745
+-> [Epoch 9] HighConf>0.1: 1153 (19.0%)
+[P1] Epoch 009 | Loss 0.0065 | Val MAE 39.6887 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.0971
+-> [Epoch 10] HighConf>0.1: 610 (10.0%)
+[P1] Epoch 010 | Loss 0.0069 | Val MAE 35.8660 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1045
+-> [Epoch 11] HighConf>0.1: 709 (11.7%)
+[P1] Epoch 011 | Loss 0.0066 | Val MAE 43.1576 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1074
+-> [Epoch 12] HighConf>0.1: 704 (11.6%)
+[P1] Epoch 012 | Loss 0.0065 | Val MAE 38.6002 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1113
+-> [Epoch 13] HighConf>0.1: 758 (12.5%)
+[P1] Epoch 013 | Loss 0.0065 | Val MAE 44.7200 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1118
+-> [Epoch 14] HighConf>0.1: 783 (12.9%)
+[P1] Epoch 014 | Loss 0.0061 | Val MAE 43.3801 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1150
+-> [Epoch 15] HighConf>0.1: 795 (13.1%)
+[P1] Epoch 015 | Loss 0.0064 | Val MAE 40.0756 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1103
+-> [Epoch 16] HighConf>0.1: 782 (12.9%)
+[P1] Epoch 016 | Loss 0.0069 | Val MAE 35.2234 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1208
+-> [Epoch 17] HighConf>0.1: 849 (14.0%)
+[P1] Epoch 017 | Loss 0.0067 | Val MAE 41.2334 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1177
+-> [Epoch 18] HighConf>0.1: 845 (13.9%)
+[P1] Epoch 018 | Loss 0.0056 | Val MAE 33.5705 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1228
+-> [Epoch 19] HighConf>0.1: 867 (14.3%)
+[P1] Epoch 019 | Loss 0.0062 | Val MAE 34.7809 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1213
+-> [Epoch 20] HighConf>0.1: 887 (14.6%)
+[P1] Epoch 020 | Loss 0.0069 | Val MAE 31.7384 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1229
+-> [Epoch 21] HighConf>0.1: 863 (14.2%)
+[P1] Epoch 021 | Loss 0.0064 | Val MAE 33.9955 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1219
+-> [Epoch 22] HighConf>0.1: 867 (14.3%)
+[P1] Epoch 022 | Loss 0.0070 | Val MAE 35.9090 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1355
+-> [Epoch 23] HighConf>0.1: 942 (15.5%)
+[P1] Epoch 023 | Loss 0.0059 | Val MAE 43.1098 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1319
+-> [Epoch 24] HighConf>0.1: 963 (15.9%)
+[P1] Epoch 024 | Loss 0.0056 | Val MAE 40.4666 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1356
+-> [Epoch 25] HighConf>0.1: 938 (15.4%)
+[P1] Epoch 025 | Loss 0.0057 | Val MAE 37.0336 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1364
+-> [Epoch 26] HighConf>0.1: 993 (16.3%)
+[P1] Epoch 026 | Loss 0.0052 | Val MAE 35.1822 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1398
+-> [Epoch 27] HighConf>0.1: 982 (16.2%)
+[P1] Epoch 027 | Loss 0.0058 | Val MAE 42.4744 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1475
+-> [Epoch 28] HighConf>0.1: 1055 (17.4%)
+[P1] Epoch 028 | Loss 0.0051 | Val MAE 38.7318 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1418
+-> [Epoch 29] HighConf>0.1: 987 (16.2%)
+[P1] Epoch 029 | Loss 0.0065 | Val MAE 34.4499 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1339
+-> [Epoch 30] HighConf>0.1: 982 (16.2%)
+[P1] Epoch 030 | Loss 0.0055 | Val MAE 38.3279 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1418
+-> [Epoch 31] HighConf>0.1: 993 (16.3%)
+[P1] Epoch 031 | Loss 0.0058 | Val MAE 38.2343 | Acc 13.89%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1467
+-> [Epoch 32] HighConf>0.1: 1072 (17.6%)
+[P1] Epoch 032 | Loss 0.0047 | Val MAE 34.5300 | Acc 19.44%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1413
+-> [Epoch 33] HighConf>0.1: 957 (15.8%)
+[P1] Epoch 033 | Loss 0.0056 | Val MAE 34.6901 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1453
+-> [Epoch 34] HighConf>0.1: 1040 (17.1%)
+[P1] Epoch 034 | Loss 0.0048 | Val MAE 37.8635 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1424
+-> [Epoch 35] HighConf>0.1: 980 (16.1%)
+[P1] Epoch 035 | Loss 0.0053 | Val MAE 41.3950 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1357
+-> [Epoch 36] HighConf>0.1: 1019 (16.8%)
+[P1] Epoch 036 | Loss 0.0053 | Val MAE 44.9318 | Acc 13.89%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1457
+-> [Epoch 37] HighConf>0.1: 1005 (16.5%)
+[P1] Epoch 037 | Loss 0.0049 | Val MAE 50.3740 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1501
+-> [Epoch 38] HighConf>0.1: 1044 (17.2%)
+[P1] Epoch 038 | Loss 0.0046 | Val MAE 53.0538 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1450
+-> [Epoch 39] HighConf>0.1: 974 (16.0%)
+[P1] Epoch 039 | Loss 0.0052 | Val MAE 48.4445 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1331
+-> [Epoch 40] HighConf>0.1: 915 (15.1%)
+[P1] Epoch 040 | Loss 0.0049 | Val MAE 52.8198 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1327
+-> [Epoch 41] HighConf>0.1: 915 (15.1%)
+[P1] Epoch 041 | Loss 0.0056 | Val MAE 56.7572 | Acc 13.89%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1401
+-> [Epoch 42] HighConf>0.1: 956 (15.7%)
+[P1] Epoch 042 | Loss 0.0048 | Val MAE 62.2760 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1316
+-> [Epoch 43] HighConf>0.1: 878 (14.5%)
+[P1] Epoch 043 | Loss 0.0051 | Val MAE 78.6104 | Acc 13.89%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1254
+-> [Epoch 44] HighConf>0.1: 869 (14.3%)
+[P1] Epoch 044 | Loss 0.0054 | Val MAE 60.1705 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1434
+-> [Epoch 45] HighConf>0.1: 939 (15.5%)
+[P1] Epoch 045 | Loss 0.0055 | Val MAE 57.4941 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1360
+-> [Epoch 46] HighConf>0.1: 946 (15.6%)
+[P1] Epoch 046 | Loss 0.0048 | Val MAE 54.5804 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1449
+-> [Epoch 47] HighConf>0.1: 928 (15.3%)
+[P1] Epoch 047 | Loss 0.0057 | Val MAE 55.3880 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1351
+-> [Epoch 48] HighConf>0.1: 945 (15.6%)
+[P1] Epoch 048 | Loss 0.0044 | Val MAE 57.6810 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1325
+-> [Epoch 49] HighConf>0.1: 832 (13.7%)
+[P1] Epoch 049 | Loss 0.0053 | Val MAE 61.3670 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1428
+-> [Epoch 50] HighConf>0.1: 994 (16.4%)
+[P1] Epoch 050 | Loss 0.0047 | Val MAE 55.7429 | Acc 2.78%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1591
+-> [Epoch 51] HighConf>0.1: 1007 (16.6%)
+[P1] Epoch 051 | Loss 0.0049 | Val MAE 52.0168 | Acc 11.11%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1512
+-> [Epoch 52] HighConf>0.1: 1057 (17.4%)
+[P1] Epoch 052 | Loss 0.0044 | Val MAE 56.8614 | Acc 13.89%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1489
+-> [Epoch 53] HighConf>0.1: 978 (16.1%)
+[P1] Epoch 053 | Loss 0.0047 | Val MAE 53.5563 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1449
+-> [Epoch 54] HighConf>0.1: 979 (16.1%)
+[P1] Epoch 054 | Loss 0.0048 | Val MAE 57.2729 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1441
+-> [Epoch 55] HighConf>0.1: 958 (15.8%)
+[P1] Epoch 055 | Loss 0.0047 | Val MAE 55.3680 | Acc 22.22%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1400
+-> [Epoch 56] HighConf>0.1: 980 (16.1%)
+[P1] Epoch 056 | Loss 0.0041 | Val MAE 63.6299 | Acc 19.44%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1394
+-> [Epoch 57] HighConf>0.1: 928 (15.3%)
+[P1] Epoch 057 | Loss 0.0050 | Val MAE 56.7816 | Acc 5.56%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1507
+-> [Epoch 58] HighConf>0.1: 1013 (16.7%)
+[P1] Epoch 058 | Loss 0.0054 | Val MAE 65.3729 | Acc 0.00%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1479
+-> [Epoch 59] HighConf>0.1: 961 (15.8%)
+[P1] Epoch 059 | Loss 0.0050 | Val MAE 62.1238 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1453
+-> [Epoch 60] HighConf>0.1: 981 (16.2%)
+[P1] Epoch 060 | Loss 0.0052 | Val MAE 66.2066 | Acc 19.44%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1494
+-> [Epoch 61] HighConf>0.1: 982 (16.2%)
+[P1] Epoch 061 | Loss 0.0049 | Val MAE 72.3150 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1505
+-> [Epoch 62] HighConf>0.1: 988 (16.3%)
+[P1] Epoch 062 | Loss 0.0053 | Val MAE 67.4450 | Acc 19.44%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1475
+-> [Epoch 63] HighConf>0.1: 1013 (16.7%)
+[P1] Epoch 063 | Loss 0.0048 | Val MAE 78.6876 | Acc 19.44%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1532
+-> [Epoch 64] HighConf>0.1: 1018 (16.8%)
+[P1] Epoch 064 | Loss 0.0045 | Val MAE 78.4869 | Acc 19.44%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1539
+-> [Epoch 65] HighConf>0.1: 1065 (17.5%)
+[P1] Epoch 065 | Loss 0.0045 | Val MAE 71.3244 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1534
+-> [Epoch 66] HighConf>0.1: 1018 (16.8%)
+[P1] Epoch 066 | Loss 0.0044 | Val MAE 72.1722 | Acc 19.44%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1536
+-> [Epoch 67] HighConf>0.1: 1011 (16.6%)
+[P1] Epoch 067 | Loss 0.0042 | Val MAE 75.5016 | Acc 16.67%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1562
+-> [Epoch 68] HighConf>0.1: 1054 (17.4%)
+[P1] Epoch 068 | Loss 0.0051 | Val MAE 66.8091 | Acc 13.89%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1594
+-> [Epoch 69] HighConf>0.1: 1072 (17.6%)
+[P1] Epoch 069 | Loss 0.0055 | Val MAE 67.6432 | Acc 8.33%
+   [Debug] Range Filter dropped 213 molecules (Out of [-114.1, 142.3]).
+   [Debug] Active Weights Mean: 0.1503
+-> [Epoch 70] HighConf>0.1: 1012 (16.7%)
+[P1] Epoch 070 | Loss 0.0046 | Val MAE 64.5885 | Acc 13.89%
+Phase 1 Early stopping.
+------------------------------------------------------------
+[phase1 RESULT] Performance on Test Set:
+   MAE:      76.0093 kcal/mol
+   RMSE:     106.3096 kcal/mol
+   MAPE:     326.21 %
+   Acc(10%): 2.78 %  <-- Key Metric
+------------------------------------------------------------
+
+==================================================
+PHASE 2: Target Fine-tuning
+   Strategy: Freeze GNN first -> Align Head -> Unfreeze All
+==================================================
+>>> Stage 2.1: Aligning Prediction Head (Backbone Frozen)...
+[P2-Head] Epoch 10 | Val MAE 33.6072 | Acc 2.78%
+[P2-Head] Epoch 20 | Val MAE 33.6040 | Acc 0.00%
+[P2-Head] Epoch 30 | Val MAE 32.7094 | Acc 2.78%
+[P2-Head] Epoch 40 | Val MAE 31.1000 | Acc 2.78%
+[P2-Head] Epoch 50 | Val MAE 31.4961 | Acc 0.00%
+[P2-Head] Epoch 60 | Val MAE 30.7484 | Acc 5.56%
+[P2-Head] Epoch 70 | Val MAE 32.7161 | Acc 5.56%
+[P2-Head] Epoch 80 | Val MAE 31.2377 | Acc 0.00%
+[P2-Head] Epoch 90 | Val MAE 32.5151 | Acc 5.56%
+[P2-Head] Epoch 100 | Val MAE 31.3181 | Acc 0.00%
+[P2-Head] Epoch 110 | Val MAE 30.7394 | Acc 0.00%
+[P2-Head] Epoch 120 | Val MAE 32.0039 | Acc 2.78%
+[P2-Head] Epoch 130 | Val MAE 31.4546 | Acc 0.00%
+[P2-Head] Epoch 140 | Val MAE 31.7522 | Acc 2.78%
+[P2-Head] Epoch 150 | Val MAE 32.3160 | Acc 2.78%
+
+>>> Stage 2.2: Fine-tuning Whole Model...
+[P2-Full] Epoch 010 | Loss 0.5743 | Val MAE 31.0674 | Acc 5.56%
+[P2-Full] Epoch 020 | Loss 0.5886 | Val MAE 30.7645 | Acc 5.56%
+[P2-Full] Epoch 030 | Loss 0.5498 | Val MAE 31.9283 | Acc 5.56%
+[P2-Full] Epoch 040 | Loss 0.4409 | Val MAE 31.3704 | Acc 2.78%
+[P2-Full] Epoch 050 | Loss 0.5355 | Val MAE 31.8191 | Acc 8.33%
+[P2-Full] Epoch 060 | Loss 0.5074 | Val MAE 31.5946 | Acc 8.33%
+Phase 2 Early stopping.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[FINAL RESULT] Performance on Test Set:
+   MAE:      27.0822 kcal/mol
+   RMSE:     33.7526 kcal/mol
+   MAPE:     101.40 %
+   Acc(10%): 2.78 %  <-- Key Metric
+------------------------------------------------------------

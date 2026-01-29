@@ -1,0 +1,327 @@
+Loading datasets...
+Target Stats: Mean=6.7268, Std=2.3296
+
+>>> Phase 0: Warm-up on Target...
+-> Extracting Anchors from Target...
+/root/miniconda3/envs/subset/lib/python3.9/site-packages/torch/nn/modules/transformer.py:508: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /pytorch/aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(
+-> Anchors Established: 5 prototypes.
+
+=== PHASE 1: DETS Source Training ===
+   [Weights] Min: 1.0000, Max: 1.0000, Mean: 1.0000
+   [Weights] Min: 0.7268, Max: 1.0000, Mean: 0.9560
+   [Weights] Min: 0.6632, Max: 1.0000, Mean: 0.9002
+   [Weights] Min: 0.7721, Max: 1.0000, Mean: 0.9710
+   [Weights] Min: 0.5963, Max: 1.0000, Mean: 0.9211
+   [Weights] Min: 0.6810, Max: 1.0000, Mean: 0.9190
+   [Weights] Min: 0.5160, Max: 1.0000, Mean: 0.9802
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.9470
+   [Weights] Min: 0.3358, Max: 1.0000, Mean: 0.8638
+   [Weights] Min: 0.1184, Max: 1.0000, Mean: 0.8898
+[P1] Ep 10 | Loss 2.1386 | Val MAE 1.9260 Acc 15.8%
+   [Weights] Min: 0.4718, Max: 1.0000, Mean: 0.9007
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.8690
+   [Weights] Min: 0.3712, Max: 1.0000, Mean: 0.7668
+   [Weights] Min: 0.1068, Max: 1.0000, Mean: 0.7810
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.7992
+   [Weights] Min: 0.1035, Max: 1.0000, Mean: 0.8463
+   [Weights] Min: 0.2080, Max: 1.0000, Mean: 0.8526
+   [Weights] Min: 0.1107, Max: 1.0000, Mean: 0.7880
+   [Weights] Min: 0.1130, Max: 1.0000, Mean: 0.7374
+   [Weights] Min: 0.1225, Max: 1.0000, Mean: 0.8502
+[P1] Ep 20 | Loss 1.7777 | Val MAE 1.7326 Acc 21.1%
+   [Weights] Min: 0.1872, Max: 1.0000, Mean: 0.8260
+   [Weights] Min: 0.1433, Max: 1.0000, Mean: 0.6999
+   [Weights] Min: 0.1479, Max: 1.0000, Mean: 0.5738
+   [Weights] Min: 0.1425, Max: 1.0000, Mean: 0.6546
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.8123
+   [Weights] Min: 0.1454, Max: 1.0000, Mean: 0.6102
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.7616
+   [Weights] Min: 0.1311, Max: 1.0000, Mean: 0.7070
+   [Weights] Min: 0.1310, Max: 1.0000, Mean: 0.7384
+   [Weights] Min: 0.1008, Max: 1.0000, Mean: 0.6519
+[P1] Ep 30 | Loss 1.5383 | Val MAE 1.8662 Acc 10.5%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6789
+   [Weights] Min: 0.1090, Max: 1.0000, Mean: 0.6512
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6166
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6553
+   [Weights] Min: 0.1052, Max: 1.0000, Mean: 0.6057
+   [Weights] Min: 0.1010, Max: 1.0000, Mean: 0.5904
+   [Weights] Min: 0.1054, Max: 1.0000, Mean: 0.6369
+   [Weights] Min: 0.1080, Max: 1.0000, Mean: 0.6096
+   [Weights] Min: 0.1021, Max: 1.0000, Mean: 0.6279
+   [Weights] Min: 0.1085, Max: 1.0000, Mean: 0.6247
+[P1] Ep 40 | Loss 1.3224 | Val MAE 1.8342 Acc 10.5%
+   [Weights] Min: 0.1236, Max: 1.0000, Mean: 0.6346
+   [Weights] Min: 0.1197, Max: 1.0000, Mean: 0.6287
+   [Weights] Min: 0.1129, Max: 1.0000, Mean: 0.6141
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5994
+   [Weights] Min: 0.1061, Max: 1.0000, Mean: 0.6092
+   [Weights] Min: 0.1053, Max: 1.0000, Mean: 0.5986
+   [Weights] Min: 0.1021, Max: 1.0000, Mean: 0.6022
+   [Weights] Min: 0.1030, Max: 1.0000, Mean: 0.6069
+   [Weights] Min: 0.1017, Max: 1.0000, Mean: 0.5994
+   [Weights] Min: 0.1037, Max: 1.0000, Mean: 0.6026
+[P1] Ep 50 | Loss 1.3093 | Val MAE 1.8135 Acc 10.5%
+   [Weights] Min: 0.1034, Max: 1.0000, Mean: 0.6006
+   [Weights] Min: 0.1137, Max: 1.0000, Mean: 0.5125
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6256
+   [Weights] Min: 0.1104, Max: 1.0000, Mean: 0.6365
+   [Weights] Min: 0.1266, Max: 1.0000, Mean: 0.6153
+   [Weights] Min: 0.1060, Max: 1.0000, Mean: 0.5671
+   [Weights] Min: 0.1130, Max: 1.0000, Mean: 0.6048
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6898
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6386
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6321
+[P1] Ep 60 | Loss 1.3712 | Val MAE 1.9106 Acc 10.5%
+   [Weights] Min: 0.1037, Max: 1.0000, Mean: 0.6440
+   [Weights] Min: 0.1069, Max: 1.0000, Mean: 0.6515
+   [Weights] Min: 0.1022, Max: 1.0000, Mean: 0.5740
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5960
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6399
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6840
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6353
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6828
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6195
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6014
+[P1] Ep 70 | Loss 1.2863 | Val MAE 1.9374 Acc 10.5%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6395
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5180
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6281
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5495
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6249
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5688
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5398
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.6055
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5713
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5698
+[P1] Ep 80 | Loss 1.2904 | Val MAE 2.0334 Acc 10.5%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5290
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5145
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5192
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4997
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4680
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4832
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5112
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4906
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4747
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5433
+[P1] Ep 90 | Loss 1.2949 | Val MAE 1.7418 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5331
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5213
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4975
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4627
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4746
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3936
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4817
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.5437
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4950
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4869
+[P1] Ep 100 | Loss 1.2042 | Val MAE 1.8438 Acc 10.5%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4049
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4652
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4332
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4761
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4063
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4359
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4585
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4022
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3975
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4145
+[P1] Ep 110 | Loss 1.1304 | Val MAE 1.7519 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4041
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3820
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3919
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4425
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4521
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4362
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3941
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4038
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4331
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4187
+[P1] Ep 120 | Loss 1.1298 | Val MAE 1.8884 Acc 10.5%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4104
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4447
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4285
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4402
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3970
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4176
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4072
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3738
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3879
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3756
+[P1] Ep 130 | Loss 1.0296 | Val MAE 1.8462 Acc 10.5%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3697
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3631
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3578
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3390
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3743
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3616
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3487
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3482
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3624
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3386
+[P1] Ep 140 | Loss 1.0516 | Val MAE 1.8220 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3405
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3431
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3478
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3451
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3443
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3423
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3411
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3395
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3443
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3387
+[P1] Ep 150 | Loss 1.0493 | Val MAE 1.8349 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3386
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3973
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4371
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3776
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3673
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3574
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4159
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3318
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3246
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4342
+[P1] Ep 160 | Loss 1.1005 | Val MAE 1.7140 Acc 21.1%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3386
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.4098
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3083
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3617
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3304
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3130
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3659
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2969
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3165
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3329
+[P1] Ep 170 | Loss 1.1440 | Val MAE 2.0231 Acc 10.5%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2812
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3336
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3497
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3322
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2976
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3286
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3381
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3800
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3556
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3124
+[P1] Ep 180 | Loss 1.1046 | Val MAE 1.8556 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3132
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2985
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2621
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3110
+   [Weights] Min: 0.1000, Max: 0.9742, Mean: 0.2634
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2766
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2740
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2674
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3144
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3063
+[P1] Ep 190 | Loss 1.0990 | Val MAE 1.9550 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3038
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2413
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2862
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2786
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2820
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2564
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2727
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2604
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2863
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2683
+[P1] Ep 200 | Loss 1.1461 | Val MAE 1.8562 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2761
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2860
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2577
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2709
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2598
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2983
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2695
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2466
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2725
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2776
+[P1] Ep 210 | Loss 1.0044 | Val MAE 1.9888 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 0.9635, Mean: 0.2311
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.3055
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2563
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2951
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2944
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2518
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2790
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2343
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2688
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2602
+[P1] Ep 220 | Loss 1.0349 | Val MAE 1.9711 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2216
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2539
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2578
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2743
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2613
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2617
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2430
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2304
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2501
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2477
+[P1] Ep 230 | Loss 1.0201 | Val MAE 1.9666 Acc 15.8%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2231
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2347
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2434
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2419
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2699
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2384
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2587
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2467
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2408
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2342
+[P1] Ep 240 | Loss 1.0183 | Val MAE 1.9327 Acc 21.1%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2721
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2224
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2328
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2183
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2549
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2569
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2318
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2233
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2086
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2337
+[P1] Ep 250 | Loss 0.9912 | Val MAE 1.9924 Acc 21.1%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2451
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2120
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2402
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2432
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2154
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2351
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2170
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2017
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2046
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2329
+[P1] Ep 260 | Loss 0.9654 | Val MAE 1.9762 Acc 26.3%
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2147
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2299
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2165
+   [Weights] Min: 0.1000, Max: 1.0000, Mean: 0.2537
+
+=== PHASE 2: Target Fine-tuning ===
+>>> Stage 2.1: Head Alignment...
+[Head] Ep 20 MAE 1.6397
+[Head] Ep 40 MAE 1.6419
+>>> Stage 2.2: Full Fine-tuning...
+[Full] Ep 10 MAE 1.6246 Acc 26.3%
+[Full] Ep 20 MAE 1.6524 Acc 36.8%
+[Full] Ep 30 MAE 1.6849 Acc 36.8%
+[Full] Ep 40 MAE 1.7008 Acc 36.8%
+[Full] Ep 50 MAE 1.7024 Acc 36.8%
+[Full] Ep 60 MAE 1.7318 Acc 31.6%
+[Full] Ep 70 MAE 1.7376 Acc 21.1%
+[Full] Ep 80 MAE 1.7173 Acc 21.1%
+[Full] Ep 90 MAE 1.6907 Acc 26.3%
+[Full] Ep 100 MAE 1.6594 Acc 26.3%
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[FINAL RESULT] Test Set:
+   MAE:  1.8357
+   RMSE: 2.2902
+   CI:   0.4368
+   RM2:  -0.6843
+   MAPE: 26.67 %
+   Acc:  20.00 %
+------------------------------------------------------------

@@ -1,0 +1,78 @@
+--- Baseline MLP Pipeline (Method: epsilon-greedy) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [epsilon-greedy] ===
+   Target Ratio: 20.0%
+
+[Sampler] Running epsilon-greedy | Target: 1581/7908 (20.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  12%|█▎        | 1/8 [00:00<00:00,  8.11it/s]                                                                               -> Selected 1581 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 1.2824
+[P1] Ep 40: Loss 0.9989
+[P1] Ep 60: Loss 0.8726
+[P1] Ep 80: Loss 0.7773
+[P1] Ep 100: Loss 0.7118
+[P1] Ep 120: Loss 0.6673
+[P1] Ep 140: Loss 0.6313
+[P1] Ep 160: Loss 0.5300
+[P1] Ep 180: Loss 0.5103
+[P1] Ep 200: Loss 0.4957
+[P1] Ep 220: Loss 0.4477
+[P1] Ep 240: Loss 0.4586
+[P1] Ep 260: Loss 0.4257
+[P1] Ep 280: Loss 0.4006
+[P1] Ep 300: Loss 0.4093
+[P1] Ep 320: Loss 0.3784
+[P1] Ep 340: Loss 0.3601
+[P1] Ep 360: Loss 0.3290
+[P1] Ep 380: Loss 0.3265
+[P1] Ep 400: Loss 0.3276
+[P1] Ep 420: Loss 0.3064
+[P1] Ep 440: Loss 0.2795
+[P1] Ep 460: Loss 0.2901
+[P1] Ep 480: Loss 0.2635
+[P1] Ep 500: Loss 0.2569
+[P1] Ep 520: Loss 0.2519
+[P1] Ep 540: Loss 0.2455
+[P1] Ep 560: Loss 0.2265
+[P1] Ep 580: Loss 0.2303
+[P1] Ep 600: Loss 0.2144
+[P1] Ep 620: Loss 0.2025
+[P1] Ep 640: Loss 0.2115
+[P1] Ep 660: Loss 0.1942
+[P1] Ep 680: Loss 0.1947
+[P1] Ep 700: Loss 0.2021
+[P1] Ep 720: Loss 0.1946
+[P1] Ep 740: Loss 0.1777
+[P1] Ep 760: Loss 0.1852
+[P1] Ep 780: Loss 0.1830
+[P1] Ep 800: Loss 0.1735
+[P1] Ep 820: Loss 0.1599
+[P1] Ep 840: Loss 0.1613
+Phase 1 Early Stopping
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8072
+[P2.1] Ep 100 MAE 0.8154
+[P2.1] Ep 150 MAE 0.8060
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.7311
+[P2.2] Ep 40 MAE 0.7334
+[P2.2] Ep 60 MAE 0.7360
+[P2.2] Ep 80 MAE 0.7359
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: epsilon-greedy (Ratio=0.2)
+MAE: 0.6482
+RMSE: 0.8197
+MAPE: 53.9975
+Acc_10: 22.1591
+Acc_20: 47.7273
+------------------------------------------------------------

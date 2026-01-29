@@ -1,0 +1,342 @@
+--- Enthalpy Baseline: epsilon-greedy (Ratio: 0.6) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.04it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.02it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.11it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.06it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:01,  1.03s/it]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:06<00:00,  1.09s/it]                                                                               -> Source reduced: 6074 -> 3644
+
+=== Phase 1: Source Pre-training ===
+
+-> [Ep 10] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.47it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.14it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.14it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.08it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 10: Loss 0.2649 | Val MAE 171.2880
+
+-> [Ep 20] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.10it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.21it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.25it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.12it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.14it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.06it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 20: Loss 0.1514 | Val MAE 221.9136
+
+-> [Ep 30] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.54it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.47it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.45it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.03it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 30: Loss 0.1208 | Val MAE 237.8785
+
+-> [Ep 40] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.67it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.44it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.14it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 40: Loss 0.1089 | Val MAE 215.1104
+
+-> [Ep 50] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.19it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.32it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.33it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.31it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.26it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 50: Loss 0.1122 | Val MAE 131.2091
+
+-> [Ep 60] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.15it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.31it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.31it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.32it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.26it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 60: Loss 0.1607 | Val MAE 123.0810
+
+-> [Ep 70] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.60it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.52it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.28it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.26it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.22it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.11it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 70: Loss 0.1341 | Val MAE 139.7345
+
+-> [Ep 80] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.56it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.26it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.25it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.24it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 80: Loss 0.0680 | Val MAE 111.1577
+
+-> [Ep 90] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.48it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.48it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.15it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.08it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 90: Loss 0.0906 | Val MAE 118.5597
+
+-> [Ep 100] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.58it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.54it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.41it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.19it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.11it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 100: Loss 0.1031 | Val MAE 112.2397
+
+-> [Ep 110] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.60it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.54it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 110: Loss 0.0588 | Val MAE 93.0654
+
+-> [Ep 120] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.57it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.49it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.38it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.21it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 120: Loss 0.0776 | Val MAE 97.2839
+
+-> [Ep 130] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.14it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.36it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.36it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.29it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.21it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.13it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 130: Loss 0.0687 | Val MAE 90.4463
+
+-> [Ep 140] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.65it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.33it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.31it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.33it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.29it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 140: Loss 0.0750 | Val MAE 107.3004
+
+-> [Ep 150] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.55it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.42it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.38it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.15it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.16it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.06it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 150: Loss 0.0538 | Val MAE 106.6064
+
+-> [Ep 160] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.64it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.49it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.29it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.10it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 160: Loss 0.0723 | Val MAE 97.4309
+
+-> [Ep 170] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.74it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.56it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.33it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.31it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.26it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.11it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 170: Loss 0.0380 | Val MAE 126.1503
+
+-> [Ep 180] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.37it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.33it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.25it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 180: Loss 0.0707 | Val MAE 121.7325
+
+-> [Ep 190] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.12it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.31it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.34it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.23it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.21it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.10it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 190: Loss 0.0384 | Val MAE 119.9486
+
+-> [Ep 200] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.62it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.55it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.28it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.25it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.25it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 200: Loss 0.0550 | Val MAE 148.6866
+
+-> [Ep 210] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.59it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.48it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.26it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.27it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.24it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.14it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 210: Loss 0.0415 | Val MAE 147.9939
+
+-> [Ep 220] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.59it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.49it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.19it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.08it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 220: Loss 0.0331 | Val MAE 118.3712
+
+-> [Ep 230] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.72it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.58it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:02,  1.49it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.39it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.20it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.08it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 230: Loss 0.0400 | Val MAE 185.2882
+
+-> [Ep 240] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.49it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.49it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.44it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 240: Loss 0.0398 | Val MAE 160.2530
+
+-> [Ep 250] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.69it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.47it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.40it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.34it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.17it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 250: Loss 0.0272 | Val MAE 161.7700
+
+-> [Ep 260] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.09it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.30it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.26it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.23it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.19it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 260: Loss 0.0272 | Val MAE 232.6819
+
+-> [Ep 270] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.68it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.30it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.33it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.32it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.26it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 270: Loss 0.0271 | Val MAE 185.1306
+
+-> [Ep 280] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.53it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.23it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.22it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.17it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.06it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 280: Loss 0.0282 | Val MAE 103.9823
+
+-> [Ep 290] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.58it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.50it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.42it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.20it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:04<00:00,  1.16it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 290: Loss 0.0256 | Val MAE 192.0339
+
+-> [Ep 300] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.54it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.42it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.28it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.26it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.23it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 300: Loss 0.0246 | Val MAE 148.4478
+
+-> [Ep 310] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.66it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.54it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.45it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.22it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 310: Loss 0.0187 | Val MAE 181.8407
+
+-> [Ep 320] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.76it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.60it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:02,  1.49it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.19it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.19it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.11it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 320: Loss 0.0210 | Val MAE 128.3516
+
+-> [Ep 330] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.19it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.29it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.29it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.29it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.24it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 330: Loss 0.0215 | Val MAE 151.3546
+
+-> [Ep 340] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.53it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.20it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.30it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:03<00:01,  1.30it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.25it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.13it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 340: Loss 0.0234 | Val MAE 154.1294
+
+-> [Ep 350] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.67it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.56it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:02,  1.49it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.25it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.24it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.12it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 350: Loss 0.0169 | Val MAE 146.3142
+
+-> [Ep 360] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.80it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.36it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.35it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.30it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.16it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 360: Loss 0.0178 | Val MAE 159.2568
+
+-> [Ep 370] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.47it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:03,  1.33it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.38it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.35it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.17it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 370: Loss 0.0194 | Val MAE 180.1766
+
+-> [Ep 380] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.61it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.61it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:01,  1.56it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.52it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 380: Loss 0.0158 | Val MAE 160.8696
+
+-> [Ep 390] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.69it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.67it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:01,  1.63it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.56it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.48it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 390: Loss 0.0200 | Val MAE 171.6190
+
+-> [Ep 400] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.66it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.59it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:01,  1.56it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.45it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 400: Loss 0.0173 | Val MAE 197.7725
+
+-> [Ep 410] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.21it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:01,  1.50it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 410: Loss 0.0154 | Val MAE 210.3623
+
+-> [Ep 420] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.67it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.69it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.43it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.45it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.28it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 420: Loss 0.0156 | Val MAE 170.2265
+
+-> [Ep 430] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.67it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:01,  1.61it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.37it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.27it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 430: Loss 0.0178 | Val MAE 183.3588
+
+-> [Ep 440] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.55it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:01,  1.52it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.50it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.20it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 440: Loss 0.0266 | Val MAE 208.9434
+
+-> [Ep 450] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.65it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.66it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:01,  1.58it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.27it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 450: Loss 0.0116 | Val MAE 175.8693
+
+-> [Ep 460] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.51it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:01,  1.52it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.44it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.40it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 460: Loss 0.0112 | Val MAE 202.4579
+
+-> [Ep 470] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:04,  1.20it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.42it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.48it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.48it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.44it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 470: Loss 0.0151 | Val MAE 210.6145
+
+-> [Ep 480] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:02,  1.70it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.70it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.33it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.31it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.29it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 480: Loss 0.0118 | Val MAE 142.8388
+
+-> [Ep 490] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.65it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.64it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.39it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.36it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 490: Loss 0.0113 | Val MAE 170.5076
+
+-> [Ep 500] Re-sampling Coreset via epsilon-greedy...
+
+[Sampler] Running epsilon-greedy | Target: 3644/6074 (60.0%)
+Scanning Source (epsilon-greedy):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (epsilon-greedy):  17%|█▋        | 1/6 [00:00<00:03,  1.60it/s]Scanning Source (epsilon-greedy):  33%|███▎      | 2/6 [00:01<00:02,  1.62it/s]Scanning Source (epsilon-greedy):  50%|█████     | 3/6 [00:01<00:01,  1.56it/s]Scanning Source (epsilon-greedy):  67%|██████▋   | 4/6 [00:02<00:01,  1.50it/s]Scanning Source (epsilon-greedy):  83%|████████▎ | 5/6 [00:03<00:00,  1.31it/s]Scanning Source (epsilon-greedy): 100%|██████████| 6/6 [00:04<00:00,  1.19it/s]                                                                               -> Coreset Updated. Size: 3644
+[P1] Ep 500: Loss 0.0114 | Val MAE 169.6139
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.7087 | Val MAE 34.2250
+[FT] Ep 20: Loss 0.6740 | Val MAE 34.3513
+[FT] Ep 30: Loss 0.6628 | Val MAE 32.1705
+[FT] Ep 40: Loss 0.6425 | Val MAE 32.1279
+[FT] Ep 50: Loss 0.6436 | Val MAE 33.7621
+[FT] Ep 60: Loss 0.5741 | Val MAE 31.0014
+[FT] Ep 70: Loss 0.5684 | Val MAE 29.6222
+[FT] Ep 80: Loss 0.5685 | Val MAE 34.2805
+[FT] Ep 90: Loss 0.5631 | Val MAE 32.1550
+[FT] Ep 100: Loss 0.4941 | Val MAE 32.4157
+[FT] Ep 110: Loss 0.5016 | Val MAE 32.3228
+[FT] Ep 120: Loss 0.4894 | Val MAE 32.9306
+[FT] Ep 130: Loss 0.5315 | Val MAE 31.4981
+[FT] Ep 140: Loss 0.4758 | Val MAE 32.0946
+[FT] Ep 150: Loss 0.4953 | Val MAE 34.9737
+[FT] Ep 160: Loss 0.4770 | Val MAE 31.0075
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: epsilon-greedy
+   MAE:  27.7822
+   RMSE: 38.4361
+   MAPE: 100.80 %
+   Acc:  16.67 %
+------------------------------------------------------------

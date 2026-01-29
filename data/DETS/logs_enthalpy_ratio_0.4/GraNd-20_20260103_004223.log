@@ -1,0 +1,89 @@
+--- Enthalpy Baseline: GraNd-20 (Ratio: 0.4) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running GraNd-20 | Target: 2429/6074 (40.0%)
+Scanning Source (GraNd-20):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (GraNd-20):  17%|█▋        | 1/6 [00:01<00:06,  1.40s/it]Scanning Source (GraNd-20):  33%|███▎      | 2/6 [00:02<00:05,  1.32s/it]Scanning Source (GraNd-20):  50%|█████     | 3/6 [00:03<00:03,  1.14s/it]Scanning Source (GraNd-20):  67%|██████▋   | 4/6 [00:04<00:02,  1.14s/it]Scanning Source (GraNd-20):  83%|████████▎ | 5/6 [00:05<00:01,  1.17s/it]Scanning Source (GraNd-20): 100%|██████████| 6/6 [00:07<00:00,  1.31s/it]                                                                         -> Source reduced: 6074 -> 2429
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 10: Loss 0.3322 | Val MAE 135.5099
+[P1] Ep 20: Loss 0.1906 | Val MAE 183.1164
+[P1] Ep 30: Loss 0.1708 | Val MAE 152.6581
+[P1] Ep 40: Loss 0.1047 | Val MAE 193.6498
+[P1] Ep 50: Loss 0.0931 | Val MAE 161.5762
+[P1] Ep 60: Loss 0.0798 | Val MAE 99.6144
+[P1] Ep 70: Loss 0.0881 | Val MAE 98.4430
+[P1] Ep 80: Loss 0.0985 | Val MAE 134.8920
+[P1] Ep 90: Loss 0.0727 | Val MAE 129.6868
+[P1] Ep 100: Loss 0.1678 | Val MAE 74.5927
+[P1] Ep 110: Loss 0.0767 | Val MAE 105.7880
+[P1] Ep 120: Loss 0.0510 | Val MAE 106.7807
+[P1] Ep 130: Loss 0.0763 | Val MAE 100.0614
+[P1] Ep 140: Loss 0.0733 | Val MAE 184.4950
+[P1] Ep 150: Loss 0.0474 | Val MAE 118.4860
+[P1] Ep 160: Loss 0.0471 | Val MAE 174.1510
+[P1] Ep 170: Loss 0.0524 | Val MAE 125.7336
+[P1] Ep 180: Loss 0.0395 | Val MAE 109.8046
+[P1] Ep 190: Loss 0.0394 | Val MAE 151.1792
+[P1] Ep 200: Loss 0.0353 | Val MAE 187.7534
+[P1] Ep 210: Loss 0.0392 | Val MAE 125.7550
+[P1] Ep 220: Loss 0.0389 | Val MAE 171.7275
+[P1] Ep 230: Loss 0.0396 | Val MAE 184.7691
+[P1] Ep 240: Loss 0.0315 | Val MAE 212.4240
+[P1] Ep 250: Loss 0.0396 | Val MAE 144.9271
+[P1] Ep 260: Loss 0.0254 | Val MAE 116.9719
+[P1] Ep 270: Loss 0.0324 | Val MAE 140.5534
+[P1] Ep 280: Loss 0.0238 | Val MAE 114.8241
+[P1] Ep 290: Loss 0.0196 | Val MAE 107.3327
+[P1] Ep 300: Loss 0.0299 | Val MAE 111.1173
+[P1] Ep 310: Loss 0.0242 | Val MAE 128.3638
+[P1] Ep 320: Loss 0.0281 | Val MAE 120.6902
+[P1] Ep 330: Loss 0.0226 | Val MAE 115.2783
+[P1] Ep 340: Loss 0.0244 | Val MAE 118.1510
+[P1] Ep 350: Loss 0.0229 | Val MAE 105.2185
+[P1] Ep 360: Loss 0.0225 | Val MAE 116.0255
+[P1] Ep 370: Loss 0.0239 | Val MAE 133.4191
+[P1] Ep 380: Loss 0.0188 | Val MAE 113.5134
+[P1] Ep 390: Loss 0.0192 | Val MAE 108.3481
+[P1] Ep 400: Loss 0.0183 | Val MAE 123.5974
+[P1] Ep 410: Loss 0.0204 | Val MAE 132.1338
+[P1] Ep 420: Loss 0.0199 | Val MAE 112.4180
+[P1] Ep 430: Loss 0.0193 | Val MAE 126.3755
+[P1] Ep 440: Loss 0.0195 | Val MAE 127.5662
+[P1] Ep 450: Loss 0.0148 | Val MAE 123.3912
+[P1] Ep 460: Loss 0.0236 | Val MAE 126.8494
+[P1] Ep 470: Loss 0.0124 | Val MAE 114.9071
+[P1] Ep 480: Loss 0.0178 | Val MAE 123.4859
+[P1] Ep 490: Loss 0.0125 | Val MAE 138.2498
+[P1] Ep 500: Loss 0.0142 | Val MAE 138.7133
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.7548 | Val MAE 31.5314
+[FT] Ep 20: Loss 0.7583 | Val MAE 34.5133
+[FT] Ep 30: Loss 0.7212 | Val MAE 33.3592
+[FT] Ep 40: Loss 0.6922 | Val MAE 33.4554
+[FT] Ep 50: Loss 0.6383 | Val MAE 32.6580
+[FT] Ep 60: Loss 0.6413 | Val MAE 30.6775
+[FT] Ep 70: Loss 0.6064 | Val MAE 31.2007
+[FT] Ep 80: Loss 0.5825 | Val MAE 33.7539
+[FT] Ep 90: Loss 0.6083 | Val MAE 28.4439
+[FT] Ep 100: Loss 0.5592 | Val MAE 31.2536
+[FT] Ep 110: Loss 0.4951 | Val MAE 33.8962
+[FT] Ep 120: Loss 0.5358 | Val MAE 34.9536
+[FT] Ep 130: Loss 0.5836 | Val MAE 32.2108
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: GraNd-20
+   MAE:  28.0179
+   RMSE: 35.9439
+   MAPE: 109.99 %
+   Acc:  11.11 %
+------------------------------------------------------------

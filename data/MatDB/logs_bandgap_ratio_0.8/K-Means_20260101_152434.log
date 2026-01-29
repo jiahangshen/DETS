@@ -1,0 +1,92 @@
+--- Baseline MLP Pipeline (Method: K-Means) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [K-Means] ===
+   Target Ratio: 80.0%
+
+[Sampler] Running K-Means | Target: 6326/7908 (80.0%)
+Scanning Source (K-Means):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (K-Means):  12%|█▎        | 1/8 [00:00<00:00,  7.79it/s]                                                                           Running KMeans...
+-> Selected 6326 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.8599
+[P1] Ep 40: Loss 0.7156
+[P1] Ep 60: Loss 0.6343
+[P1] Ep 80: Loss 0.5702
+[P1] Ep 100: Loss 0.5183
+[P1] Ep 120: Loss 0.4884
+[P1] Ep 140: Loss 0.4385
+[P1] Ep 160: Loss 0.4238
+[P1] Ep 180: Loss 0.3921
+[P1] Ep 200: Loss 0.3723
+[P1] Ep 220: Loss 0.3454
+[P1] Ep 240: Loss 0.3388
+[P1] Ep 260: Loss 0.3228
+[P1] Ep 280: Loss 0.3053
+[P1] Ep 300: Loss 0.2904
+[P1] Ep 320: Loss 0.2751
+[P1] Ep 340: Loss 0.2761
+[P1] Ep 360: Loss 0.2564
+[P1] Ep 380: Loss 0.2447
+[P1] Ep 400: Loss 0.2354
+[P1] Ep 420: Loss 0.2324
+[P1] Ep 440: Loss 0.2217
+[P1] Ep 460: Loss 0.2171
+[P1] Ep 480: Loss 0.2126
+[P1] Ep 500: Loss 0.1985
+[P1] Ep 520: Loss 0.2033
+[P1] Ep 540: Loss 0.1863
+[P1] Ep 560: Loss 0.1848
+[P1] Ep 580: Loss 0.1763
+[P1] Ep 600: Loss 0.1716
+[P1] Ep 620: Loss 0.1687
+[P1] Ep 640: Loss 0.1674
+[P1] Ep 660: Loss 0.1612
+[P1] Ep 680: Loss 0.1546
+[P1] Ep 700: Loss 0.1592
+[P1] Ep 720: Loss 0.1568
+[P1] Ep 740: Loss 0.1444
+[P1] Ep 760: Loss 0.1430
+[P1] Ep 780: Loss 0.1378
+[P1] Ep 800: Loss 0.1387
+[P1] Ep 820: Loss 0.1336
+[P1] Ep 840: Loss 0.1323
+[P1] Ep 860: Loss 0.1269
+[P1] Ep 880: Loss 0.1244
+[P1] Ep 900: Loss 0.1244
+[P1] Ep 920: Loss 0.1217
+[P1] Ep 940: Loss 0.1206
+[P1] Ep 960: Loss 0.1192
+[P1] Ep 980: Loss 0.1087
+[P1] Ep 1000: Loss 0.1135
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.7987
+[P2.1] Ep 100 MAE 0.7990
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.7252
+[P2.2] Ep 40 MAE 0.7367
+[P2.2] Ep 60 MAE 0.7309
+[P2.2] Ep 80 MAE 0.7245
+[P2.2] Ep 100 MAE 0.7189
+[P2.2] Ep 120 MAE 0.7242
+[P2.2] Ep 140 MAE 0.7197
+[P2.2] Ep 160 MAE 0.7225
+[P2.2] Ep 180 MAE 0.7133
+[P2.2] Ep 200 MAE 0.7222
+[P2.2] Ep 220 MAE 0.7237
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: K-Means (Ratio=0.8)
+MAE: 0.6427
+RMSE: 0.8101
+MAPE: 49.8968
+Acc_10: 23.8636
+Acc_20: 49.4318
+------------------------------------------------------------

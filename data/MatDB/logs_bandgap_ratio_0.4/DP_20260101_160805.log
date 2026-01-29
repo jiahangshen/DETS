@@ -1,0 +1,85 @@
+--- Baseline MLP Pipeline (Method: DP) ---
+Loading data from:
+  Theory: ../bandgap/theory_features_clean.csv
+  Exp: ../bandgap/exp_features_clean.csv
+Full Source Data: 7908 | Target Train: 632
+Initializing ResNet Baseline (Dim=128)...
+
+=== Stage 0: Coreset Selection [DP] ===
+   Target Ratio: 40.0%
+
+[Sampler] Running DP | Target: 3163/7908 (40.0%)
+Scanning Source (DP):   0%|          | 0/8 [00:00<?, ?it/s]Scanning Source (DP):  12%|█▎        | 1/8 [00:00<00:00,  9.05it/s]                                                                   -> Selected 3163 samples.
+
+=== PHASE 1: Source Pre-training ===
+[P1] Ep 20: Loss 0.9973
+[P1] Ep 40: Loss 0.7752
+[P1] Ep 60: Loss 0.7125
+[P1] Ep 80: Loss 0.6385
+[P1] Ep 100: Loss 0.5854
+[P1] Ep 120: Loss 0.5115
+[P1] Ep 140: Loss 0.5115
+[P1] Ep 160: Loss 0.4619
+[P1] Ep 180: Loss 0.4247
+[P1] Ep 200: Loss 0.4046
+[P1] Ep 220: Loss 0.3869
+[P1] Ep 240: Loss 0.3639
+[P1] Ep 260: Loss 0.3276
+[P1] Ep 280: Loss 0.3149
+[P1] Ep 300: Loss 0.3041
+[P1] Ep 320: Loss 0.2923
+[P1] Ep 340: Loss 0.2742
+[P1] Ep 360: Loss 0.2631
+[P1] Ep 380: Loss 0.2518
+[P1] Ep 400: Loss 0.2490
+[P1] Ep 420: Loss 0.2318
+[P1] Ep 440: Loss 0.2263
+[P1] Ep 460: Loss 0.2144
+[P1] Ep 480: Loss 0.2124
+[P1] Ep 500: Loss 0.2000
+[P1] Ep 520: Loss 0.2028
+[P1] Ep 540: Loss 0.1970
+[P1] Ep 560: Loss 0.1804
+[P1] Ep 580: Loss 0.1735
+[P1] Ep 600: Loss 0.1598
+[P1] Ep 620: Loss 0.1675
+[P1] Ep 640: Loss 0.1699
+[P1] Ep 660: Loss 0.1602
+[P1] Ep 680: Loss 0.1583
+[P1] Ep 700: Loss 0.1416
+[P1] Ep 720: Loss 0.1482
+[P1] Ep 740: Loss 0.1501
+[P1] Ep 760: Loss 0.1373
+[P1] Ep 780: Loss 0.1292
+[P1] Ep 800: Loss 0.1359
+[P1] Ep 820: Loss 0.1268
+[P1] Ep 840: Loss 0.1288
+[P1] Ep 860: Loss 0.1149
+[P1] Ep 880: Loss 0.1225
+[P1] Ep 900: Loss 0.1258
+[P1] Ep 920: Loss 0.1092
+[P1] Ep 940: Loss 0.1087
+[P1] Ep 960: Loss 0.1031
+[P1] Ep 980: Loss 0.1043
+[P1] Ep 1000: Loss 0.1031
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 50 MAE 0.8528
+[P2.1] Ep 100 MAE 0.8479
+[P2.1] Ep 150 MAE 0.7617
+[P2.1] Ep 200 MAE 0.8193
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.6746
+[P2.2] Ep 40 MAE 0.6710
+[P2.2] Ep 60 MAE 0.6765
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+Method: DP (Ratio=0.4)
+MAE: 0.6599
+RMSE: 0.8700
+MAPE: 47.7701
+Acc_10: 29.5455
+Acc_20: 47.1591
+------------------------------------------------------------

@@ -1,0 +1,145 @@
+-> Loading CSVs...
+-> Selected 128 features.
+-> Target Stats: Mean=2.7508, Std=1.5292
+Source Data: 7908 | Target Train: 632
+Initializing ResNet DETS Model (Dim=128)...
+-> Applying Sparsity Init...
+
+=== PHASE 1: Source Pre-training (Soft DETS) ===
+-> Extracting Prototypes...
+[P1] Ep 20: Loss 0.6895 | Val MAE 1.3689
+[P1] Ep 40: Loss 0.6065 | Val MAE 1.3133
+[P1] Ep 60: Loss 0.5506 | Val MAE 1.2470
+[P1] Ep 80: Loss 0.5187 | Val MAE 1.2549
+[P1] Ep 100: Loss 0.4875 | Val MAE 1.1893
+[P1] Ep 120: Loss 0.4569 | Val MAE 1.1566
+[P1] Ep 140: Loss 0.4434 | Val MAE 1.2511
+[P1] Ep 160: Loss 0.3982 | Val MAE 1.2083
+[P1] Ep 180: Loss 0.3767 | Val MAE 1.2488
+[P1] Ep 200: Loss 0.3509 | Val MAE 1.2231
+[P1] Ep 220: Loss 0.3290 | Val MAE 1.2392
+[P1] Ep 240: Loss 0.2970 | Val MAE 1.2253
+[P1] Ep 260: Loss 0.2857 | Val MAE 1.2601
+[P1] Ep 280: Loss 0.2701 | Val MAE 1.2264
+[P1] Ep 300: Loss 0.2504 | Val MAE 1.2585
+[P1] Ep 320: Loss 0.2243 | Val MAE 1.2654
+[P1] Ep 340: Loss 0.2158 | Val MAE 1.2200
+[P1] Ep 360: Loss 0.2174 | Val MAE 1.2202
+[P1] Ep 380: Loss 0.1847 | Val MAE 1.2624
+[P1] Ep 400: Loss 0.1760 | Val MAE 1.2536
+[P1] Ep 420: Loss 0.1642 | Val MAE 1.2072
+[P1] Ep 440: Loss 0.1454 | Val MAE 1.2469
+[P1] Ep 460: Loss 0.1499 | Val MAE 1.2823
+[P1] Ep 480: Loss 0.1398 | Val MAE 1.2627
+[P1] Ep 500: Loss 0.1062 | Val MAE 1.2469
+[P1] Ep 520: Loss 0.0932 | Val MAE 1.2490
+[P1] Ep 540: Loss 0.0952 | Val MAE 1.2859
+[P1] Ep 560: Loss 0.0850 | Val MAE 1.2333
+[P1] Ep 580: Loss 0.0639 | Val MAE 1.2323
+[P1] Ep 600: Loss 0.0584 | Val MAE 1.2681
+[P1] Ep 620: Loss 0.0625 | Val MAE 1.2380
+[P1] Ep 640: Loss 0.0183 | Val MAE 1.2394
+[P1] Ep 660: Loss 0.0249 | Val MAE 1.2260
+[P1] Ep 680: Loss 0.0277 | Val MAE 1.2717
+[P1] Ep 700: Loss 0.0346 | Val MAE 1.2223
+[P1] Ep 720: Loss 0.0095 | Val MAE 1.2183
+[P1] Ep 740: Loss -0.0005 | Val MAE 1.2283
+[P1] Ep 760: Loss 0.0070 | Val MAE 1.2368
+[P1] Ep 780: Loss -0.0131 | Val MAE 1.2267
+[P1] Ep 800: Loss -0.0355 | Val MAE 1.2673
+[P1] Ep 820: Loss -0.0175 | Val MAE 1.2564
+[P1] Ep 840: Loss -0.0171 | Val MAE 1.2447
+[P1] Ep 860: Loss -0.0454 | Val MAE 1.2623
+[P1] Ep 880: Loss -0.0449 | Val MAE 1.2653
+[P1] Ep 900: Loss -0.0595 | Val MAE 1.1830
+[P1] Ep 920: Loss -0.0784 | Val MAE 1.2271
+[P1] Ep 940: Loss -0.0779 | Val MAE 1.2192
+[P1] Ep 960: Loss -0.0849 | Val MAE 1.1917
+[P1] Ep 980: Loss -0.0897 | Val MAE 1.2276
+[P1] Ep 1000: Loss -0.1010 | Val MAE 1.2785
+
+=== PHASE 2.1: Head Alignment ===
+[P2.1] Ep 20 MAE 0.6529
+[P2.1] Ep 40 MAE 0.6231
+[P2.1] Ep 60 MAE 0.6266
+[P2.1] Ep 80 MAE 0.6241
+[P2.1] Ep 100 MAE 0.6348
+[P2.1] Ep 120 MAE 0.6230
+[P2.1] Ep 140 MAE 0.6257
+[P2.1] Ep 160 MAE 0.6231
+[P2.1] Ep 180 MAE 0.6229
+[P2.1] Ep 200 MAE 0.6270
+[P2.1] Ep 220 MAE 0.6223
+[P2.1] Ep 240 MAE 0.6155
+[P2.1] Ep 260 MAE 0.6183
+[P2.1] Ep 280 MAE 0.6135
+[P2.1] Ep 300 MAE 0.6092
+[P2.1] Ep 320 MAE 0.6120
+[P2.1] Ep 340 MAE 0.6080
+[P2.1] Ep 360 MAE 0.6016
+[P2.1] Ep 380 MAE 0.6012
+[P2.1] Ep 400 MAE 0.6070
+[P2.1] Ep 420 MAE 0.6046
+[P2.1] Ep 440 MAE 0.5940
+[P2.1] Ep 460 MAE 0.5895
+[P2.1] Ep 480 MAE 0.6021
+[P2.1] Ep 500 MAE 0.5974
+[P2.1] Ep 520 MAE 0.5990
+[P2.1] Ep 540 MAE 0.5956
+[P2.1] Ep 560 MAE 0.5936
+[P2.1] Ep 580 MAE 0.6002
+[P2.1] Ep 600 MAE 0.5922
+[P2.1] Ep 620 MAE 0.5863
+[P2.1] Ep 640 MAE 0.5970
+[P2.1] Ep 660 MAE 0.5929
+[P2.1] Ep 680 MAE 0.5933
+[P2.1] Ep 700 MAE 0.5954
+[P2.1] Ep 720 MAE 0.5897
+[P2.1] Ep 740 MAE 0.5936
+[P2.1] Ep 760 MAE 0.5921
+[P2.1] Ep 780 MAE 0.5806
+[P2.1] Ep 800 MAE 0.5771
+[P2.1] Ep 820 MAE 0.5864
+[P2.1] Ep 840 MAE 0.5822
+[P2.1] Ep 860 MAE 0.5846
+[P2.1] Ep 880 MAE 0.5893
+[P2.1] Ep 900 MAE 0.5857
+[P2.1] Ep 920 MAE 0.5907
+[P2.1] Ep 940 MAE 0.5754
+[P2.1] Ep 960 MAE 0.5716
+[P2.1] Ep 980 MAE 0.5819
+[P2.1] Ep 1000 MAE 0.5764
+[P2.1] Ep 1020 MAE 0.5834
+[P2.1] Ep 1040 MAE 0.5767
+[P2.1] Ep 1060 MAE 0.5732
+[P2.1] Ep 1080 MAE 0.5782
+[P2.1] Ep 1100 MAE 0.5754
+[P2.1] Ep 1120 MAE 0.5805
+[P2.1] Ep 1140 MAE 0.5787
+[P2.1] Ep 1160 MAE 0.5905
+[P2.1] Ep 1180 MAE 0.5796
+[P2.1] Ep 1200 MAE 0.5737
+[P2.1] Ep 1220 MAE 0.5639
+[P2.1] Ep 1240 MAE 0.5665
+[P2.1] Ep 1260 MAE 0.5691
+[P2.1] Ep 1280 MAE 0.5738
+[P2.1] Ep 1300 MAE 0.5741
+[P2.1] Ep 1320 MAE 0.5678
+[P2.1] Ep 1340 MAE 0.5720
+[P2.1] Ep 1360 MAE 0.5742
+[P2.1] Ep 1380 MAE 0.5791
+[P2.1] Ep 1400 MAE 0.5713
+
+=== PHASE 2.2: Full Fine-tuning ===
+[P2.2] Ep 20 MAE 0.5646
+[P2.2] Ep 40 MAE 0.5642
+[P2.2] Ep 60 MAE 0.5620
+
+>>> Final Test Evaluation
+------------------------------------------------------------
+MAE: 0.5088
+RMSE: 0.6781
+MAPE: 37.7028
+Acc_10: 32.9545
+Acc_20: 59.0909
+------------------------------------------------------------

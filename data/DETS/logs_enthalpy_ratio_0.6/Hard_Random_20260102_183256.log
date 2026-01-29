@@ -1,0 +1,103 @@
+--- Enthalpy Baseline: Hard Random (Ratio: 0.6) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running Hard Random | Target: 3644/6074 (60.0%)
+-> Source reduced: 6074 -> 3644
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 10: Loss 2.7885 | Val MAE 153.8898
+[P1] Ep 20: Loss 0.9531 | Val MAE 190.0091
+[P1] Ep 30: Loss 0.5485 | Val MAE 230.1471
+[P1] Ep 40: Loss 0.3043 | Val MAE 318.2013
+[P1] Ep 50: Loss 0.2172 | Val MAE 277.3129
+[P1] Ep 60: Loss 0.1560 | Val MAE 253.5539
+[P1] Ep 70: Loss 0.1742 | Val MAE 250.0123
+[P1] Ep 80: Loss 0.1224 | Val MAE 286.1345
+[P1] Ep 90: Loss 0.1267 | Val MAE 306.4729
+[P1] Ep 100: Loss 0.1173 | Val MAE 361.9387
+[P1] Ep 110: Loss 0.1154 | Val MAE 295.7766
+[P1] Ep 120: Loss 0.1071 | Val MAE 259.3639
+[P1] Ep 130: Loss 0.1058 | Val MAE 216.7171
+[P1] Ep 140: Loss 0.0859 | Val MAE 210.5244
+[P1] Ep 150: Loss 0.0826 | Val MAE 329.8412
+[P1] Ep 160: Loss 0.0799 | Val MAE 111.9783
+[P1] Ep 170: Loss 0.0712 | Val MAE 271.7652
+[P1] Ep 180: Loss 0.0693 | Val MAE 351.4414
+[P1] Ep 190: Loss 0.0698 | Val MAE 219.4460
+[P1] Ep 200: Loss 0.0624 | Val MAE 338.5060
+[P1] Ep 210: Loss 0.0590 | Val MAE 262.6420
+[P1] Ep 220: Loss 0.0662 | Val MAE 393.6038
+[P1] Ep 230: Loss 0.0545 | Val MAE 325.4937
+[P1] Ep 240: Loss 0.0531 | Val MAE 301.5611
+[P1] Ep 250: Loss 0.0511 | Val MAE 191.4452
+[P1] Ep 260: Loss 0.0509 | Val MAE 339.0049
+[P1] Ep 270: Loss 0.0463 | Val MAE 203.2331
+[P1] Ep 280: Loss 0.0450 | Val MAE 370.1860
+[P1] Ep 290: Loss 0.0478 | Val MAE 254.8467
+[P1] Ep 300: Loss 0.0458 | Val MAE 233.5723
+[P1] Ep 310: Loss 0.0475 | Val MAE 318.7961
+[P1] Ep 320: Loss 0.0475 | Val MAE 325.6463
+[P1] Ep 330: Loss 0.0455 | Val MAE 307.5482
+[P1] Ep 340: Loss 0.0427 | Val MAE 329.5863
+[P1] Ep 350: Loss 0.0425 | Val MAE 294.8188
+[P1] Ep 360: Loss 0.0466 | Val MAE 246.3974
+[P1] Ep 370: Loss 0.0391 | Val MAE 288.2487
+[P1] Ep 380: Loss 0.0370 | Val MAE 238.4960
+[P1] Ep 390: Loss 0.0353 | Val MAE 330.1067
+[P1] Ep 400: Loss 0.0343 | Val MAE 329.1909
+[P1] Ep 410: Loss 0.0355 | Val MAE 266.9062
+[P1] Ep 420: Loss 0.0390 | Val MAE 242.8988
+[P1] Ep 430: Loss 0.0346 | Val MAE 174.6325
+[P1] Ep 440: Loss 0.0328 | Val MAE 172.3777
+[P1] Ep 450: Loss 0.0363 | Val MAE 314.6094
+[P1] Ep 460: Loss 0.0375 | Val MAE 199.4887
+[P1] Ep 470: Loss 0.0355 | Val MAE 230.3349
+[P1] Ep 480: Loss 0.0358 | Val MAE 372.2737
+[P1] Ep 490: Loss 0.0368 | Val MAE 438.8842
+[P1] Ep 500: Loss 0.0329 | Val MAE 278.0219
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.8998 | Val MAE 31.3585
+[FT] Ep 20: Loss 0.7400 | Val MAE 31.0859
+[FT] Ep 30: Loss 0.6458 | Val MAE 34.8882
+[FT] Ep 40: Loss 0.6558 | Val MAE 30.8721
+[FT] Ep 50: Loss 0.6490 | Val MAE 36.9613
+[FT] Ep 60: Loss 0.6237 | Val MAE 33.9493
+[FT] Ep 70: Loss 0.6436 | Val MAE 33.2509
+[FT] Ep 80: Loss 0.6254 | Val MAE 28.6399
+[FT] Ep 90: Loss 0.5774 | Val MAE 32.7271
+[FT] Ep 100: Loss 0.5773 | Val MAE 30.4761
+[FT] Ep 110: Loss 0.5821 | Val MAE 35.0019
+[FT] Ep 120: Loss 0.5916 | Val MAE 30.2960
+[FT] Ep 130: Loss 0.5872 | Val MAE 31.4540
+[FT] Ep 140: Loss 0.5876 | Val MAE 28.9791
+[FT] Ep 150: Loss 0.5898 | Val MAE 29.9235
+[FT] Ep 160: Loss 0.5944 | Val MAE 32.2523
+[FT] Ep 170: Loss 0.6408 | Val MAE 32.3690
+[FT] Ep 180: Loss 0.6088 | Val MAE 32.5233
+[FT] Ep 190: Loss 0.6528 | Val MAE 33.7222
+[FT] Ep 200: Loss 0.5775 | Val MAE 29.8082
+[FT] Ep 210: Loss 0.5362 | Val MAE 29.4801
+[FT] Ep 220: Loss 0.5663 | Val MAE 32.1588
+[FT] Ep 230: Loss 0.5832 | Val MAE 29.6997
+[FT] Ep 240: Loss 0.5485 | Val MAE 35.1031
+[FT] Ep 250: Loss 0.4834 | Val MAE 29.8152
+[FT] Ep 260: Loss 0.5253 | Val MAE 27.9533
+[FT] Ep 270: Loss 0.5352 | Val MAE 33.1755
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: Hard Random
+   MAE:  29.9804
+   RMSE: 40.7538
+   MAPE: 125.50 %
+   Acc:  11.11 %
+------------------------------------------------------------

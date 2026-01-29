@@ -1,0 +1,100 @@
+--- Enthalpy Baseline: Full (Ratio: 0.8) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+=== Phase 1: Source Pre-training ===
+[P1] Ep 10: Loss 1.3109 | Val MAE 167.6645
+[P1] Ep 20: Loss 0.4149 | Val MAE 343.7554
+[P1] Ep 30: Loss 0.2154 | Val MAE 349.2896
+[P1] Ep 40: Loss 0.1525 | Val MAE 293.4264
+[P1] Ep 50: Loss 0.1267 | Val MAE 381.2936
+[P1] Ep 60: Loss 0.1130 | Val MAE 362.3970
+[P1] Ep 70: Loss 0.1037 | Val MAE 481.4647
+[P1] Ep 80: Loss 0.0850 | Val MAE 583.1963
+[P1] Ep 90: Loss 0.0786 | Val MAE 782.1018
+[P1] Ep 100: Loss 0.0684 | Val MAE 690.7635
+[P1] Ep 110: Loss 0.0648 | Val MAE 777.7252
+[P1] Ep 120: Loss 0.0597 | Val MAE 903.3794
+[P1] Ep 130: Loss 0.0589 | Val MAE 747.0757
+[P1] Ep 140: Loss 0.0473 | Val MAE 910.0150
+[P1] Ep 150: Loss 0.0508 | Val MAE 942.2686
+[P1] Ep 160: Loss 0.0479 | Val MAE 986.8648
+[P1] Ep 170: Loss 0.0480 | Val MAE 1061.8241
+[P1] Ep 180: Loss 0.0455 | Val MAE 952.2072
+[P1] Ep 190: Loss 0.0487 | Val MAE 958.8196
+[P1] Ep 200: Loss 0.0408 | Val MAE 910.8635
+[P1] Ep 210: Loss 0.0456 | Val MAE 689.9799
+[P1] Ep 220: Loss 0.0414 | Val MAE 900.0206
+[P1] Ep 230: Loss 0.0383 | Val MAE 850.3024
+[P1] Ep 240: Loss 0.0413 | Val MAE 704.8090
+[P1] Ep 250: Loss 0.0363 | Val MAE 737.3092
+[P1] Ep 260: Loss 0.0427 | Val MAE 864.0583
+[P1] Ep 270: Loss 0.0392 | Val MAE 629.4511
+[P1] Ep 280: Loss 0.0342 | Val MAE 714.3394
+[P1] Ep 290: Loss 0.0393 | Val MAE 744.0681
+[P1] Ep 300: Loss 0.0330 | Val MAE 500.7495
+[P1] Ep 310: Loss 0.0341 | Val MAE 632.8000
+[P1] Ep 320: Loss 0.0339 | Val MAE 889.7355
+[P1] Ep 330: Loss 0.0320 | Val MAE 855.5071
+[P1] Ep 340: Loss 0.0300 | Val MAE 728.2003
+[P1] Ep 350: Loss 0.0297 | Val MAE 666.6853
+[P1] Ep 360: Loss 0.0312 | Val MAE 649.3606
+[P1] Ep 370: Loss 0.0320 | Val MAE 624.9056
+[P1] Ep 380: Loss 0.0297 | Val MAE 506.1212
+[P1] Ep 390: Loss 0.0280 | Val MAE 362.2202
+[P1] Ep 400: Loss 0.0295 | Val MAE 507.9604
+[P1] Ep 410: Loss 0.0309 | Val MAE 506.0638
+[P1] Ep 420: Loss 0.0274 | Val MAE 559.4756
+[P1] Ep 430: Loss 0.0284 | Val MAE 505.4567
+[P1] Ep 440: Loss 0.0273 | Val MAE 664.4780
+[P1] Ep 450: Loss 0.0260 | Val MAE 593.2306
+[P1] Ep 460: Loss 0.0290 | Val MAE 505.6779
+[P1] Ep 470: Loss 0.0278 | Val MAE 740.0995
+[P1] Ep 480: Loss 0.0248 | Val MAE 740.2897
+[P1] Ep 490: Loss 0.0262 | Val MAE 739.2446
+[P1] Ep 500: Loss 0.0251 | Val MAE 661.7590
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 2.1407 | Val MAE 44.5636
+[FT] Ep 20: Loss 0.9384 | Val MAE 32.5806
+[FT] Ep 30: Loss 0.8488 | Val MAE 36.8862
+[FT] Ep 40: Loss 0.8949 | Val MAE 30.2374
+[FT] Ep 50: Loss 0.6676 | Val MAE 36.0196
+[FT] Ep 60: Loss 0.6377 | Val MAE 32.8966
+[FT] Ep 70: Loss 0.6695 | Val MAE 32.3184
+[FT] Ep 80: Loss 0.6552 | Val MAE 34.6494
+[FT] Ep 90: Loss 0.7242 | Val MAE 31.4378
+[FT] Ep 100: Loss 0.6199 | Val MAE 34.3235
+[FT] Ep 110: Loss 0.6327 | Val MAE 37.5478
+[FT] Ep 120: Loss 0.6577 | Val MAE 32.0452
+[FT] Ep 130: Loss 0.6596 | Val MAE 30.9889
+[FT] Ep 140: Loss 0.6141 | Val MAE 30.8553
+[FT] Ep 150: Loss 0.6704 | Val MAE 33.1635
+[FT] Ep 160: Loss 0.5442 | Val MAE 35.0746
+[FT] Ep 170: Loss 0.5763 | Val MAE 29.9922
+[FT] Ep 180: Loss 0.5697 | Val MAE 31.4538
+[FT] Ep 190: Loss 0.6444 | Val MAE 38.7870
+[FT] Ep 200: Loss 0.5693 | Val MAE 36.1545
+[FT] Ep 210: Loss 0.5699 | Val MAE 27.8447
+[FT] Ep 220: Loss 0.5866 | Val MAE 33.1900
+[FT] Ep 230: Loss 0.5436 | Val MAE 33.1506
+[FT] Ep 240: Loss 0.5823 | Val MAE 37.3206
+[FT] Ep 250: Loss 0.5206 | Val MAE 33.3298
+[FT] Ep 260: Loss 0.5486 | Val MAE 31.5508
+[FT] Ep 270: Loss 0.5345 | Val MAE 33.9197
+[FT] Ep 280: Loss 0.5028 | Val MAE 35.8740
+[FT] Ep 290: Loss 0.5218 | Val MAE 32.2211
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: Full
+   MAE:  26.3510
+   RMSE: 36.8651
+   MAPE: 103.28 %
+   Acc:  16.67 %
+------------------------------------------------------------

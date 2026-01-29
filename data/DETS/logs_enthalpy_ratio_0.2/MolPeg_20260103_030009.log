@@ -1,0 +1,361 @@
+--- Enthalpy Baseline: MolPeg (Ratio: 0.2) ---
+Loading datasets...
+Processing ../enthalpy/atct.csv...
+-> Loaded 358 valid molecules from 358 rows.
+Processing ../enthalpy/wudily_cho.csv...
+-> Loaded 6074 valid molecules from 6074 rows.
+Target Stats: Mean=14.00, Std=51.68
+
+>>> [Stage 0] Sampling...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:06,  1.30s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:05,  1.33s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.23s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.22s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.25s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.40s/it]                                                                       -> Source reduced: 6074 -> 1214
+
+=== Phase 1: Source Pre-training ===
+
+-> [Ep 10] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:06,  1.24s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.15s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.19s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.43s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.46s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.65s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 10: Loss 1.0269 | Val MAE 101.1422
+
+-> [Ep 20] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.10s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.21s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.18s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.27s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.28s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.39s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 20: Loss 0.6768 | Val MAE 77.2419
+
+-> [Ep 30] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.07it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.04s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.19s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.27s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.36s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.66s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 30: Loss 0.5816 | Val MAE 93.6545
+
+-> [Ep 40] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.01s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.01it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.02s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.07s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.21s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.48s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 40: Loss 0.5796 | Val MAE 84.0071
+
+-> [Ep 50] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.00it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.11it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:02<00:02,  1.00it/s]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.08s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.22s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.35s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 50: Loss 0.3427 | Val MAE 83.7069
+
+-> [Ep 60] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.15s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:06,  1.51s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:04<00:04,  1.50s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.42s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:07<00:01,  1.38s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.52s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 60: Loss 0.2017 | Val MAE 51.6232
+
+-> [Ep 70] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.16it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.06it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.16s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.16s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.22s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.26s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 70: Loss 0.2096 | Val MAE 167.0476
+
+-> [Ep 80] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.09s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.19s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.15s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.26s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.51s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.68s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 80: Loss 0.2104 | Val MAE 65.8587
+
+-> [Ep 90] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.00it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.08s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.16s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.22s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.26s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.53s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 90: Loss 0.1932 | Val MAE 104.3548
+
+-> [Ep 100] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.05it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.07it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:02<00:02,  1.08it/s]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:03<00:02,  1.03s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.13s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:06<00:00,  1.20s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 100: Loss 0.2875 | Val MAE 125.4958
+
+-> [Ep 110] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:06,  1.39s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:05,  1.29s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.29s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.27s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.33s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.53s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 110: Loss 0.2726 | Val MAE 157.1385
+
+-> [Ep 120] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.02it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.21s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.28s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.36s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.41s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.58s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 120: Loss 0.1320 | Val MAE 132.4030
+
+-> [Ep 130] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:03,  1.41it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:02<00:02,  1.09it/s]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:03<00:01,  1.06it/s]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:04<00:01,  1.07s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:06<00:00,  1.22s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 130: Loss 0.2208 | Val MAE 103.8739
+
+-> [Ep 140] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.06s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.17s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.26s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.47s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:07<00:01,  1.51s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.59s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 140: Loss 0.1289 | Val MAE 59.7208
+
+-> [Ep 150] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.07it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.04it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.10s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.14s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.27s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.36s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 150: Loss 0.1902 | Val MAE 91.6671
+
+-> [Ep 160] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.20it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:04,  1.03s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.15s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.28s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.35s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.55s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 160: Loss 0.1835 | Val MAE 91.0393
+
+-> [Ep 170] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:06,  1.24s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:03,  1.04it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:02<00:02,  1.13it/s]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:03<00:01,  1.09it/s]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.10s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.41s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 170: Loss 0.2475 | Val MAE 88.8636
+
+-> [Ep 180] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.08it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.21s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.16s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.20s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.20s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.33s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 180: Loss 0.5023 | Val MAE 169.5523
+
+-> [Ep 190] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.07it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.15s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.05s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.00s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.36s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 190: Loss 0.2249 | Val MAE 64.0739
+
+-> [Ep 200] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:06,  1.20s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.23s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.27s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.43s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.33s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.44s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 200: Loss 0.2466 | Val MAE 69.7202
+
+-> [Ep 210] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.00it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.17s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.25s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.37s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.46s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.51s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 210: Loss 0.2357 | Val MAE 57.3349
+
+-> [Ep 220] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.01s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.15s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.18s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.23s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.40s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.71s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 220: Loss 0.2156 | Val MAE 73.0176
+
+-> [Ep 230] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.14it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.04s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.09s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.11s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.27s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.36s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 230: Loss 0.1512 | Val MAE 31.4643
+
+-> [Ep 240] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:06,  1.22s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:05,  1.26s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.32s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.34s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.29s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.32s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 240: Loss 0.1414 | Val MAE 67.0029
+
+-> [Ep 250] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.20it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.18s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.11s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.15s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.24s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.53s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 250: Loss 0.0838 | Val MAE 39.7738
+
+-> [Ep 260] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.08it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.00it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.19s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.11s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.14s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.34s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 260: Loss 0.3670 | Val MAE 87.0216
+
+-> [Ep 270] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.06it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.08s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.24s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.24s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.34s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.36s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 270: Loss 0.2638 | Val MAE 46.3742
+
+-> [Ep 280] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.16it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.04it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.07s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.11s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.23s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.41s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 280: Loss 0.4947 | Val MAE 95.0540
+
+-> [Ep 290] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.12s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.13s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:04,  1.34s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.44s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:07<00:01,  1.55s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:09<00:00,  1.85s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 290: Loss 0.3525 | Val MAE 49.5815
+
+-> [Ep 300] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.16it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:04,  1.00s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.12s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.17s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.21s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.35s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 300: Loss 2.0390 | Val MAE 57.9965
+
+-> [Ep 310] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:07,  1.51s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:05,  1.35s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:04<00:03,  1.33s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.25s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.24s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.38s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 310: Loss 4.0801 | Val MAE 35.8119
+
+-> [Ep 320] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.21it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.24s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.29s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.26s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.30s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.40s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 320: Loss 2.2081 | Val MAE 48.8575
+
+-> [Ep 330] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.02s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.17s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:04,  1.40s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.29s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.37s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.51s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 330: Loss 3.7273 | Val MAE 89.5689
+
+-> [Ep 340] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.05s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.17s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.23s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.33s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.51s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.58s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 340: Loss 1.7767 | Val MAE 75.9369
+
+-> [Ep 350] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.13it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.04it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.06s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.13s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.18s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.30s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 350: Loss 2.5347 | Val MAE 114.4722
+
+-> [Ep 360] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.11it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.03it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.04s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.07s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.18s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.35s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 360: Loss 1.5022 | Val MAE 109.7276
+
+-> [Ep 370] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.11it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.03s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.08s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.12s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.21s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.39s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 370: Loss 1.8115 | Val MAE 58.8138
+
+-> [Ep 380] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.16it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.09s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.25s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.22s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.25s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.39s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 380: Loss 1.3836 | Val MAE 68.1411
+
+-> [Ep 390] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.20it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.04s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.21s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.18s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.32s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.54s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 390: Loss 1.8341 | Val MAE 68.3441
+
+-> [Ep 400] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.19it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.08s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.18s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.19s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.37s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.45s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 400: Loss 1.4907 | Val MAE 121.2429
+
+-> [Ep 410] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.09it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:02<00:02,  1.00it/s]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.18s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.20s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.41s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 410: Loss 0.9002 | Val MAE 52.0180
+
+-> [Ep 420] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.24it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.18it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:02<00:02,  1.09it/s]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:03<00:02,  1.03s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.10s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:06<00:00,  1.25s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 420: Loss 0.9420 | Val MAE 122.9531
+
+-> [Ep 430] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.13it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.13s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.12s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.19s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.30s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.41s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 430: Loss 0.8449 | Val MAE 72.6351
+
+-> [Ep 440] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:03,  1.26it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.03it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:04,  1.34s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.45s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:07<00:01,  1.55s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.69s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 440: Loss 0.5869 | Val MAE 102.9602
+
+-> [Ep 450] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.10s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.11s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:04,  1.36s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:05<00:02,  1.40s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:07<00:01,  1.54s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:09<00:00,  1.66s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 450: Loss 0.9882 | Val MAE 49.0340
+
+-> [Ep 460] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.01it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.02it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.03s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.10s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.27s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.46s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 460: Loss 1.3981 | Val MAE 97.7844
+
+-> [Ep 470] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:01<00:05,  1.07s/it]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.13s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.21s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.30s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:06<00:01,  1.40s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:08<00:00,  1.57s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 470: Loss 0.7466 | Val MAE 39.2158
+
+-> [Ep 480] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.15it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.05it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:02<00:02,  1.02it/s]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.05s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.26s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.51s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 480: Loss 0.7714 | Val MAE 127.4119
+
+-> [Ep 490] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.10it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:02<00:04,  1.21s/it]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.14s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.18s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.21s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.39s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 490: Loss 0.6304 | Val MAE 87.1571
+
+-> [Ep 500] Re-sampling Coreset via MolPeg...
+
+[Sampler] Running MolPeg | Target: 1214/6074 (20.0%)
+Scanning Source (MolPeg):   0%|          | 0/6 [00:00<?, ?it/s]Scanning Source (MolPeg):  17%|█▋        | 1/6 [00:00<00:04,  1.15it/s]Scanning Source (MolPeg):  33%|███▎      | 2/6 [00:01<00:03,  1.01it/s]Scanning Source (MolPeg):  50%|█████     | 3/6 [00:03<00:03,  1.20s/it]Scanning Source (MolPeg):  67%|██████▋   | 4/6 [00:04<00:02,  1.23s/it]Scanning Source (MolPeg):  83%|████████▎ | 5/6 [00:05<00:01,  1.23s/it]Scanning Source (MolPeg): 100%|██████████| 6/6 [00:07<00:00,  1.40s/it]                                                                       -> Coreset Updated. Size: 1214
+[P1] Ep 500: Loss 1.3082 | Val MAE 79.3453
+
+=== Phase 2: Target Fine-tuning ===
+[FT] Ep 10: Loss 0.8806 | Val MAE 34.7278
+[FT] Ep 20: Loss 0.7016 | Val MAE 34.6223
+[FT] Ep 30: Loss 0.6990 | Val MAE 34.9557
+[FT] Ep 40: Loss 0.7014 | Val MAE 33.9612
+[FT] Ep 50: Loss 0.7204 | Val MAE 35.1734
+[FT] Ep 60: Loss 0.6287 | Val MAE 33.4823
+[FT] Ep 70: Loss 0.6481 | Val MAE 30.2156
+[FT] Ep 80: Loss 0.6126 | Val MAE 31.6927
+[FT] Ep 90: Loss 0.6102 | Val MAE 33.0172
+[FT] Ep 100: Loss 0.6160 | Val MAE 32.8626
+[FT] Ep 110: Loss 0.6155 | Val MAE 32.5486
+[FT] Ep 120: Loss 0.5702 | Val MAE 32.8243
+[FT] Ep 130: Loss 0.5945 | Val MAE 33.7957
+[FT] Ep 140: Loss 0.5623 | Val MAE 30.2702
+[FT] Ep 150: Loss 0.5549 | Val MAE 33.5794
+[FT] Ep 160: Loss 0.5656 | Val MAE 30.5618
+[FT] Ep 170: Loss 0.6660 | Val MAE 37.2907
+[FT] Ep 180: Loss 0.5388 | Val MAE 34.1831
+[FT] Ep 190: Loss 0.5042 | Val MAE 33.8551
+[FT] Ep 200: Loss 0.5036 | Val MAE 30.4907
+[FT] Ep 210: Loss 0.5424 | Val MAE 32.0487
+[FT] Ep 220: Loss 0.4836 | Val MAE 33.3650
+[FT] Ep 230: Loss 0.5055 | Val MAE 34.4968
+[FT] Ep 240: Loss 0.4495 | Val MAE 31.6820
+[FT] Ep 250: Loss 0.4796 | Val MAE 30.9668
+[FT] Ep 260: Loss 0.4666 | Val MAE 29.1029
+[FT] Ep 270: Loss 0.4413 | Val MAE 30.1429
+[FT] Ep 280: Loss 0.4476 | Val MAE 33.7420
+[FT] Ep 290: Loss 0.4539 | Val MAE 34.5188
+[FT] Ep 300: Loss 0.4445 | Val MAE 29.9827
+[FT] Ep 310: Loss 0.4376 | Val MAE 32.0395
+[FT] Ep 320: Loss 0.4046 | Val MAE 34.8571
+[FT] Ep 330: Loss 0.4121 | Val MAE 31.0650
+[FT] Ep 340: Loss 0.4291 | Val MAE 36.5905
+[FT] Ep 350: Loss 0.4080 | Val MAE 31.9116
+Early stopping triggered.
+
+>>> Testing Final Model...
+------------------------------------------------------------
+[BASELINE RESULT] Method: MolPeg
+   MAE:  29.0635
+   RMSE: 40.5916
+   MAPE: 95.69 %
+   Acc:  11.11 %
+------------------------------------------------------------
